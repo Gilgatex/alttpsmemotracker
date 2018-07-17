@@ -1,5 +1,9 @@
 1.0.1
 Added readme.txt file with contact information
+Made several wrecked ship spots dependant on phantoon being marked
+Pinned items now wrap
+Fixed some bomb logic issues
+
 -----
 1.0.0 
 Initial Release
