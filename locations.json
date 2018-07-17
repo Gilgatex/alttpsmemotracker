@@ -159,16 +159,16 @@
 				  {
 					"name": "Missile (outside Wrecked Ship top)",
 					"access_rules": [
-					  "[tournament],super,$canBombPassages",
+					  "[tournament],phantoon,super,$canBombPassages",
 					  
-					  "[casual],super,speed",
-					  "[casual],super,grapple",
-					  "[casual],super,$canFlySM",
-					  "[casual],super,space",
-					  "[casual],super,$canSpringJump,hijump",
-					  "[casual],$canAccessMaridiaPortal,hijump",
-					  "[casual],$canAccessMaridiaPortal,$canFly",
-					  "[casual],$canAccessMaridiaPortal,speed"
+					  "[casual],phantoon,super,speed",
+					  "[casual],phantoon,super,grapple",
+					  "[casual],phantoon,super,$canFlySM",
+					  "[casual],phantoon,super,space",
+					  "[casual],phantoon,super,$canSpringJump,hijump",
+					  "[casual],phantoon,$canAccessMaridiaPortal,hijump",
+					  "[casual],phantoon,$canAccessMaridiaPortal,$canFly",
+					  "[casual],phantoon,$canAccessMaridiaPortal,speed"
 					],
 					"sections": [
 					  {
@@ -187,13 +187,13 @@
 				  {
 					"name": "Missile (outside Wrecked Ship middle)",
 					"access_rules": [
-					  "[tournament],super,$canBombPassages",
+					  "[tournament],phantoon,super,$canBombPassages",
 					  
-					  "[casual],super,speed",
-					  "[casual],super,grapple",
-					  "[casual],super,space",
-					  "[casual],super,$canSpringJump",
-					  "[casual],super,$canAccessMaridiaPortal"
+					  "[casual],phantoon,super,speed",
+					  "[casual],phantoon,super,grapple",
+					  "[casual],phantoon,super,space",
+					  "[casual],phantoon,super,$canSpringJump",
+					  "[casual],phantoon,super,$canAccessMaridiaPortal"
 					],
 					"sections": [
 					  {
@@ -1639,13 +1639,13 @@
 			  {
 				"name": "Reserve Tank, Wrecked Ship",
 				"access_rules": [
-				  "[tournament],$canPowerBomb,speed,varia",
-				  "[tournament],$canPowerBomb,speed,$hasEnergyReserves:3",
+				  "[tournament],phantoon,$canPowerBomb,speed,varia",
+				  "[tournament],phantoon,$canPowerBomb,speed,$hasEnergyReserves:3",
 				  
-				  "[casual],speed,$canPowerBomb,grapple",
-				  "[casual],speed,$canPowerBomb,space",
-				  "[casual],speed,$canPowerBomb,varia,$hasEnergyReserves:3",
-				  "[casual],speed,$canPowerBomb,$hasEnergyReserves:4",
+				  "[casual],phantoon,speed,$canPowerBomb,grapple",
+				  "[casual],phantoon,speed,$canPowerBomb,space",
+				  "[casual],phantoon,speed,$canPowerBomb,varia,$hasEnergyReserves:3",
+				  "[casual],phantoon,speed,$canPowerBomb,$hasEnergyReserves:4",
 				],
 				"sections": [
 				  {
@@ -1664,13 +1664,13 @@
 			 {
 				"name": "Energy Tank, Wrecked Ship",
 				"access_rules": [
-				  "hijump",
-				  "space",
-				  "speed",
-				  "gravity",
-				  "[tournament], bomb",
-				  "[tournament], powerbomb",
-				  "[tournament], $canSpringJump"
+				  "hijump, phantoon",
+				  "space, phantoon",
+				  "speed, phantoon",
+				  "gravity, phantoon",
+				  "[tournament], bomb, phantoon",
+				  "[tournament], powerbomb, phantoon",
+				  "[tournament], $canSpringJump, phantoon"
 				],
 				"sections": [
 				  {
@@ -1691,6 +1691,7 @@
 				"sections": [
 				  {
 					"name": "Right Super, Wrecked Ship",
+					"access_rules": ["phantoon"],
 					"item_count": 1
 				  }
 				],
@@ -1705,13 +1706,13 @@
 			  {
 				"name": "Gravity Suit",
 				"access_rules": [
-				  "[tournament],varia",
-				  "[tournament],$hasEnergyReserves:2",
+				  "[tournament],phantoon,varia",
+				  "[tournament],phantoon,$hasEnergyReserves:2",
 				  
-				  "[casual],grapple",
-				  "[casual],space",				  
-				  "[casual],varia,$hasEnergyReserves:3",
-				  "[casual],$hasEnergyReserves:4"
+				  "[casual],phantoon,grapple",
+				  "[casual],phantoon,space",				  
+				  "[casual],phantoon,varia,$hasEnergyReserves:3",
+				  "[casual],phantoon,$hasEnergyReserves:4"
 				],
 				"sections": [
 				  {
@@ -1746,13 +1747,13 @@
 			  {
 				"name": "Missile (Gravity Suit)",
 				"access_rules": [
-				  "[tournament],varia",
-				  "[tournament],$hasEnergyReserves:2",
+				  "[tournament],phantoon,varia",
+				  "[tournament],phantoon,$hasEnergyReserves:2",
 				  
-				  "[casual],grapple",
-				  "[casual],space",				  
-				  "[casual],varia,$hasEnergyReserves:3",
-				  "[casual],$hasEnergyReserves:4"
+				  "[casual],phantoon,grapple",
+				  "[casual],phantoon,space",				  
+				  "[casual],phantoon,varia,$hasEnergyReserves:3",
+				  "[casual],phantoon,$hasEnergyReserves:4"
 				],
 				"sections": [
 				  {
@@ -1773,6 +1774,7 @@
 				"sections": [
 				  {
 					"name": "Missile (Wrecked Ship top)",
+					"access_rules": ["phantoon"],
 					"item_count": 1
 				  }
 				],
@@ -1789,6 +1791,7 @@
 				"sections": [
 				  {
 					"name": "Super Missile (Wrecked Ship left)",
+					"access_rules": ["phantoon"],
 					"item_count": 1
 				  }
 				],
