@@ -1,0 +1,160 @@
+﻿{
+  "map_enabled": true,
+  "auto_pin_capturing_locations": false,
+  "auto_unpin_on_clear": true,
+  "layout_swap_left_right": false,
+  "disabled_image_filter": "grayscale, dim",
+  "layouts": {
+    "shared_item_grid": {
+      "type": "array",
+      "orientation": "vertical",
+      "margin": "0,0",
+      "content": [
+        {
+          "type": "array",
+          "orientation": "horizontal",
+          "margin": "0,0",
+          "content": [
+			{
+			  "type": "itemgrid",
+			  "h_alignment": "center",
+			  "item_margin": "1,2",
+			  "rows": [
+				[ "bowandarrows", "boomerangs", "hookshot", "bombs", "powder", "mushroom", "aga"],
+				[ "firerod", "icerod", "bombos", "ether", "quake", "shovel", "ridley"],
+				[ "lamp", "hammer", "ocarina", "net", "book", "pearl", "phantoon"],
+				[ "bottle", "somaria", "byrna", "cape", "mirror", "gomode", "kraid"],
+				[ "lift1", "boots", "flippers", "halfmagic", "", "", "draygon"],
+				[ "easternpalace", "desertpalace", "towerofhera", "", "owsword", "shield", "armor"],
+				[ "palaceofdarkness", "swamppalace", "skullwoods", "thievestown", "icepalace", "miserymire", "turtlerock"]
+			  ]
+			},		  
+            {
+              "type": "array",
+              "orientation": "vertical",
+			  "h_alignment": "center",
+              "v_alignment": "top",
+              "margin": "0,0",
+              "content": [			
+				{
+				  "type": "itemgrid",
+				  "item_margin": "1,2",
+				  "h_alignment": "left",
+				  "rows": [
+					[ "charge", "ice", "wave", "spazer", "plasma"],
+					[ "morph", "bomb", "spring", "space","screw"],
+					[ "varia", "gravity", "hijump", "speed", ""],
+					[ "grapple", "xray", "etank", "reservetank", ""],
+					[ "missile", "supermissile", "powerbomb", "", ""]
+				  ]
+				},
+				{
+				  "type": "array",
+				  "orientation": "horizontal",
+				  "margin": "0,0",
+				  "content": [
+					{
+					  "type": "item",
+					  "item": "difficulty"
+					}				
+				  ]
+				}
+			  ]
+			}
+		  ]
+        }
+      ]
+    },
+    "tracker_capture_item": {
+      "type": "container",
+      "content": {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "item_margin": "1,2",
+        "rows": [
+			[ "bow", "silvers", "hookshot", "bombs", "powder", "mushroom", "charge", "ice", "wave", "spazer", "plasma"],
+			[ "firerod", "icerod", "bombos", "ether", "quake", "shovel", "morph", "bomb", "spring", "space","screw"],
+			[ "lamp", "hammer", "ocarina", "net", "book", "pearl", "varia", "gravity", "hijump", "speed", ""],
+			[ "bottle", "somaria", "byrna", "cape", "mirror", "blue_boomerang", "red_boomerang", "grapple", "xray", "etank_icon", "reservetank_icon"],
+			[ "lift1", "boots", "flippers", "halfmagic", "owsword", "shield", "armor", "", "missile_icon", "super_icon", "pb_icon"]
+		]
+      }
+    },
+    "tracker_default": {
+      "type": "container",
+      "background": "#000000",
+      "content": {
+        "type": "dock",
+        "dropshadow": true,
+        "content": [
+          {
+            "type": "dock",
+            "dock": "bottom",
+            "h_alignment": "stretch",
+            "content": [
+              {
+			    "type": "dock",
+				"dock": "left",
+				"content": [
+				  {
+					"type": "group",
+					"header": "Items",
+					"dock": "top",
+					"content": {
+					  "type": "layout",
+					  "key": "shared_item_grid"
+					}
+				  }
+				]
+              },
+              {
+                "type": "group",
+                "header": "Pinned Locations",
+                "content": {
+                  "type": "recentpins",
+                  "style": "wrap",
+                  "h_alignment": "stretch",
+                  "v_alignment": "stretch",
+                  "orientation": "vertical",
+                  "compact": true
+                }
+              }
+            ]
+          },
+          {
+            "type": "tabbed",
+            "tabs": [
+              {
+                "title": "Super Metroid",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "metroid"
+                  ]
+                }
+              },
+              {
+                "title": "Light World",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "lightworld"
+                  ]
+                }
+              },              
+			  {
+                "title": "Dark World",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "darkworld"
+                  ]
+                }
+              },			  
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

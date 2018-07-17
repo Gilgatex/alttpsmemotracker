@@ -1,0 +1,3785 @@
+[
+  {
+    "name": "All Locations",
+	"children": [
+	  {
+		"name": "Zebes",
+		"chest_unopened_img": "images/major_unopened.png",
+		"chest_opened_img": "images/major_opened.png",		
+		"children": [
+		  {
+			"name": "Crateria",
+			"color": "#d83890",
+			"children": [
+			  {
+				"name": "Crateria Central",
+				"children": [
+				  {
+					"name": "Bomb Torizo",
+					"access_rules": [
+					  "[tournament],morph,$canOpenRedDoors",
+					  "[casual],$canBombPassages,$canOpenRedDoors"
+					],
+					"sections": [
+					  {
+						"name": "Bomb Torizo",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 840,
+						"y": 272
+					  }
+					]
+				  },
+				  {
+					"name": "Super Missile (Crateria)",
+					"access_rules": [
+					  "$canPowerBomb, speed, $hasEnergyReserves:3",	  
+					  "$canPowerBomb, speed, varia, [$hasEnergyReserves:3]",	  
+					  "$canPowerBomb, speed, gravity, [$hasEnergyReserves:3]"
+					],
+					"sections": [
+					  {
+						"name": "Super Missile (Crateria)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 808,
+						"y": 368
+					  }
+					]
+				  },
+				  {
+					"name": "Missile (Crateria middle)",
+					"access_rules": [
+					  "$canBombPassages"
+					],
+					"sections": [
+					  {
+						"name": "Missile (Crateria middle)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 552,
+						"y": 304
+					  }
+					]
+				  },
+				  {
+					"name": "Missile (Crateria bottom)",
+					"access_rules": [
+					  "$canBombWalls"
+					],
+					"sections": [
+					  {
+						"name": "Missile (Crateria bottom)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 680,
+						"y": 656
+					  }
+					]
+				  },
+				  {
+					"name": "Power Bomb (Crateria surface)",
+					"access_rules": [
+					  "$canPowerBomb, speed",
+					  "$canPowerBomb, $canFlySM"
+					],
+					"sections": [
+					  {
+						"name": "Power Bomb (Crateria surface)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1096,
+						"y": 112
+					  }
+					]
+				  },			  
+				]
+			  },
+			  {
+				"name": "Crateria East",
+				"access_rules": [
+				
+				  "$canPowerBomb, super",
+				  "$canAccessNorfairPortal, $canPowerBomb, ice",
+				  "$canAccessNorfairPortal, $canPowerBomb, hijump",
+				  
+				  "[tournament],$canAccessNorfairPortal, $canPowerBomb, $canSpringJump",
+				  "[tournament],$canAccessNorfairPortal, $canPowerBomb, $canFlySM",
+				  "[tournament],$canAccessMaridiaPortal, hijump, super",
+				  
+				  "[casual],$canAccessNorfairPortal, $canPowerBomb, space",
+				  "[casual],$canAccessMaridiaPortal, gravity, super"
+				],
+				"children": [
+				  {
+					"name": "Missile (outside Wrecked Ship bottom)",
+					"access_rules": [
+					  "[tournament]",
+					  
+					  "[casual],[speed]",
+					  "[casual],[grapple]",
+					  "[casual],[space]",
+					  "[casual],[$canSpringJump]",
+					  "[casual],[$canAccessMaridiaPortal]"
+					],
+					"sections": [
+					  {
+						"name": "Missile (outside Wrecked Ship bottom)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1256,
+						"y": 240
+					  }
+					]
+				  },
+				  {
+					"name": "Missile (outside Wrecked Ship top)",
+					"access_rules": [
+					  "[tournament],super,$canBombPassages",
+					  
+					  "[casual],super,speed",
+					  "[casual],super,grapple",
+					  "[casual],super,$canFlySM",
+					  "[casual],super,space",
+					  "[casual],super,$canSpringJump,hijump",
+					  "[casual],$canAccessMaridiaPortal,hijump",
+					  "[casual],$canAccessMaridiaPortal,$canFly",
+					  "[casual],$canAccessMaridiaPortal,speed"
+					],
+					"sections": [
+					  {
+						"name": "Missile (outside Wrecked Ship top)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1290,
+						"y": 78
+					  }
+					]
+				  },
+				  {
+					"name": "Missile (outside Wrecked Ship middle)",
+					"access_rules": [
+					  "[tournament],super,$canBombPassages",
+					  
+					  "[casual],super,speed",
+					  "[casual],super,grapple",
+					  "[casual],super,space",
+					  "[casual],super,$canSpringJump",
+					  "[casual],super,$canAccessMaridiaPortal"
+					],
+					"sections": [
+					  {
+						"name": "Missile (outside Wrecked Ship middle)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1256,
+						"y": 143
+					  }
+					]
+				  },
+				  {
+					"name": "Missile (Crateria moat)",			
+					"sections": [
+					  {
+						"name": "Missile (Crateria moat)",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1192,
+						"y": 208
+					  }
+					]
+				  }
+				]
+			  },
+			  {
+				"name": "Crateria West",
+				"access_rules": [
+				  "$canBombWalls",
+				  "speed"
+				],
+				"children": [
+				  {
+					"name": "Energy Tank, Gauntlet",
+					"access_rules": [
+					  "[tournament],$canEnterAndLeaveGauntletTournament",
+					  "[casual],$canEnterAndLeaveGauntletCasual,[$hasEnergyReserves:2]"
+					],
+					"sections": [
+					  {
+						"name": "Energy Tank, Gauntlet",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 584,
+						"y": 144
+					  }
+					]
+				  },
+				  {
+					"name": "Energy Tank, Terminator",
+					"sections": [
+					  {
+						"name": "Energy Tank, Terminator",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 424,
+						"y": 272
+					  }
+					]
+				  },
+				  {
+					"name": "After Gauntlet",
+					"access_rules": [
+					  "[tournament],$canEnterAndLeaveGauntletTournament,$canBombPassages",
+					  "[casual],$canEnterAndLeaveGauntletCasual,$canBombPassages,[$hasEnergyReserves:3]"
+					],
+					"sections": [
+					  {
+						"name": "Missile (Crateria gauntlet left)",
+						"item_count": 1
+					  },
+					  {
+						"name": "Missile (Crateria gauntlet right)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 392,
+						"y": 176
+					  }
+					]
+				  },			  
+				]
+			  }
+			]
+		  },
+		  {
+			"name": "Brinstar",		
+			"children": [
+			  {
+				"name": "Blue Brinstar",
+				"color": "#081848",
+				"children": [
+				  {
+					"name": "Morph Ball",
+					"sections": [
+					  {
+						"name": "Morph Ball",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 744,
+						"y": 976
+					  }
+					]
+				  },
+				  {
+					"name": "Energy Tank, Brinstar Ceiling",
+					"sections": [
+					  {
+						"name": "Energy Tank, Brinstar Ceiling",
+						"access_rules": [
+							"[casual],$canFlySM",
+							"[casual],ice",
+							"[casual],hijump",
+							"[casual],speed",
+							
+							"[tournament]",
+							"{}"
+						],
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 936,
+						"y": 976
+					  }
+					]
+				  },
+				  {
+					"name": "Missile (blue Brinstar middle)",
+					"access_rules": [
+					  "morph",
+					],					
+					"sections": [
+					  {
+						"name": "Missile (blue Brinstar middle)",
+
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 968,
+						"y": 976
+					  }
+					]
+				  },
+				  {
+					"name": "Missile (blue Brinstar bottom)",
+					"access_rules": [
+					  "morph"
+					],
+					"sections": [
+					  {
+						"name": "Missile (blue Brinstar bottom)	",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 840,
+						"y": 1008
+					  }
+					]
+				  },
+				  {
+					"name": "Missiles (blue Brinstar top)",
+					"access_rules": [
+					  "$canPowerBomb"
+					],
+					"sections": [
+					  {
+						"name": "Missile (blue Brinstar top)",
+						"item_count": 1
+					  },
+					  {
+						"name": "Missile (blue Brinstar behind missile)",
+						"item_count": 1
+					  }				  
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 872,
+						"y": 912
+					  }
+					]
+				  },
+				  {
+					"name": "Power Bomb (blue Brinstar)",
+					"access_rules": [
+					  "$canPowerBomb"
+					],
+					"sections": [
+					  {
+						"name": "Power Bomb (blue Brinstar)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 680,
+						"y": 976
+					  }
+					]
+				  }			  
+				]
+			  },
+			  {
+				"name": "Green Brinstar",
+				"color": "#48a848",
+				"access_rules": [
+					"$canBombWalls",
+					"speed"
+				],
+				"children": [
+				  {
+					"name": "Reserve Tank, Brinstar",
+					"access_rules": [
+					  "$canOpenRedDoors,speed",
+					  "[tournament],$canOpenRedDoors,morph"
+					],
+					"sections": [
+					  {
+						"name": "Reserve Tank, Brinstar",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 360,
+						"y": 784
+					  },
+					  ]
+				  },
+				  {
+					"name": "Energy Tank, Etecoons",
+					"access_rules": [
+					  "$canPowerBomb"
+					],
+					"sections": [
+					  {
+						"name": "Energy Tank, Etecoons",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 136,
+						"y": 976
+					  },
+					  ]
+				  },
+				  {
+					"name": "Power Bomb (green Brinstar bottom)",
+					"access_rules": [
+					  "$canPowerBomb"
+					],
+					"sections": [
+					  {
+						"name": "Power Bomb (green Brinstar bottom)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 328,
+						"y": 880
+					  },
+					  ]
+				  },
+				  {
+					"name": "Missile (green Brinstar below super missile)",
+					"access_rules": [
+					  "$canBombPassages,$canOpenRedDoors",
+					  "{}"
+					],
+					"capture_item": true,
+					"sections": [
+					  {
+						"name": "Missile (green Brinstar below super missile)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 296,
+						"y": 784
+					  },
+					  ]
+				  },
+				  {
+					"name": "Super Missile (green Brinstar top)",
+					"access_rules": [
+					  "[casual],$canOpenRedDoors,speed",
+					  
+					  "[tournament],$canOpenRedDoors,speed",
+					  "[tournament],$canOpenRedDoors,morph"
+					],
+					"sections": [
+					  {
+						"name": "Super Missile (green Brinstar top)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 264,
+						"y": 752
+					  },
+					  ]
+				  },
+				  {
+					"name": "Missiles (green Brinstar behind reserve tank)",
+					"access_rules": [
+					  "$canOpenRedDoors"
+					],
+					"sections": [
+					  {
+						"name": "Missile (green Brinstar behind reserve tank)",
+						"access_rules": [
+						  "[tournament],$canOpenRedDoors,morph",
+						  "[casual],$canOpenRedDoors,morph,[speed]"
+						],
+						"item_count": 1
+					  },
+					  {
+						"name": "Missile (green Brinstar behind missile)",
+						"access_rules": [
+						  "[tournament],$canBombPassages,$canOpenRedDoors",
+						  "[tournament],morph,screw,$canOpenRedDoors",
+						  "[casual],speed,$canBombPassages,morph"
+						],
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 392,
+						"y": 784
+					  },
+					  ]
+				  },
+				  {
+					"name": "Super Missile (green Brinstar bottom)",
+					"access_rules": [
+					  "$canPowerBomb,super"
+					],
+					"sections": [
+					  {
+						"name": "Super Missile (green Brinstar bottom)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 104,
+						"y": 976
+					  },
+					  ]
+				  }
+				]
+			  },
+			  {
+				"name": "Pink Brinstar",
+				"color": "#704858",
+				"access_rules": [
+				  "$canPowerBomb",
+				  "$canOpenRedDoors,$canBombWalls",
+				  "$canOpenRedDoors,speed",
+				  "$canAccessNorfairPortal,morph,wave,ice",
+				  "$canAccessNorfairPortal,morph,wave,hijump",
+				  
+				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,ice",
+				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,hijump",
+				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,$canSpringJump",
+				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,$canFlySM",
+				  "[tournament],$canAccessNorfairPortal,morph,wave,$canSpringJump",
+				  "[tournament],$canAccessNorfairPortal,morph,wave,$canFlySM",
+				  "[tournament],$canAccessNorfairPortal,morph,wave,[space]",
+				  
+				  "open,$canAccessNorfairPortal,morph,wave,space"
+				],
+				"children": [
+				  {
+					"name": "Charge Beam",
+					"access_rules": [
+					  "$canPowerBomb"
+					],
+					"sections": [
+					  {
+						"name": "Charge Beam",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 488,
+						"y": 1008
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (green Brinstar pipe)",
+					"access_rules": [
+					  "morph,powerbomb",
+					  "morph,super",
+					  "morph,$canAccessNorfairPortal",
+
+					],
+					"sections": [
+					  {
+						"name": "Missile (green Brinstar pipe)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 648,
+						"y": 1008
+					  },
+					]
+				  },					  
+				  {
+					"name": "Energy Tank, Waterway",
+					"access_rules": [
+					  "$canPowerBomb,$canOpenRedDoors,speed,$hasEnergyReserves:2"
+					],
+					"sections": [
+					  {
+						"name": "Energy Tank, Waterway",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 200,
+						"y": 1072
+					  },
+					]
+				  },
+				  {
+					"name": "Energy Tank, Brinstar Gate",
+					"access_rules": [
+					  "[tournament],$canPowerBomb,wave",
+					  "[tournament],$canPowerBomb,super",
+					  "[casual],$canPowerBomb,wave,[$hasEnergyReserves:2]"
+					],
+					"sections": [
+					  {
+						"name": "Energy Tank, Brinstar Gate",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 616,
+						"y": 912
+					  },
+					]
+				  },
+				  {
+					"name": "Pink Brinstar Super",
+					"access_rules": [
+					  "$canBombPassages,super"
+					],
+					"sections": [
+					  {
+						"name": "Pink Brinstar Super",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 712,
+						"y": 944
+					  },
+					]
+				  },
+				  {
+					"name": "Super Missile (pink Brinstar)",
+					"access_rules": [
+					  "$canBombPassages,super"
+					],
+					"sections": [
+					  {
+						"name": "Super Missile (pink Brinstar)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 424,
+						"y": 912
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (pink Brinstar top)",
+					"sections": [
+					  {
+						"name": "Missile (pink Brinstar top)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 487,
+						"y": 879
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (pink Brinstar bottom)",
+					"sections": [
+					  {
+						"name": "Missile (pink Brinstar bottom)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 488,
+						"y": 976
+					  },
+					]
+				  }
+				]
+			  },
+			  {
+				"name": "Red Brinstar",
+				"color": "#601820",
+				"access_rules": [
+				  "$canBombWalls,super,morph",
+				  "speed,super,morph",
+				  "$canAccessNorfairPortal,ice",
+				  "$canAccessNorfairPortal,hijump",
+				  "[tournament],$canAccessNorfairPortal,$canSpringJump",
+				  "[tournament],$canAccessNorfairPortal,$canFlySM",
+				  "[casual],$canAccessNorfairPortal,space"
+				],
+				"children": [
+				  {
+					"name": "X-Ray Scope",
+					"access_rules": [
+					  "$canPowerBomb,$canOpenRedDoors,grapple",
+					  "$canPowerBomb,$canOpenRedDoors,space",
+					  "[tournament],$canPowerBomb,$canOpenRedDoors,varia,$hasEnergyReserves:4,$canBombJump",
+					  "[tournament],$canPowerBomb,$canOpenRedDoors,varia,$hasEnergyReserves:4,hijump,speed",
+					  "[tournament],$canPowerBomb,$canOpenRedDoors,varia,$hasEnergyReserves:4,$canSpringJump",
+					  "[tournament],$canPowerBomb,$canOpenRedDoors,$hasEnergyReserves:6,$canBombJump",
+					  "[tournament],$canPowerBomb,$canOpenRedDoors,$hasEnergyReserves:6,hijump,speed",
+					  "[tournament],$canPowerBomb,$canOpenRedDoors,$hasEnergyReserves:6,$canSpringJump"
+					],
+					"sections": [
+					  {
+						"name": "X-Ray Scope",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 680,
+						"y": 1136
+					  },
+					  ]
+				  },
+				  {
+					"name": "Spazer",
+					"access_rules": [
+					  "$canBombPassages,super"
+					],
+					"sections": [
+					  {
+						"name": "Spazer",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1160,
+						"y": 1200
+					  },
+					]
+				  },
+				  {
+					"name": "Power Bomb (red Brinstar sidehopper room)",
+					"access_rules": [
+					  "$canPowerBomb,super"
+					],
+					"sections": [
+					  {
+						"name": "Power Bomb (red Brinstar sidehopper room)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1064,
+						"y": 912
+					  },
+					]
+				  },
+				  {
+					"name": "Power Bomb (red Brinstar spike room)",
+					"access_rules": [
+					  "[tournament],super",
+					  "[casual],$canPowerBomb,ice",
+					  "[casual],$canPowerBomb,super",
+					],
+					"sections": [
+					  {
+						"name": "Power Bomb (red Brinstar spike room)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1064,
+						"y": 1008
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (red Brinstar spike room)",
+					"access_rules": [
+					  "$canPowerBomb,super",
+					],
+					"sections": [
+					  {
+						"name": "Missile (red Brinstar spike room)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1032,
+						"y": 1008
+					  },
+					]
+				  }
+				]
+			  },
+			  {
+				"name": "Kraid",
+				"color": "#007038",
+				"access_rules": [
+				  "$canBombWalls, super, morph, $canBombPassages",
+				  "speed, super, morph, $canBombPassages",
+				  "$canAccessNorfairPortal, super, morph, $canBombPassages"				  
+				],
+				"children": [
+				  {
+					"name": "Energy Tank, Kraid",
+					"sections": [
+					  {
+						"name": "Energy Tank, Kraid",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1320,
+						"y": 1264
+					  },
+					]
+				  },
+				  {
+					"name": "Varia Suit",
+					"sections": [
+					  {
+						"name": "Varia Suit",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1768,
+						"y": 1264
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (Kraid)",
+					"access_rules": [
+					  "$canPowerBomb"
+					],
+					"sections": [
+					  {
+						"name": "Missile (Kraid)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1448,
+						"y": 1232
+					  },
+					]
+				  }
+				]
+			  }
+			]
+		  },
+		  {
+			"name": "Norfair",
+			"children": [
+			  {
+				"name": "West Norfair",
+				"color": "#b81818",
+				"access_rules": [
+				  "$norfairWest"
+				],
+				"children": [
+				  {
+					"name": "Ice Beam",
+					"access_rules": [
+					  "[tournament],super,morph,$heatProof",
+					  "[tournament],super,morph,$hasEnergyReserves:4",
+					  "[casual],super,$canPowerBomb,varia,speed"
+					],
+					"sections": [
+					  {
+						"name": "Ice Beam",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1096,
+						"y": 1360
+					  },
+					]
+				  },
+				  {
+					"name": "Norfair Missile (below ice)",
+					"access_rules": [
+					  "super,$canPowerBomb,varia,speed",
+					  "[tournament],super,$canPowerBomb,$hasEnergyReserves:4",
+					  "[tournament],super,$canPowerBomb,$heatProof",
+					],
+					"sections": [
+					  {
+						"name": "Norfair Missile (below ice)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1000,
+						"y": 1424
+					  },
+					]
+				  },
+				  {
+					"name": "Hi-Jump Boots",
+					"access_rules": [
+					  "$canOpenRedDoors,$canBombPassages",
+					],
+					"sections": [
+					  {
+						"name": "Hi-Jump Boots",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1160,
+						"y": 1488
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (Hi-Jump Boots)",
+					"access_rules": [
+					  "$canOpenRedDoors,morph"
+					],
+					"sections": [
+					  {
+						"name": "Missile (Hi-Jump Boots)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1192,
+						"y": 1456
+					  },
+					]
+				  },
+				  {
+					"name": "Energy Tank (Hi-Jump Boots)",
+					"access_rules": [
+					  "$canOpenRedDoors"
+					],
+					"sections": [
+					  {
+						"name": "Energy Tank (Hi-Jump Boots)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1224,
+						"y": 1456
+					  },
+					]
+				  }
+				]
+			  },
+			  {
+			    "name": "Crocomire",
+				"access_rules": [
+				  "[tournament],$crocomireTournament",
+				  "[casual],$crocomireCasual"
+				],
+				"children": [
+				  {
+					"name": "Energy Tank, Crocomire",
+					"sections": [
+					  {
+						"name": "Energy Tank, Crocomire",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1544,
+						"y": 1616
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (above Crocomire)",
+					"access_rules": [
+					  "[tournament], $canFlySM, $canHellRun",
+					  "[tournament], grapple, $canHellRun",
+					  "[tournament], hijump, speed, $canHellRun",
+					  "[tournament], hijump, spring, $canHellRun",
+					  "[casual], $canFlySM",
+					  "[casual], grapple",
+					  "[casual], hijump, speed",
+					  "{}"
+					],
+					"sections": [
+					  {
+						"name": "Missile (above Crocomire)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1288,
+						"y": 1488
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (below Crocomire)",
+					"access_rules": [
+					  "morph"
+					],
+					"sections": [
+					  {
+						"name": "Missile (below Crocomire)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1384,
+						"y": 1776
+					  },
+					]
+				  },
+				  {
+					"name": "Power Bomb (Crocomire)",
+					"access_rules": [
+					  "[tournament]",
+					  "[casual],$canFlySM",
+					  "[casual],hijump",
+					  "[casual],grapple"
+					],
+					"sections": [
+					  {
+						"name": "Power Bomb (Crocomire)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1224,
+						"y": 1616
+					  },
+					  ]
+				  },
+				  {
+					"name": "Missile (Grapple Beam)",
+					"access_rules": [
+					  "[tournament],speed",
+					  "[tournament],morph,$canFlySM",
+					  "[tournament],morph,grapple",
+					  "[casual],morph,$canFlySM,$canPowerBomb",
+					  "[casual],morph,speed,$canPowerBomb"				  
+					],
+					"sections": [
+					  {
+						"name": "Missile (Grapple Beam)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1192,
+						"y": 1776
+					  },
+					  ]
+				  },
+				  {
+					"name": "Grapple Beam",
+					"access_rules": [
+					  "[tournament],space",
+					  "[tournament],morph",
+					  "[tournament],grapple",
+					  "[tournament],hijump,speed",
+					  "[casual],morph,$canFlySM",
+					  "[casual],morph,speed,$canPowerBomb"
+					],
+					"sections": [
+					  {
+						"name": "Major Item",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1032,
+						"y": 1808
+					  },
+					]
+				  },
+				]
+			  },
+			  {
+			    "name": "Norfair East",
+				"access_rules": [
+				  "[tournament],$norfairEastTournament",
+				  "[casual],$norfairEastCasual"
+				],
+				"children": [
+				  {
+					"name": "Norfair Reserve Tank/Missile",
+					"access_rules": [
+					  "[tournament],morph,super",
+					  "[casual],morph,$canFlySM",
+					  "[casual],morph,hijump",
+					  "[casual],morph,ice",
+					  "[casual],morph,grapple,speed",
+					  "[casual],morph,grapple,bomb"
+					],					
+					"sections": [
+					  {
+						"name": "Reserve Tank, Norfair",
+						"item_count": 1
+					  },
+					  {
+						"name": "Missile (Norfair Reserve Tank)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1512,
+						"y": 1360
+					  },
+					]
+				  },
+				  {
+					"name": "Speed Booster",
+					"access_rules": [
+					  "[tournament],super",
+					  
+					  "[casual],$canFlySM",
+					  "[casual],morph,speed",
+					  "[casual],morph,$canBombPassages",
+					  "[casual],hijump",
+					  "[casual],ice"
+					],
+					"sections": [
+					  {
+						"name": "Speed Booster",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 2120,
+						"y": 1360
+					  },
+					]
+				  },
+				  {
+					"name": "Speed Booster Missile",
+					"access_rules": [
+					  "[tournament],super",
+					  
+					  "[casual],$canFlySM",
+					  "[casual],morph,speed",
+					  "[casual],morph,$canBombPassages",
+					  "[casual],hijump",
+					  "[casual],ice"
+					],
+					"sections": [
+					  {
+						"name": "Minor Item",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 2088,
+						"y": 1360
+					  },
+					]
+				  },
+				  {
+					"name": "Wave Beam",
+					"access_rules": [
+					  "[tournament],$canOpenRedDoors,morph",
+					  "[tournament],$canOpenRedDoors,grapple",
+					  "[tournament],$canOpenRedDoors,hijump,$heatProof",
+					  "[tournament],$canOpenRedDoors,space",
+					  
+					  "[casual],morph,$canFly",
+					  "[casual],morph,speed",
+					  "[casual],morph,$canBombPassages",
+					  "[casual],morph,hijump",
+					  "[casual],morph,ice"
+					],
+					"sections": [
+					  {
+						"name": "Wave Beam",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1864,
+						"y": 1424
+					  },
+					  ]
+				  },
+				  {
+					"name": "Wave Beam Missile",
+					"access_rules": [
+					  "[tournament]",
+					  
+					  "[casual],$canFly",
+					  "[casual],morph,speed",
+					  "[casual],morph,$canBombPassages",
+					  "[casual],hijump",
+					  "[casual],ice"
+					],
+					"sections": [
+					  {
+						"name": "Wave Beam Missile",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1768,
+						"y": 1424
+					  },
+					]
+				  },
+				  {
+					"name": "Norfair Missile (lava room)",
+					"access_rules": [
+					  "morph"
+					],
+					"sections": [
+					  {
+						"name": "Norfair Missile (lava room)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1448,
+						"y": 1424
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (bubble Norfair green door)",
+					"access_rules": [
+					  "[tournament],super",
+					  "[casual],$canFlySM",
+					  "[casual],grapple,morph,speed",
+					  "[casual],grapple,morph,$canBombPassages",
+					  "[casual],hijump",
+					  "[casual],ice",					  
+					],
+					"sections": [
+					  {
+						"name": "Missile (bubble Norfair green door)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1608,
+						"y": 1360
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (bubble Norfair)",
+					"sections": [
+					  {
+						"name": "Missile (bubble Norfair)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1672,
+						"y": 1456
+					  },
+					  ]
+				  }
+				]
+			  },
+			  {
+				"name": "Lower Norfair",
+				"color": "#700010",
+				"children": [
+				  {
+					"name": "Lower Norfair East",
+					"children": [
+					  {
+						"access_rules": [
+						  "[tournament],$lowerNorfairEastTournament",
+						  "[casual],$lowerNorfairEastCasual"
+						],
+						"children": [
+						  {
+							"name": "Missile (Mickey Mouse room)",
+							"sections": [
+							  {
+								"name": "Missile (Mickey Mouse room)",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 1832,
+								"y": 1616
+							  },
+							]
+						  },
+						  {
+							"name": "Missile (lower Norfair above fire flea room)",
+							"sections": [
+							  {
+								"name": "Missile (lower Norfair above fire flea room)",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 2056,
+								"y": 1456
+							  },
+							]
+						  },
+						  {
+							"name": "Power Bomb (lower Norfair above fire flea room)",
+							"sections": [
+							  {
+								"name": "Power Bomb (lower Norfair above fire flea room)",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 2120,
+								"y": 1488
+							  },
+							]
+						  },
+						  {
+							"name": "Power Bomb (Power Bombs of shame)",
+							"access_rules": [
+							  "$canPowerBomb"
+							],
+							"sections": [
+							  {
+								"name": "Power Bomb (Power Bombs of shame)",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 1960,
+								"y": 1744
+							  },
+							]
+						  },
+						  {
+							"name": "Missile (lower Norfair near Wave Beam)",
+							"sections": [
+							  {
+								"name": "Missile (lower Norfair near Wave Beam)",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 1864,
+								"y": 1456
+							  },
+							]
+						  },
+						  {
+							"name": "Energy Tank, Ridley",
+							"access_rules": [
+							  "$canPowerBomb,super,charge"
+							],
+							"sections": [
+							  {
+								"name": "Energy Tank, Ridley",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 1640,
+								"y": 1840
+							  },
+							  ]
+						  },
+						  {
+							"name": "Energy Tank, Firefleas",
+							"sections": [
+							  {
+								"name": "Energy Tank, Firefleas",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 2122,
+								"y": 1646
+							  },
+							  ]
+						  },
+						]
+					  }
+					]
+				  },
+				  {
+					"name": "Lower Norfair West",
+					"children": [
+					  {
+						"access_rules": [
+						  "[tournament],$lowerNorfairEastTournament,$canPowerBomb,$heatProof,hijump",
+						  "[tournament],$lowerNorfairEastTournament,$canPowerBomb,$heatProof,gravity",
+						  "[tournament],$canAccessLowerNorfairPortal,$canBombWalls",
+						  "[casual],$heatProof,$lowerNorfairEastCasual,$canPowerBomb,gravity",
+						  "[casual],$heatProof,$lowerNorfairEastCasual,$canPowerBomb,hijump",
+						  "[casual],$heatProof,$canAccessLowerNorfairPortal,$canBombWalls"
+						],
+						"children": [
+						  {
+							"name": "Screw Attack",
+							"access_rules": [
+							  "$canBombWalls,$canAccessLowerNorfairPortal",
+							  "[tournament],$canBombWalls,$heatProof",
+							  "[casual],$canBombWalls,space,$canPowerBomb",
+							],
+							"sections": [
+							  {
+								"name": "Screw Attack",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 1576,
+								"y": 1808
+							  },
+							  ]
+						  },
+						  {
+							"name": "Missile (Gold Torizo)",
+							"access_rules": [
+							  "[tournament],$canPowerBomb,space,$heatProof,hijump",
+							  "[tournament],$canPowerBomb,space,$heatProof,gravity",
+							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canFly",
+							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canSpringJump",
+							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,speed",
+							  "[casual],$canPowerBomb,space,super"
+							],							
+							"sections": [
+							  {
+								"name": "Missile (Gold Torizo)",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 1512,
+								"y": 1776
+							  },
+							]
+						  },
+						  {
+							"name": "Super Missile (Gold Torizo)",
+							"access_rules": [
+							  "[tournament],$canBombWalls,$heatProof",
+							  "[casual],$canBombWalls,$canAccessLowerNorfairPortal",
+							  "[casual],$canBombWalls,space,$canPowerBomb"
+							],							
+							"sections": [
+							  {
+								"name": "Super Missile (Gold Torizo)",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "metroid",
+								"x": 1544,
+								"y": 1776
+							  },
+							]
+						  }
+						]
+					  }
+					]
+				  }
+				]
+			  }
+			]
+		  },
+		  {
+			"name": "Wrecked Ship",
+			"color": "#707048",
+			"access_rules": [
+			  "[tournament],super,$canPowerBomb",
+			  "[tournament],super,$canAccessMaridiaPortal,hijump,$canBombPassages",
+			  "[tournament],super,$canAccessMaridiaPortal,gravity,$canBombPassages",
+			  
+			  "[casual],super,$canPowerBomb,speed",
+			  "[casual],super,$canPowerBomb,grapple",
+			  "[casual],super,$canPowerBomb,space",
+			  "[casual],super,$canPowerBomb,$canSpringJump",
+			  "[casual],super,$canAccessMaridiaPortal,gravity,$canBombPassages"
+			],
+			"children": [
+			  {
+				"name": "Reserve Tank, Wrecked Ship",
+				"access_rules": [
+				  "[tournament],$canPowerBomb,speed,varia",
+				  "[tournament],$canPowerBomb,speed,$hasEnergyReserves:3",
+				  
+				  "[casual],speed,$canPowerBomb,grapple",
+				  "[casual],speed,$canPowerBomb,space",
+				  "[casual],speed,$canPowerBomb,varia,$hasEnergyReserves:3",
+				  "[casual],speed,$canPowerBomb,$hasEnergyReserves:4",
+				],
+				"sections": [
+				  {
+					"name": "Reserve Tank, Wrecked Ship",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1608,
+					"y": 112
+				  },
+				  ]
+			  },
+			 {
+				"name": "Energy Tank, Wrecked Ship",
+				"access_rules": [
+				  "hijump",
+				  "space",
+				  "speed",
+				  "gravity",
+				  "[tournament], bomb",
+				  "[tournament], powerbomb",
+				  "[tournament], $canSpringJump"
+				],
+				"sections": [
+				  {
+					"name": "Energy Tank, Wrecked Ship",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1704,
+					"y": 176
+				  },
+				  ]
+			  },
+			  {
+				"name": "Right Super, Wrecked Ship",
+				"sections": [
+				  {
+					"name": "Right Super, Wrecked Ship",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1800,
+					"y": 304
+				  },
+				  ]
+			  },
+			  {
+				"name": "Gravity Suit",
+				"access_rules": [
+				  "[tournament],varia",
+				  "[tournament],$hasEnergyReserves:2",
+				  
+				  "[casual],grapple",
+				  "[casual],space",				  
+				  "[casual],varia,$hasEnergyReserves:3",
+				  "[casual],$hasEnergyReserves:4"
+				],
+				"sections": [
+				  {
+					"name": "Gravity Suit",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1448,
+					"y": 176
+				  },
+				  ]
+			  },
+			  {
+				"name": "Missile (Wrecked Ship middle)",
+				"sections": [
+				  {
+					"name": "Missile (Wrecked Ship middle)",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1512,
+					"y": 272
+				  },
+				  ]
+			  },
+			  {
+				"name": "Missile (Gravity Suit)",
+				"access_rules": [
+				  "[tournament],varia",
+				  "[tournament],$hasEnergyReserves:2",
+				  
+				  "[casual],grapple",
+				  "[casual],space",				  
+				  "[casual],varia,$hasEnergyReserves:3",
+				  "[casual],$hasEnergyReserves:4"
+				],
+				"sections": [
+				  {
+					"name": "Missile (Gravity Suit)",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1542,
+					"y": 176
+				  },
+				  ]
+			  },
+			  {
+				"name": "Missile (Wrecked Ship top)",
+				"sections": [
+				  {
+					"name": "Missile (Wrecked Ship top)",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1798,
+					"y": 79
+				  }
+				]
+			  },
+			  {
+				"name": "Super Missile (Wrecked Ship left)",
+				"sections": [
+				  {
+					"name": "Super Missile (Wrecked Ship left)",
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "metroid",
+					"x": 1608,
+					"y": 304
+				  },
+				  ]
+			  }
+			]
+		  },
+		  {
+			"name": "Maridia",
+			"children": [
+			  {
+				"name": "Outer Maridia",
+				"access_rules": [
+				  "[tournament],$canAccessMaridiaPortal",
+				  "[tournament],$norfairWest,$canPowerBomb,gravity",
+				  "[tournament],$norfairWest,$canPowerBomb,hijump,$canSpringJump",
+				  "[tournament],$norfairWest,$canPowerBomb,hijump,ice",
+				  "[casual],gravity,$norfairWest,$canPowerBomb",
+				  "[casual],gravity,$canAccessMaridiaPortal"
+				],				
+				"color": "#409078",
+				"children": [
+				  {
+					"name": "Missile (green Maridia shinespark)",
+					"access_rules": [
+					  "[tournament],gravity,speed",
+					  "[casual],speed",
+					  "{}"
+					],
+					"sections": [
+					  {
+						"name": "Missile (green Maridia shinespark)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1160,
+						"y": 1040
+					  },
+					  ]
+				  },
+				  {
+					"name": "Super Missile (green Maridia)",
+					"sections": [
+					  {
+						"name": "Super Missile (green Maridia)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1192,
+						"y": 1008
+					  },
+					  ]
+				  },
+				  {
+					"name": "Energy Tank, Mama turtle",
+					"access_rules": [
+					  "$canFlySM",
+					  "speed",
+					  "grapple",
+					  "[tournament],$canSpringJump"
+					],
+					"sections": [
+					  {
+						"name": "Energy Tank, Mama turtle",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1416,
+						"y": 1040
+					  },
+					  ]
+				  },
+				  {
+					"name": "Missile (green Maridia tatori)",
+					"sections": [
+					  {
+						"name": "Missile (green Maridia tatori)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1448,
+						"y": 1072
+					  },
+					  ]
+				  },
+				]
+			  },
+			  {
+				"name": "Inner Maridia",
+				"access_rules": [
+				  "[tournament],$canAccessMaridiaPortal",
+				  "[tournament],$norfairWest,$canPowerBomb,gravity",
+				  "[tournament],$norfairWest,$canPowerBomb,hijump,$canSpringJump,grapple",
+				  "[tournament],$norfairWest,$canPowerBomb,hijump,ice,grapple",
+				  "[casual],gravity,$norfairWest,$canPowerBomb,$canFlySM",
+				  "[casual],gravity,$norfairWest,$canPowerBomb,speed",
+				  "[casual],gravity,$norfairWest,$canPowerBomb,grapple",
+				  "[casual],gravity,$canAccessMaridiaPortal"
+				],
+				"color": "#409078",
+				"children": [
+				  {
+					"name": "Super Missile/Missile (yellow Maridia)",
+					"access_rules": [
+					  "[tournament],$canBombPassages,gravity",
+					  "[tournament],$canBombPassages,ice",
+					  "[tournament],$canBombPassages,hijump,$canSpringJump",
+					  "[casual],$canBombPassages"
+					],
+					"sections": [
+					  {
+						"name": "Super Missile/Missile (yellow Maridia)",
+						"item_count": 2
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1224,
+						"y": 848
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (yellow Maridia false wall)",
+					"access_rules": [
+					  "[tournament],$canBombPassages,gravity",
+					  "[tournament],$canBombPassages,ice",
+					  "[tournament],$canBombPassages,hijump,$canSpringJump",
+					  "[casual],$canBombPassages"
+					],
+					"sections": [
+					  {
+						"name": "Missile (yellow Maridia false wall)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1480,
+						"y": 848
+					  },
+					]
+				  },
+				  {
+					"name": "Plasma Beam",
+					"access_rules": [
+					  "[tournament],$plasmaBeamTournament",
+					  "[casual],$canDefeatDraygon,screw,hijump",
+					  "[casual],$canDefeatDraygon,screw,$canFlySM",
+					  "[casual],$canDefeatDraygon,plasma,hijump",
+					  "[casual],$canDefeatDraygon,plasma,$canFlySM"
+					],
+					"sections": [
+					  {
+						"name": "Plasma Beam",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1736,
+						"y": 720
+					  },
+					  ]
+				  },
+				  {
+					"name": "Missile/Reserve Tank (left Maridia sand pit room)",
+					"access_rules": [
+					  "[tournament],hijump",
+					  "[tournament],gravity",
+					  
+					  "[casual],$canBombPassages"
+					],
+					"sections": [
+					  {
+						"name": "Missile/Reserve Tank (left Maridia sand pit room)",
+						"item_count": 2
+					  },
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1480,
+						"y": 1104
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (right Maridia sand pit room)",
+					"access_rules": [
+					  "[tournament],hijump",
+					  "[tournament],gravity",
+					  "casual"
+					],
+					"sections": [
+					  {
+						"name": "Missile (right Maridia sand pit room)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1576,
+						"y": 1104
+					  },
+					  ]
+				  },
+				  {
+					"name": "Power Bomb (right Maridia sand pit room)",
+					"access_rules": [
+					  "[tournament],hijump,$canSpringJump",
+					  "[tournament],gravity",
+					  "casual"
+					],
+					"sections": [
+					  {
+						"name": "Power Bomb (right Maridia sand pit room)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1608,
+						"y": 1136
+					  },
+					]
+				  },
+				  {
+					"name": "Super Missile (pink Maridia)",
+					"access_rules": [
+					  "[tournament],gravity",
+					  "[casual],speed"
+					],
+					"sections": [
+					  {
+						"name": "Super Missile (pink Maridia)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1640,
+						"y": 944
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (pink Maridia)",
+					"access_rules": [
+					  "[tournament],gravity",
+					  "[casual],speed"
+					],
+					"sections": [
+					  {
+						"name": "Missile (pink Maridia)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1608,
+						"y": 944
+					  },
+					  ]
+				  },
+				  {
+					"name": "Spring Ball",
+					"access_rules": [
+					  "[tournament],grapple,$canPowerBomb,gravity,$canFlySM",
+					  "[tournament],grapple,$canPowerBomb,gravity,hijump",
+					  "[tournament],grapple,$canPowerBomb,hijump,$canSpringJump,space",
+					  "[casual],$canPowerBomb,grapple,space",
+					  "[casual],$canPowerBomb,grapple,hijump"
+					],
+					"sections": [
+					  {
+						"name": "Major Item",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1896,
+						"y": 1168
+					  },
+					]
+				  },
+				  {
+					"name": "Missile (Draygon)",
+					"access_rules": [
+					  "[tournament],$canDefeatBotwoon,gravity",
+					  "[casual],$canDefeatBotwoon"
+					],
+					"sections": [
+					  {
+						"name": "Missile (Draygon)",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 2184,
+						"y": 880
+					  },
+					]
+				  },
+				  {
+					"name": "Energy Tank, Botwoon",
+					"access_rules": [
+					  "$canDefeatBotwoon"
+					],
+					"sections": [
+					  {
+						"name": "Energy Tank, Botwoon",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1768,
+						"y": 912
+					  },
+					  ]
+				  },
+				  {
+					"name": "Space Jump",
+					"access_rules": [
+					  "[tournament],$canDefeatDraygon",
+					  "[casual],$canDefeatDraygon,$canFlySM",
+					  "[casual],$canDefeatDraygon,speed,hijump"
+					],
+					"sections": [
+					  {
+						"name": "Space Jump",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 2056,
+						"y": 976
+					  },
+					]
+				  }
+				]
+			  }
+			]
+		  },
+		]
+	  },
+	  {
+		"name": "Hyrule",
+		"chest_unopened_img": "images/0058.png",
+		"chest_opened_img": "images/0059.png",
+		"children": [		
+		  //  Light World
+		  {
+			"name": "Light World",
+			"color": "#059134",
+			"children": [
+
+			  //  Northwest Hyrule
+			  {
+				"name": "Northwest Hyrule",
+				"group": "Northwest Hyrule",
+
+				"children": [
+				  {
+					"name": "Master Sword Pedestal",
+					"short_name": "Pedestal",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 83,
+						"y": 101
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Pedestal",
+						"capture_item": true,
+						"access_rules": [ "greenpendant,pendant:2", "{book}" ],
+						"item_count": 1
+					  }
+					]
+				  },
+				  //  King's Tomb
+				  {
+					"name": "King's Tomb",
+					"access_rules": [ 
+						"boots,lift2",
+						"boots,mirror,pearl,$canEnterNWDarkWorld"
+					],
+					"sections": [
+					  {
+						"name": "The Crypt",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1207,
+						"y": 598
+					  }
+					]
+				  },
+				  {
+					"name": "Tavern",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 320,
+						"y": 1145
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Back Room",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Chicken House",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 197,
+						"y": 1066
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Bombable Wall",
+						"access_rules": ["bombs"],
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "The Well",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 47,
+						"y": 833
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Cave",
+						"item_count": 4
+					  },
+					  {
+						"name": "Bombable Wall",
+						"access_rules": ["bombs"],
+						"short_name": "Bomb",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Blind's House",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 307,
+						"y": 840
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Basement",
+						"short_name": "Main",
+						"item_count": 4
+					  },
+					  {
+						"name": "Bombable Wall",
+						"access_rules": ["bombs"],
+						"short_name": "Bomb",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Pegasus Rocks",
+					"access_rules": [ "boots" ],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 777,
+						"y": 590
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Pegasus Rocks",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Bottle Merchant",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 190,
+						"y": 933
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Bottle Merchant",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Magic Bat",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 650,
+						"y": 1127
+					  }
+					],
+					"access_rules": [ 
+						"powder, hammer", 
+						"powder, moonpearl, mirror, lift2" 
+					],
+					"sections": [
+					  {
+						"name": "Magic Bowl",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Sick Kid",
+					"access_rules": [ "bottle" ],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 314,
+						"y": 1060
+					  }
+					],
+					"sections": [
+					  {
+						"name": "By The Bed",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Lost Woods Hideout",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 320,
+						"y": 260
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Lost Woods Hideout",
+						"short_name": "Hideout",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Lumberjack Tree",
+					"short_name": "Lumberjacks",
+					"access_rules": [ "aga1,boots", "{}" ],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 633,
+						"y": 117
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Lumberjack Tree",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Graveyard Ledge",
+					"access_rules": [ "mirror,pearl,$canEnterNWDarkWorld" ],
+					"sections": [
+					  {
+						"name": "Cave",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1132,
+						"y": 549
+					  },
+					  {
+						"map": "darkworld",
+						"x": 1132,
+						"y": 530
+					  }
+					]
+				  },
+				  {
+					"name": "Mushroom",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 240,
+						"y": 180
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Mushroom",
+						"short_name": "Mushroom",
+						"item_count": 1
+					  },
+					]
+				  },
+				]
+			  },
+			  //  Northeast Hyrule
+			  {
+				"name": "Northeast Hyrule",
+				"group": "Northeast Hyrule",
+
+				"children": [
+				  {
+					"name": "Sahasrala's Hut",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1630,
+						"y": 900
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Back Room",
+						"access_rules": [ "bombs" ],
+						"item_count": 3
+					  },
+					  {
+						"name": "Sahasrala's Reward",
+						"access_rules": [ "greenpendant" ],
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Zora Area",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1920,
+						"y": 273
+					  }
+					],
+					"sections": [
+					  {
+						"name": "King Zora",
+						"access_rules": [ "lift2", "[flippers]" ],
+						"item_count": 1
+					  },
+					  {
+						"name": "Ledge",
+						"capture_item": true,
+						"access_rules": [ "flippers", "[flippers],boots", "{lift1}", "{[flippers]}" ],
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Potion Shop",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1607,
+						"y": 670
+					  }
+					],
+					"access_rules": [ "mushroom" ],
+					"sections": [
+					  {
+						"name": "Potion Shop",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Waterfall Fairy",
+					"access_rules": [ "flippers", "pearl,[flippers]", "boots,[flippers]" ],
+					"sections": [
+					  {
+						"name": "Waterfall Fairy",
+						"item_count": 2
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1806,
+						"y": 286
+					  }
+					]
+				  },
+				  {
+					"name": "Eastern Palace",
+					"color": "#af0000",
+					"access_rules": [ "[lamp]" ],
+					"completion_rules": [ "lift1,firesource,boots" ],
+					"sections": [
+					  {
+						"name": "Dungeon",
+						"clear_as_group": false,
+						"access_rules": [ "[lamp]" ],
+						"item_count": 3
+					  },
+					  {
+						"name": "Armos",
+						"access_rules": [ "bow,[lamp]" ],
+						"hosted_item": "easternpalace"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1925,
+						"y": 791
+					  }
+					]
+				  }
+  	  		    ]
+			  },
+			  //  South Hyrule
+			  {
+				"name": "South Hyrule",
+				"group": "South Hyrule",
+
+				"children": [
+				  {
+					"name": "Floodgate Chests",
+					"sections": [
+					  {
+						"name": "Floodgate Chest",
+						"item_count": 1
+					  },
+					  {
+						"name": "Sunken Treasure",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 942,
+						"y": 1880
+					  }
+					]
+				  },
+				  {
+					"name": "Link's House",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1097,
+						"y": 1366
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Link's House",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Aginah's Cave",
+					"sections": [
+					  {
+						"name": "Aginah's Cave",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 400,
+						"y": 1655
+					  }
+					]
+				  },
+				  {
+					"name": "Mini Moldorm Cave",
+					"color": "#158134",
+					"access_rules": ["bombs"],
+					"sections": [
+					  {
+						"name": "Mini Moldorm Cave",
+						"item_count": 5
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1309,
+						"y": 1887
+					  }
+					]
+				  },
+				  {
+					"name": "Ice Rod Cave",
+					"color": "#158134",
+					"access_rules": ["bombs"],
+					"sections": [
+					  {
+						"name": "Ice Rod Cave",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1795,
+						"y": 1547
+					  }
+					]
+				  },
+				  {
+					"name": "Hobo",
+					"access_rules": [ "[flippers]" ],
+					"sections": [
+					  {
+						"name": "Under The Bridge",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1390,
+						"y": 1390
+					  }
+					]
+				  },
+				  {
+					"name": "Bombos Tablet",
+					"group": "Desert Area",
+					"access_rules": [ 
+						"book,sword2,mirror,$canEnterSDarkWorld", 
+						"{mirror,book}" 
+					],
+					"color": "#aa860d",
+					"sections": [
+					  {
+						"name": "Tablet",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 440,
+						"y": 1845
+					  },
+					  {
+						"map": "darkworld",
+						"x": 440,
+						"y": 1845
+					  }
+					]
+				  },
+				  {
+					"name": "Cave 45",
+					"access_rules": [ "mirror,$canEnterSDarkWorld" ],
+					"sections": [
+					  {
+						"name": "Cave 45",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 552,
+						"y": 1693
+					  },
+					  {
+						"map": "darkworld",
+						"x": 552,
+						"y": 1693
+					  }
+					]
+				  },
+				  {
+					"name": "Checkerboard Cave",
+					"color": "#aa860d",
+					"access_rules": [ 
+						"$canFly,lift2,mirror", 
+						"$canAccessMiseryMirePortal,mirror"
+					],
+					"sections": [
+					  //  Cave
+					  {
+						"name": "Checkerboard Cave",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 354,
+						"y": 1560
+					  },
+					  {
+						"map": "darkworld",
+						"x": 334,
+						"y": 1557
+					  }
+					]
+				  },
+				  {
+					"name": "Library",
+					"access_rules": [ "boots", "{}" ],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 313,
+						"y": 1310
+					  }
+					],
+					"sections": [
+					  {
+						"name": "On The Shelf",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Maze Race",
+					"access_rules": ["bombs"],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 111,
+						"y": 1354
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Maze Race",
+						"item_count": 1
+					  }
+					]
+				  },
+				  {
+					"name": "Desert Ledge",
+					"access_rules": [ "book", "flute,lift2,mirror", "$canAccessMiseryMirePortal,mirror", "{}" ],
+					"color": "#aa860d",
+					"sections": [
+					  {
+						"name": "Desert Ledge",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 40,
+						"y": 1835
+					  }
+					]
+				  },
+				  {
+					"name": "Desert Palace",
+					"color": "#af0000",
+					"access_rules": [ "book", "flute,lift2,mirror", "$canAccessMiseryMirePortal,mirror"],
+					"completion_rules": [ "lift1,firesource,boots" ],
+					"sections": [
+					  {
+						"name": "Dungeon",
+						"clear_as_group": false,
+						"capture_item": true,
+						"access_rules": [ "[boots]" ],
+						"item_count": 2
+					  },
+					  {
+						"name": "Lanmolas",
+						"short_name": "Lanmo",
+						"access_rules": [ "lift1,firesource,[boots],sword", "lift1,firesource,[boots],hammer", "lift1,firesource,[boots],bow", "lift1,firesource,[boots],somaria", "lift1,firesource,[boots],[sword]" ],
+						"hosted_item": "desertpalace"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 146,
+						"y": 1584
+					  }
+					]
+				  },
+				  
+				  {
+					"name": "Lake Hylia Island",
+					"sections": [
+					  {
+						"name": "Lake Hylia Island",
+						"access_rules": [ 
+							"flippers,pearl,mirror,hammer,lift1", 
+							"flippers,pearl,mirror,$canEnterSDarkWorld", 
+							"flippers,pearl,mirror,$canEnterNEDarkWorld", 
+							"flippers,mirror,aga1,[pearl]", 
+							"{[flippers]}" 
+						],
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1450,
+						"y": 1666
+					  },
+					  {
+						"map": "darkworld",
+						"x": 1450,
+						"y": 1666
+					  }
+					]
+				  },
+				  {
+					"name": "Flute Spot",
+					"access_rules": [ "shovel" ],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 600,
+						"y": 1350
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Flute Spot",
+						"item_count": 1
+					  }
+					]
+				  },
+				]
+			  },
+			  //  Hyrule Castle
+			  {
+				"name": "Hyrule Castle",
+				"group": "Hyrule Castle",
+
+				"children": [
+				  {
+					"name": "Hyrule Castle & Sanctuary",
+					"short_name": "Castle Escape",
+					"color": "#701d43",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1003,
+						"y": 906
+					  },
+					  {
+						"map": "lightworld",
+						"x": 925,
+						"y": 536
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Escape",
+						"short_name": "",
+						"clear_as_group": false,
+						"access_rules": [ "[lamp],[lift1]" ],
+						"item_count": 6
+					  }
+					]
+				  },			
+				  {
+					"name": "Secret Passage",
+					"short_name": "Uncle",
+					"color": "#701d43",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1196,
+						"y": 834
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Uncle & Hallway",
+						"item_count": 2
+					  }
+					]
+				  },
+				  {
+					"name": "Agahnim",
+					"color": "#701d43",
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1003,
+						"y": 807
+					  }
+					],
+					"sections": [
+					  {
+						"name": "Agahnim",
+						"access_rules": [ "[lamp],mst", "[lamp],sword,cape" ],
+						"hosted_item": "aga1"
+					  }
+					]
+				  },	
+				]
+			  },
+			  {
+				"name": "Death Mountain West",
+				"color": "#934f17",
+				"access_rules": [ 
+					"$canAccessDeathMountainPortal",
+					"[lamp],lift1",
+					"$canFly"
+				],
+				"children": [
+				  //  Tower of Hera
+				  {
+					"name": "Tower of Hera",
+					"color": "#af0000",
+					"access_rules": [ "mirror", "hookshot,hammer" ],
+					"sections": [
+					  {
+						"name": "Tower of Hera",
+						"clear_as_group": false,
+						"access_rules": [ "[firesource]" ],
+						"item_count": 2
+					  },
+					  {
+						"name": "Moldorm",
+						"access_rules": [ "sword,[firesource]", "hammer,[firesource]" ],
+						"hosted_item": "towerofhera"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1126,
+						"y": 68
+					  }
+					]
+				  },
+				  {
+					"name": "Old Man",
+					"access_rules": [ "[lamp]" ],
+					"sections": [
+					  {
+						"name": "Old Man",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 816,
+						"y": 378
+					  }
+					]
+				  },
+				  //  Spectacle Rock
+				  {
+					"name": "Spectacle Rock",
+					"access_rules": [ "mirror", "{}" ],
+					"sections": [
+					  {
+						"name": "Spectacle Rock",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 980,
+						"y": 178
+					  }
+					]
+				  },
+				  {
+					"name": "Spectacle Rock Cave",
+					"sections": [
+					  {
+						"name": "Cave",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 900,
+						"y": 260
+					  }
+					]
+				  },				  
+				  //  Ether Tablet
+				  {
+					"name": "Ether Tablet",
+					"access_rules": [ "mirror,book,sword2", "mirror,{book}",
+						"hookshot,hammer,book,sword2", "hookshot,hammer,{book}" ],
+					"sections": [
+					  {
+						"name": "Tablet",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 844,
+						"y": 38
+					  }
+					]
+				  },
+				  //  Death Mountain West (Dark) (subregion of death mountain west light)
+				  {
+					"name": "Death Mountain West (Dark)",
+					"color": "#934f17",
+					"children": [
+					  {
+						"name": "Spike Cave",
+						"color": "#35046b",
+						"sections": [
+						  {
+							"name": "Spike Cave",
+							"access_rules": [ 
+								"pearl,hammer,lift1,[cape],[$canExtendMagic]", 
+								"pearl,hammer,lift1,[byrna],[$canExtendMagic]", 
+							],
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "darkworld",
+							"x": 1151,
+							"y": 294
+						  }
+						]
+					  }
+					]
+				  }
+				]
+			  },
+			  //  Death Mountain East
+			  {
+				"name": "Death Mountain East",
+				"color": "#934f17",
+				"access_rules": [ 
+					"$canEnterDeathMountainWest,hammer,mirror",
+					"$canEnterDeathMountainWest,hookshot",
+					"[lamp],lift1,hammer,mirror",
+					"[lamp],lift1,hookshot"
+				],
+				"children": [
+				  {
+					"name": "Spiral Cave",
+					"sections": [
+					  //  Front chest
+					  {
+						"name": "Spiral Cave",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1598,
+						"y": 180
+					  }
+					]
+				  },
+				  {
+					"name": "Paradox Cave",
+					"sections": [
+					  {
+						"name": "Bottom",
+						"item_count": 2
+					  },
+					  {
+						"name": "Top",
+						"item_count": 5
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1731,
+						"y": 434
+					  },
+					  {
+						"map": "lightworld",
+						"x": 1714,
+						"y": 293
+					  }
+					]
+				  },
+				  {
+					"name": "Floating Island",
+					"color": "#934f17",
+					"access_rules": [ "pearl,lift2,mirror", "{}" ],
+					"sections": [
+					  //  Front chest
+					  {
+						"name": "Island",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 1627,
+						"y": 40
+					  },
+					  {
+						"map": "darkworld",
+						"x": 1627,
+						"y": 40
+					  }
+					]
+				  },
+				  //  Death Mountain East (Dark) (subregion of death mountain east light)
+				  {
+					"name": "Death Mountain East (Dark)",
+					"color": "#934f17",
+					"access_rules": [ 
+						"lift2"
+					],
+					"children": [
+					  {
+						"name": "Turtle Rock",
+						"color": "#af0000",
+						"access_rules": [ 
+							"tr_medallion,sword,pearl,somaria,lift2,hammer",
+							"bombos,ether,quake,sword,pearl,somaria,lift2,hammer"
+						],
+						"sections": [
+						  {
+							"name": "Dungeon",
+							"clear_as_group": false,
+							"access_rules": [ "[firerod],[lamp]" ],
+							"item_count": 5
+						  },
+						  {
+							"name": "Trinexx",
+							"access_rules": [ "firerod,icerod,[lamp]" ],
+							"hosted_item": "turtlerock"
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "darkworld",
+							"x": 1890,
+							"y": 144
+						  }
+						],
+						"children": [
+						  {
+							"name": "Mimic Cave",
+							"color": "#934f17",
+							"access_rules": [ "mirror,hammer" ],
+							"sections": [
+							  {
+								"name": "Mimic Cave",
+								"item_count": 1
+							  }
+							],
+							"map_locations": [
+							  {
+								"map": "lightworld",
+								"x": 1694,
+								"y": 190
+							  },
+							  {
+								"map": "darkworld",
+								"x": 1693,
+								"y": 205
+							  }
+							]
+						  }
+						],
+					  },					  
+					  {
+						"name": "Super-Bunny Cave",
+						"access_rules": [ "[pearl]" ],
+						"sections": [
+						  {
+							"name": "Cave",
+							"item_count": 2
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "darkworld",
+							"x": 1695,
+							"y": 290
+						  }
+						]
+					  },
+					  {
+						"name": "Hookshot Cave",
+						"access_rules": [ "pearl" ],
+						"sections": [
+						  //  Front chest
+						  {
+							"name": "Bonkable Chest",
+							"short_name": "Front",
+							"access_rules": [ "boots", "hookshot" ],
+							"item_count": 1
+						  },
+						  //  Back Chests
+						  {
+							"name": "Back",
+							"access_rules": [ "hookshot" ],
+							"item_count": 3
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "darkworld",
+							"x": 1670,
+							"y": 126
+						  }
+						]
+					  }
+					]
+				  }
+				]
+			  }
+			]
+		  },
+
+		  //  Dark World
+		  {
+			"name": "Dark World",
+			"children": [
+			  {
+				"name": "Northeast Dark World",
+				"color": "#35046b",
+				"group": "Lost Woods",
+				"access_rules": [ 
+					"aga1",
+					"hammer,lift1,moonpearl",
+					"lift2,flippers,moonpearl",
+					"$canAccessDarkWorldPortal, flippers, moonpearl"
+				],
+				"children": [
+				  //  Catfish
+				  {
+					"name": "Catfish",
+					"color": "#35046b",
+					"access_rules": [ "pearl,lift2" ],
+					"sections": [
+					  {
+						"name": "Ring of Stones",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 1813,
+						"y": 347
+					  }
+					]
+				  },
+				  {
+					"name": "Pyramid Ledge",
+					"color": "#35046b",
+					"children": [
+					  {
+						"name": "Pyramid Ledge",
+						"sections": [
+						  {
+							"name": "Ledge",
+							"item_count": 1
+						  }
+						],
+						"map_locations": [
+						  {
+							"map": "darkworld",
+							"x": 1164,
+							"y": 922
+						  }
+						]
+					  }
+					]
+				  },
+				  {
+					"name": "Pyramid Fairy",
+					"color": "#35046b",
+					"access_rules": [ 
+						"crystal56:2,moonpearl,$canEnterSDarkWorld,hammer",
+						"crystal56:2,moonpearl,$canEnterSDarkWorld,aga1,mirror"
+					],
+					"sections": [
+					  {
+						"name": "Sword Chest (left)",
+						"access_rules": [ "[sword]" ],
+						"item_count": 1
+					  },
+					  {
+						"name": "Bow Chest (right)",
+						"access_rules": [ "[bow]" ],
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 940,
+						"y": 976
+					  }
+					]
+				  },
+				  {
+					"name": "Palace of Darkness",
+					"short_name": "POD",
+					"color": "#af0000",
+					"sections": [
+					  //  Front
+					  {
+						"name": "Dungeon",
+						"clear_as_group": false,
+						"access_rules": [ "[bow],[lamp]" ],
+						"item_count": 5
+					  },
+					  //  Back
+					  {
+						"name": "Helmasaur King",
+						"short_name": "Helma",
+						"access_rules": [ "bow,hammer,[lamp]" ],
+						"hosted_item": "palaceofdarkness"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 1924,
+						"y": 800
+					  }
+					]
+				  }				  
+			    ]
+			  },
+			  // Northwest Dark World
+			  {
+				"name": "Northwest Dark World",
+				"color": "#35046b",
+				"access_rules": [ 
+					"moonpearl,$canEnterNEDarkWorld,hookshot,flippers", 
+					"moonpearl,$canEnterNEDarkWorld,hookshot,lift1",
+					"moonpearl,$canEnterNEDarkWorld,hookshot,hammer",
+					"moonpearl,hammer,lift1",
+					"moonpearl,lift2"
+				],
+				"children": [				
+				  {
+					"name": "Brewery",
+					"access_rules": ["bombs"],
+					"sections": [
+					  {
+						"name": "Brewery",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 219,
+						"y": 1171
+					  }
+					]
+				  },
+				  {
+					"name": "C-Shaped House",
+					"sections": [
+					  {
+						"name": "House",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 414,
+						"y": 969
+					  }
+					]
+				  },
+				  {
+					"name": "Chest Game",
+					"sections": [
+					  {
+						"name": "Chest Game",
+						"item_count": 2
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 100,
+						"y": 936
+					  }
+					]
+				  },
+				  {
+					"name": "Hammer Pegs",
+					"access_rules": [ "lift2,hammer" ],
+					"sections": [
+					  {
+						"name": "Cave",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 636,
+						"y": 1214
+					  }
+					]
+				  },
+				  {
+					"name": "Bumper Cave",
+					"sections": [
+					  //  Ledge
+					  {
+						"name": "Ledge",
+						"capture_item": true,
+						"access_rules": [ "lift1,cape", "{}" ],
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 687,
+						"y": 340
+					  }
+					]
+				  },
+				  {
+					"name": "Blacksmith",
+					"short_name": "Blacksmith",
+					"access_rules": [ "lift2" ],
+					"sections": [
+					  {
+						"name": "Bring Him Home",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 616,
+						"y": 1054
+					  },
+					  {
+						"map": "darkworld",
+						"x": 295,
+						"y": 1325
+					  }
+					]
+				  },
+				  {
+					"name": "Purple Chest",
+					"access_rules": [ "lift2" ],
+					"sections": [
+					  {
+						"name": "Purple Chest",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "lightworld",
+						"x": 680,
+						"y": 1805
+					  },
+					  {
+						"map": "darkworld",
+						"x": 601,
+						"y": 1050
+					  }
+					]
+				  },
+				  //  Skull Woods
+				  {
+					"name": "Skull Woods",
+					"access_rules": ["moonpearl"],
+					"color": "#af0000",
+					"sections": [
+					  //  Front
+					  {
+						"name": "Dungeon",
+						"clear_as_group": false,
+						"item_count": 2
+					  },
+					  //  Back
+					  {
+						"name": "Mothula",
+						"access_rules": [ "firerod,sword" ],
+						"hosted_item": "skullwoods"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 79,
+						"y": 121
+					  }
+					]
+				  },
+				  {
+					"name": "Thieves Town",
+					"color": "#af0000",
+					"access_rules": [ "moonpearl" ],
+					"sections": [
+					  {
+						"name": "Thieves Town",
+						"clear_as_group": false,
+						"item_count": 4
+					  },
+					  //  Back
+					  {
+						"name": "Blind",
+						"hosted_item": "thievestown",
+						"access_rules": [ "sword", "hammer", "somaria", "byrna", "bomb" ]
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 251,
+						"y": 971
+					  }
+					]
+				  }
+				]
+			  },
+			  //  Misery Mire Area
+			  {
+				"name": "Mire Area",
+				"color": "#02473f",
+				"access_rules": [ "$canFly,lift2", "$canAccessMiseryMirePortal" ],
+				"children": [
+
+				  //  Misery Mire
+				  {
+					"name": "Misery Mire",
+					"color": "#af0000",
+					"access_rules": [ 
+						"mm_medallion, sword, moonpearl, boots",
+						"mm_medallion, sword, moonpearl, hookshot",
+						"quake, ether, bombos, sword, moonpearl, boots",
+						"quake, ether, bombos, sword, moonpearl, hookshot"
+					],
+					"sections": [
+					  //  Front
+					  {
+						"name": "Dungeon",
+						"clear_as_group": false,
+						"access_rules": [ "[firesource]" ],
+						"item_count": 2
+					  },
+					  //  Back
+					  {
+						"name": "Vitreous",
+						"access_rules": [ "somaria,[lamp]" ],
+						"hosted_item": "miserymire"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 150,
+						"y": 1670
+					  }
+					]
+				  },
+				  {
+					"name": "Mire Shed",
+					"access_rules": [ "moonpearl", "mirror,[moonpearl]" ],
+					"sections": [
+					  //  Hut
+					  {
+						"name": "Shack",
+						"item_count": 2
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 77,
+						"y": 1600
+					  }
+					]
+				  },
+				]
+			  },
+			  //  South Dark World
+			  {
+				"name": "South Dark World",
+				"access_rules": [
+					"$canEnterSDarkWorld"
+				],
+				"color": "#0d8452",
+				"children": [
+				  {
+					"name": "Hype Cave",
+					"color": "#35046b",
+					"access_rules": [ "bombs" ],
+					"sections": [
+					  {
+						"name": "Cave",
+						"item_count": 5
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 1200,
+						"y": 1560
+					  }
+					]
+				  },
+				  {
+					"name": "Stumpy",
+					"sections": [
+					  {
+						"name": "Stumpy",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 620,
+						"y": 1371
+					  }
+					]
+				  },
+				  {
+					"name": "Digging Game",
+					"sections": [
+					  {
+						"name": "Dig For Treasure",
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 100,
+						"y": 1385
+					  }
+					]
+				  },
+				  //  Swamp Palace
+				  {
+					"name": "Swamp Palace",
+					"color": "#af0000",
+					"access_rules": [ "mirror,flippers,moonpearl" ],
+					"sections": [
+					  //  Front
+					  {
+						"name": "Dungeon",
+						"clear_as_group": false,
+						"access_rules": [ "[hammer],[hookshot]" ],
+						"item_count": 6
+					  },
+					  //  Back
+					  {
+						"name": "Arrgus",
+						"access_rules": [ "hammer,hookshot" ],
+						"hosted_item": "swamppalace"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 940,
+						"y": 1880
+					  }
+					]
+				  }				  
+				]
+			  },
+
+			  //  Lake Hylia
+			  {
+				"name": "Lake Hylia",
+				"color": "#345a99",
+				"group": "Lake Hylia",
+				"children": [
+
+				  //  Ice Palace
+				  {
+					"name": "Ice Palace",
+					"color": "#af0000",
+					"access_rules": [ 
+						"moonpearl,lift2,firerod,[flippers]", 
+						"moonpearl,lift2,bombos,[flippers]" 
+					],
+					"sections": [
+					  //  Front
+					  {
+						"name": "Dungeon",
+						"clear_as_group": false,
+						"access_rules": [ "[hammer],[hookshot]" ],
+						"item_count": 3
+					  },
+					  //  Back
+					  {
+						"name": "Khold",
+						"access_rules": [ "hammer,bombos", "hammer,firerod" ],
+						"hosted_item": "icepalace"
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "darkworld",
+						"x": 1600,
+						"y": 1735
+					  }
+					]
+				  }
+				]
+			  }
+			]
+		  }
+		]		
+	  }
+	]
+  }
+]

@@ -1,0 +1,1036 @@
+[
+  {
+    "name": "Difficulty",
+    "type": "progressive",
+    "allow_disabled": "false",
+    "loop": "true",
+    "stages": [
+      {
+        "name": "Tournament",
+        "img": "images/diff_tournament.png",
+        "inherit_codes": "false",
+        "codes": "difficulty,tournament"
+      },
+      {
+        "name": "Casual",
+        "img": "images/diff_casual.png",
+        "inherit_codes": "false",
+        "codes": "casual"
+      }
+    ]
+  },
+  {
+    "name": "Glitches",
+    "type": "progressive",
+    "allow_disabled": "false",
+    "loop": "true",
+    "stages": [
+      {
+        "name": "No Glitches",
+        "img": "images/glitch_noglitch.png",
+        "inherit_codes": "false",
+        "codes": "glitches,noglitch"
+      },
+      {
+        "name": "Overworld Glitches",
+        "img": "images/glitch_overworld.png",
+        "inherit_codes": "false",
+        "codes": "overworld"
+      },	  
+      {
+        "name": "Major Glitches",
+        "img": "images/glitch_major.png",
+        "inherit_codes": "false",
+        "codes": "major"
+      }
+    ]
+  },  
+  {
+    "name": "Charge Beam",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/charge.png",
+    "codes": "charge"
+  },
+  {
+    "name": "Ice Beam",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/ice.png",
+    "codes": "ice"
+  },
+  {
+    "name": "Wave Beam",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/wave.png",
+    "codes": "wave"
+  },
+  {
+    "name": "Spazer Beam",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/spazer.png",
+    "codes": "spazer"
+  },
+  {
+    "name": "Plasma Beam",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/plasma.png",
+    "codes": "plasma"
+  },
+  {
+    "name": "Varia Suit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/varia.png",
+    "codes": "varia"
+  },
+  {
+    "name": "Gravity Suit",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/gravity.png",
+    "codes": "gravity"
+  },
+  {
+    "name": "Morph Ball",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/morph.png",
+    "codes": "morph"
+  },
+  {
+    "name": "Bomb",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/bomb.png",
+    "codes": "bomb"
+  },
+  {
+    "name": "Spring Ball",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/springball.png",
+    "codes": "spring"
+  },
+  {
+    "name": "Screw Attack",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/screw.png",
+    "codes": "screw"
+  },
+  {
+    "name": "High Jump",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/hijump.png",
+    "codes": "hijump"
+  },
+  {
+    "name": "Space Jump",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/space.png",
+    "codes": "space"
+  },
+  {
+    "name": "Speed Booster",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/speed.png",
+    "codes": "speed"
+  },
+  {
+    "name": "Grapple",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/grapple.png",
+    "codes": "grapple"
+  },
+  {
+    "name": "Xray",
+    "type": "toggle",
+    "loop": "true",
+    "img": "images/xray.png",
+    "codes": "xray"
+  },
+  {
+    "name": "Ridley",
+    "type": "toggle",
+    "img": "images/Boss1.png",
+    "codes": "ridley,g4"
+  },
+   {
+    "name": "Kraid",
+    "type": "toggle",
+    "img": "images/Boss2.png",
+    "codes": "kraid,g4"
+  },
+  {
+    "name": "Phantoon",
+    "type": "toggle",
+    "img": "images/Boss3.png",
+    "codes": "phantoon,g4"
+  }, 
+  {
+    "name": "Draygon",
+    "type": "toggle",
+    "img": "images/Boss4.png",
+    "codes": "draygon,g4"
+  },  
+  {
+    "name": "Etanks",
+    "type": "consumable",
+    "img": "images/etank.png",
+    "max_quantity": 14,
+    "codes": "etank,alltanks"
+  },
+  {
+	"name": "Etank",
+	"type": "toggle",
+	"img": "images/etank.png",
+	"codes": "etank_icon"
+  },
+  {
+    "name": "Reserve Tanks",
+    "type": "consumable",
+    "img": "images/reservetank.png",
+    "max_quantity": 4,
+    "codes": "reservetank,alltanks"
+  },
+  {
+	"name": "Reserve Tank",
+	"type": "toggle",
+	"img": "images/reservetank.png",
+	"codes": "reservetank_icon"
+  },  
+  {
+    "name": "Missile Capacity",
+    "type": "consumable",
+    "img": "images/missile.png",
+    "max_quantity": 255,
+    "increment": 5,
+    "codes": "missile"
+  },
+  {
+	"name": "Missiles",
+	"type": "toggle",
+	"img": "images/missile.png",
+	"codes": "missile_icon"
+  },
+  {
+    "name": "Super Missile Capacity",
+    "type": "consumable",
+    "img": "images/super.png",
+    "max_quantity": 100,
+    "increment": 5,
+    "codes": "supermissile,super"
+  },
+  {
+	"name": "Super Missiles",
+	"type": "toggle",
+	"img": "images/super.png",
+	"codes": "super_icon"
+  },
+  {
+    "name": "Power Bomb Capacity",
+    "type": "consumable",
+    "img": "images/powerbomb.png",
+    "max_quantity": 100,
+    "increment": 5,
+    "codes": "powerbomb,pb"
+  },
+  {
+	"name": "Power Bombs",
+	"type": "toggle",
+	"img": "images/powerbomb.png",
+	"codes": "pb_icon"
+  },
+   // Bow
+  {
+    "name": "Bow",
+    "type": "toggle",
+    "img": "images/0000.png",
+    "codes": "bow"
+  },
+  // Silver Arrows
+  {
+    "name": "Silver Arrows",
+    "type": "toggle",
+    "img": "images/silver_arrow.png",
+    "codes": "silverarrows,silvers"
+  },
+  // Bow + Silvers
+  {
+    "name": "Bow and Arrows",
+    "type": "composite_toggle",
+    "codes": "bowandarrows",
+    "item_left": "bow",
+    "item_right": "silvers",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/bow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/bow.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/bowandsilverarrowdisabled.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/bowandsilverarrow.png"
+      }
+    ]
+  },
+  // Bombs
+  {
+    "name": "Bombs",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0003.png",
+        "codes": "bombs"
+      },
+      {
+        "img": "images/0003withbigbomb.png",
+        "disabled_img": "images/0003withbigbombdisabled.png",
+        "disabled_img_mods": "",
+        "codes": "bombs",
+        "secondary_codes": "bigbomb,superbomb"
+      }
+    ]
+  },
+  // Boomerang
+  {
+    "name": "Boomerang",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/boomerangsblue.png",
+        "disabled_img": "images/boomerangs.png",
+        "codes": "blueboomerang,boomerang"
+      },
+      {
+        "img": "images/boomerangs.png",
+        "disabled_img": "images/boomerangsdisabled.png",
+        "disabled_img_mods": "",
+        "codes": "redboomerang,boomerang"
+      }
+    ]
+  },
+
+  // Blue Boomerang
+  {
+    "name": "Blue Boomerang",
+    "type": "toggle",
+    "img": "images/boomerang_blue.png",
+    "codes": "blue_boomerang,bluemarang"
+  },
+
+  // Red Boomerang
+  {
+    "name": "Red Boomerang",
+    "type": "toggle",
+    "img": "images/boomerang_red.png",
+    "codes": "red_boomerang,redmarang"
+  },
+
+  // Boomerang Combo
+  {
+    "name": "Boomerangs",
+    "type": "composite_toggle",
+    "codes": "boomerangs",
+    "item_left": "blue_boomerang",
+    "item_right": "red_boomerang",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/boomerangs.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/boomerangsblue.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/boomerangsdisabled.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/boomerangs.png"
+      }
+    ]
+  },
+
+  // Hookshot
+  {
+    "name": "Hookshot",
+    "type": "toggle",
+    "img": "images/0002.png",
+    "codes": "hookshot,hs"
+  },
+  // Powder
+  {
+    "name": "Magic Powder",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0046.png",
+        "codes": "powder"
+      },
+      {
+        "img": "images/0046withbat.png",
+        "disabled_img": "images/0046withbatdisabled.png",
+        "disabled_img_mods": "",
+        "codes": "powder",
+        "secondary_codes": "bat"
+      }
+    ]
+  },
+  // Mushroom
+  {
+    "name": "Mushroom",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/0004.png",
+        "codes": "mushroom"
+      },
+      {
+        "inherit_codes": false,
+        "img": "images/0056.png"
+      }
+    ]
+  },
+
+  // Fire Rod
+  {
+    "name": "Fire Rod",
+    "type": "toggle",
+    "img": "images/0005.png",
+    "codes": "firerod,firesource"
+  },
+  // Ice Rod
+  {
+    "name": "Ice Rod",
+    "type": "toggle",
+    "img": "images/0006.png",
+    "codes": "icerod"
+  },
+
+  // Bombos
+  {
+    "name": "Bombos",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0007.png",
+        "codes": "bombos",
+        "secondary_codes": "none"
+      },
+      {
+        "img": "images/0117.png",
+        "codes": "bombos,mm_medallion",
+        "secondary_codes": "mm"
+      },
+      {
+        "img": "images/0120.png",
+        "codes": "bombos,tr_medallion",
+        "secondary_codes": "tr"
+      },
+      {
+        "img": "images/0123.png",
+        "codes": "bombos,mm_medallion,tr_medallion",
+        "secondary_codes": "both"
+      }
+    ]
+  },
+  // Ether
+  {
+    "name": "Ether",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0008.png",
+        "codes": "ether",
+        "secondary_codes": "none"
+      },
+      {
+        "img": "images/0118.png",
+        "codes": "ether,mm_medallion",
+        "secondary_codes": "mm"
+      },
+      {
+        "img": "images/0121.png",
+        "codes": "ether,tr_medallion",
+        "secondary_codes": "tr"
+      },
+      {
+        "img": "images/0124.png",
+        "codes": "ether,mm_medallion,tr_medallion",
+        "secondary_codes": "both"
+      }
+    ]
+  },
+  // Quake
+  {
+    "name": "Quake",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0009.png",
+        "codes": "quake",
+        "secondary_codes": "none"
+      },
+      {
+        "img": "images/0119.png",
+        "codes": "quake,mm_medallion",
+        "secondary_codes": "mm"
+      },
+      {
+        "img": "images/0122.png",
+        "codes": "quake,tr_medallion",
+        "secondary_codes": "tr"
+      },
+      {
+        "img": "images/0125.png",
+        "codes": "quake,mm_medallion,tr_medallion",
+        "secondary_codes": "both"
+      }
+    ]
+  },
+
+  // Shovel
+  {
+    "name": "Shovel",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/0012.png",
+        "codes": "shovel"
+      },
+      {
+        "img": "images/0057.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+
+  // Lamp
+  {
+    "name": "Lamp",
+    "type": "toggle",
+    "img": "images/0010.png",
+    "codes": "lamp,firesource"
+  },
+  // Hammer
+  {
+    "name": "Hammer",
+    "type": "toggle",
+    "img": "images/0011.png",
+    "codes": "hammer"
+  },
+  // Ocarina
+  {
+    "name": "Ocarina",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/0047.png",
+        "codes": "flute,ocarina"
+      },
+      {
+        "img": "images/0047withduck.png"
+      }
+    ]
+  },
+  // Bug Catching Net
+  {
+    "name": "Bug Catching Net",
+    "type": "toggle",
+    "img": "images/0013.png",
+    "codes": "net"
+  },
+  // Book of Mudora
+  {
+    "name": "Book of Mudora",
+    "type": "toggle",
+    "img": "images/0014.png",
+    "codes": "book"
+  },
+  // Moon Pearl
+  {
+    "name": "Moon Pearl",
+    "type": "toggle",
+    "img": "images/0022.png",
+    "codes": "pearl,moonpearl"
+  },
+
+  // Bottles
+  {
+    "name": "Bottles",
+    "type": "progressive",
+    "allow_disabled": "false",
+    "stages": [
+      {
+        "img": "images/0026.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/0070.png",
+        "codes": "bottle"
+      },
+      {
+        "img": "images/0071.png"
+      },
+      {
+        "img": "images/0072.png"
+      },
+      {
+        "img": "images/0073.png"
+      }
+    ]
+  },
+
+  // Somaria
+  {
+    "name": "Cane of Somaria",
+    "type": "toggle",
+    "img": "images/0015.png",
+    "codes": "somaria,redcane"
+  },
+  // Cane of Byrna
+  {
+    "name": "Cane of Byrna",
+    "type": "toggle",
+    "img": "images/0016.png",
+    "codes": "byrna,bluecane,sakucane,caneofsaku"
+  },
+  // Magic Cape
+  {
+    "name": "Magic Cape",
+    "type": "toggle",
+    "img": "images/0017.png",
+    "codes": "cape"
+  },
+  // Mirror
+  {
+    "name": "Mirror",
+    "type": "toggle",
+    "img": "images/0018.png",
+    "codes": "mirror"
+  },
+
+  // Go-Mode
+  {
+    "name": "Go Mode!",
+    "capturable": false,
+    "type": "toggle",
+    "img": "images/0062.png",
+    "codes": "gomode"
+  },
+
+  // Aganhim
+  {
+    "name": "Aganhim",
+    "capturable": false,
+    "type": "toggle",
+    "img": "images/0055.png",
+    "codes": "aga1,aga,aganhim"
+  },
+
+  // Progressive Gloves
+  {
+    "name": "Gloves",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/0019.png",
+        "codes": "gloves,lift1"
+      },
+      {
+        "img": "images/0043.png",
+        "codes": "mitts,lift2"
+      }
+    ]
+  },
+  // Boots
+  {
+    "name": "Boots",
+    "type": "toggle",
+    "img": "images/0020.png",
+    "codes": "boots"
+  },
+  // Flippers
+  {
+    "name": "Flippers",
+    "type": "toggle",
+    "img": "images/0021.png",
+    "codes": "flippers"
+  },
+  // Half-Magic
+  {
+    "name": "Half-Magic",
+    "type": "toggle",
+    "img": "images/0064.png",
+    "codes": "halfmagic"
+  },
+  // Progressive Swords
+  {
+    "name": "Sword",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/0023.png",
+        "codes": "sword"
+      },
+      {
+        "img": "images/0038.png",
+        "codes": "sword2,mst"
+      },
+      {
+        "img": "images/0039.png",
+        "codes": "sword3,tempered"
+      },
+      {
+        "img": "images/0040.png",
+        "codes": "sword4,butter"
+      }
+    ]
+  },
+  // Progressive Swords (Overworld)
+  {
+    "name": "Sword",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/sworddisabled.png",
+        "img_mods": "@disabled",
+        "codes": "owsword"
+      },
+      {
+        "img": "images/sword1.png",
+        "codes": "sword, owsword"
+      },
+      {
+        "img": "images/sword2.png",
+        "codes": "sword2,mst"
+      },
+      {
+        "img": "images/sword3.png",
+        "codes": "sword3,tempered"
+      },
+      {
+        "img": "images/sword4.png",
+        "codes": "sword4,butter"
+      }
+    ]
+  },
+  // Progressive Shields
+  {
+    "name": "Shield",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/0024.png",
+        "codes": "shield"
+      },
+      {
+        "img": "images/0044.png",
+        "codes": "shield2,redshield"
+      },
+      {
+        "img": "images/0045.png",
+        "codes": "shield3,mirrorshield"
+      }
+    ]
+  },
+  // Progressive Mail
+  {
+    "name": "Mail",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/0025.png",
+        "codes": "armor, armor1, greenmail"
+      },
+      {
+        "img": "images/0041.png",
+        "codes": "armor2,bluemail"
+      },
+      {
+        "img": "images/0042.png",
+        "codes": "armor3,redmail"
+      }
+    ]
+  },
+
+  // Eastern Palace
+  {
+    "name": "Eastern Palace",
+    "type": "progressive_toggle",
+    "capturable": false,
+    "stages": [
+      {
+        "img": "images/0105.png",
+        "codes": "ep,easternpalace,crystal"
+      },
+      {
+        "img": "images/0106.png",
+        "codes": "ep,easternpalace,crystal56"
+      },
+      {
+        "img": "images/0107.png",
+        "codes": "ep,easternpalace,pendant"
+      },
+      {
+        "img": "images/0108.png",
+        "codes": "ep,easternpalace,greenpendant"
+      }
+    ]
+  },
+
+  // Desert Palace
+  {
+    "name": "Desert Palace",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0109.png",
+        "codes": "dp,desertpalace,crystal"
+      },
+      {
+        "img": "images/0110.png",
+        "codes": "dp,desertpalace,crystal56"
+      },
+      {
+        "img": "images/0111.png",
+        "codes": "dp,desertpalace,pendant"
+      },
+      {
+        "img": "images/0112.png",
+        "codes": "dp,desertpalace,greenpendant"
+      }
+    ]
+  },
+
+  // Tower of Hera
+  {
+    "name": "Tower of Hera",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0113.png",
+        "codes": "toh,towerofhera,crystal"
+      },
+      {
+        "img": "images/0114.png",
+        "codes": "toh,towerofhera,crystal56"
+      },
+      {
+        "img": "images/0115.png",
+        "codes": "toh,towerofhera,pendant"
+      },
+      {
+        "img": "images/0116.png",
+        "codes": "toh,towerofhera,greenpendant"
+      }
+    ]
+  },
+
+  // Palace of Darkness
+  {
+    "name": "Palace of Darkness",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0077.png",
+        "codes": "pod,palaceofdarkness,crystal"
+      },
+      {
+        "img": "images/0078.png",
+        "codes": "pod,palaceofdarkness,crystal56"
+      },
+      {
+        "img": "images/0079.png",
+        "codes": "pod,palaceofdarkness,pendant"
+      },
+      {
+        "img": "images/0080.png",
+        "codes": "pod,palaceofdarkness,greenpendant"
+      }
+    ]
+  },
+
+  // Swamp Palace
+  {
+    "name": "Swamp Palace",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0081.png",
+        "codes": "sp,swamppalace,crystal"
+      },
+      {
+        "img": "images/0082.png",
+        "codes": "sp,swamppalace,crystal56"
+      },
+      {
+        "img": "images/0083.png",
+        "codes": "sp,swamppalace,pendant"
+      },
+      {
+        "img": "images/0084.png",
+        "codes": "sp,swamppalace,greenpendant"
+      }
+    ]
+  },
+
+  // Skull Woods
+  {
+    "name": "Skull Woods",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0085.png",
+        "codes": "sw,skullwoods,crystal"
+      },
+      {
+        "img": "images/0086.png",
+        "codes": "sw,skullwoods,crystal56"
+      },
+      {
+        "img": "images/0087.png",
+        "codes": "sw,skullwoods,pendant"
+      },
+      {
+        "img": "images/0088.png",
+        "codes": "sw,skullwoods,greenpendant"
+      }
+    ]
+  },
+
+  // Thieve's Town
+  {
+    "name": "Thieves Town",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0089.png",
+        "codes": "tt,thievestown,crystal"
+      },
+      {
+        "img": "images/0090.png",
+        "codes": "tt,thievestown,crystal56"
+      },
+      {
+        "img": "images/0091.png",
+        "codes": "tt,thievestown,pendant"
+      },
+      {
+        "img": "images/0092.png",
+        "codes": "tt,thievestown,greenpendant"
+      }
+    ]
+  },
+
+  // Ice Palace
+  {
+    "name": "Ice Palace",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0093.png",
+        "codes": "ip,icepalace,crystal"
+      },
+      {
+        "img": "images/0094.png",
+        "codes": "ip,icepalace,crystal56"
+      },
+      {
+        "img": "images/0095.png",
+        "codes": "ip,icepalace,pendant"
+      },
+      {
+        "img": "images/0096.png",
+        "codes": "ip,icepalace,greenpendant"
+      }
+    ]
+  },
+
+  // Misery Mire
+  {
+    "name": "Misery Mire",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0097.png",
+        "codes": "mm,miserymire,crystal"
+      },
+      {
+        "img": "images/0098.png",
+        "codes": "mm,miserymire,crystal56"
+      },
+      {
+        "img": "images/0099.png",
+        "codes": "mm,miserymire,pendant"
+      },
+      {
+        "img": "images/0100.png",
+        "codes": "mm,miserymire,greenpendant"
+      }
+    ]
+  },
+
+  // Turtle Rock
+  {
+    "name": "Turtle Rock",
+    "capturable": false,
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/0101.png",
+        "codes": "tr,turtlerock,crystal"
+      },
+      {
+        "img": "images/0102.png",
+        "codes": "tr,turtlerock,crystal56"
+      },
+      {
+        "img": "images/0103.png",
+        "codes": "tr,turtlerock,pendant"
+      },
+      {
+        "img": "images/0104.png",
+        "codes": "tr,turtlerock,greenpendant"
+      }
+    ]
+  }
+]

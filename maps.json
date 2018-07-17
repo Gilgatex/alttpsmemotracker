@@ -1,0 +1,16 @@
+[
+  {
+    "name": "metroid",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/map_full.png"
+  },
+  {
+    "name": "lightworld",
+    "img": "images/lttp_lightworld.png"
+  },
+  {
+    "name": "darkworld",
+    "img": "images/lttp_darkworld.png"
+  }
+]
