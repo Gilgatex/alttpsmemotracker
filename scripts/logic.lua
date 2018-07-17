@@ -288,7 +288,7 @@ end
 function canEnterAndLeaveGauntletTournament()
 	if (hasMorph() == 1 and (hasBasicBombs() == 1 or countPB() >= 2))
 					 or hasScrewAttack() == 1
-					 or (hasSpeedBooster() == 1 and $canPowerBomb() == 1 and hasEnergyReserves(3)) then
+					 or (hasSpeedBooster() == 1 and canPowerBomb() == 1 and hasEnergyReserves(3)) then
 		return 1
 	end
 	
