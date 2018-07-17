@@ -2185,7 +2185,6 @@
 			  //  Northwest Hyrule
 			  {
 				"name": "Northwest Hyrule",
-				"group": "Northwest Hyrule",
 
 				"children": [
 				  {
@@ -2414,7 +2413,7 @@
 				  },
 				  {
 					"name": "Graveyard Ledge",
-					"access_rules": [ "mirror,pearl,$canEnterNWDarkWorld" ],
+					"access_rules": [ "mirror,pearl,bombs,$canEnterNWDarkWorld" ],
 					"sections": [
 					  {
 						"name": "Cave",
@@ -2456,7 +2455,6 @@
 			  //  Northeast Hyrule
 			  {
 				"name": "Northeast Hyrule",
-				"group": "Northeast Hyrule",
 
 				"children": [
 				  {
@@ -2569,7 +2567,6 @@
 			  //  South Hyrule
 			  {
 				"name": "South Hyrule",
-				"group": "South Hyrule",
 
 				"children": [
 				  {
@@ -2679,7 +2676,6 @@
 				  },
 				  {
 					"name": "Bombos Tablet",
-					"group": "Desert Area",
 					"access_rules": [ 
 						"book,sword2,mirror,$canEnterSDarkWorld", 
 						"{mirror,book}" 
@@ -2889,7 +2885,6 @@
 			  //  Hyrule Castle
 			  {
 				"name": "Hyrule Castle",
-				"group": "Hyrule Castle",
 
 				"children": [
 				  {
@@ -2913,7 +2908,7 @@
 						"name": "Escape",
 						"short_name": "",
 						"clear_as_group": false,
-						"access_rules": [ "[lamp],[lift1]" ],
+						"access_rules": [ "[lamp],[lift1],[bombs]" ],
 						"item_count": 6
 					  }
 					]
@@ -3123,6 +3118,7 @@
 				  },
 				  {
 					"name": "Paradox Cave",
+					"access_rules": ["bombs"],
 					"sections": [
 					  {
 						"name": "Bottom",
@@ -3149,7 +3145,7 @@
 				  {
 					"name": "Floating Island",
 					"color": "#934f17",
-					"access_rules": [ "pearl,lift2,mirror", "{}" ],
+					"access_rules": [ "pearl,lift2,mirror,bombs", "{}" ],
 					"sections": [
 					  //  Front chest
 					  {
@@ -3190,7 +3186,7 @@
 						  {
 							"name": "Dungeon",
 							"clear_as_group": false,
-							"access_rules": [ "[firerod],[lamp]" ],
+							"access_rules": [ "[firerod],[lamp],[bombs]" ],
 							"item_count": 5
 						  },
 						  {
@@ -3210,7 +3206,7 @@
 						  {
 							"name": "Mimic Cave",
 							"color": "#934f17",
-							"access_rules": [ "mirror,hammer" ],
+							"access_rules": [ "mirror,hammer,bombs" ],
 							"sections": [
 							  {
 								"name": "Mimic Cave",
@@ -3289,7 +3285,6 @@
 			  {
 				"name": "Northeast Dark World",
 				"color": "#35046b",
-				"group": "Lost Woods",
 				"access_rules": [ 
 					"aga1",
 					"hammer,lift1,moonpearl",
@@ -3374,14 +3369,14 @@
 					  {
 						"name": "Dungeon",
 						"clear_as_group": false,
-						"access_rules": [ "[bow],[lamp]" ],
+						"access_rules": [ "[bow],[lamp],[bombs]" ],
 						"item_count": 5
 					  },
 					  //  Back
 					  {
 						"name": "Helmasaur King",
 						"short_name": "Helma",
-						"access_rules": [ "bow,hammer,[lamp]" ],
+						"access_rules": [ "bow,hammer,[lamp],[bombs]" ],
 						"hosted_item": "palaceofdarkness"
 					  }
 					],
@@ -3552,7 +3547,7 @@
 					  //  Back
 					  {
 						"name": "Mothula",
-						"access_rules": [ "firerod,sword" ],
+						"access_rules": [ "firerod,sword,[bombs]" ],
 						"hosted_item": "skullwoods"
 					  }
 					],
@@ -3578,7 +3573,7 @@
 					  {
 						"name": "Blind",
 						"hosted_item": "thievestown",
-						"access_rules": [ "sword", "hammer", "somaria", "byrna", "bomb" ]
+						"access_rules": [ "sword", "hammer", "somaria", "byrna", "bombs" ]
 					  }
 					],
 					"map_locations": [
@@ -3619,7 +3614,7 @@
 					  //  Back
 					  {
 						"name": "Vitreous",
-						"access_rules": [ "somaria,[lamp]" ],
+						"access_rules": [ "somaria,bombs,[lamp]" ],
 						"hosted_item": "miserymire"
 					  }
 					],
@@ -3719,7 +3714,7 @@
 					  {
 						"name": "Dungeon",
 						"clear_as_group": false,
-						"access_rules": [ "[hammer],[hookshot]" ],
+						"access_rules": [ "[hammer],[hookshot],[bombs]" ],
 						"item_count": 6
 					  },
 					  //  Back
@@ -3744,7 +3739,6 @@
 			  {
 				"name": "Lake Hylia",
 				"color": "#345a99",
-				"group": "Lake Hylia",
 				"children": [
 
 				  //  Ice Palace
@@ -3760,7 +3754,7 @@
 					  {
 						"name": "Dungeon",
 						"clear_as_group": false,
-						"access_rules": [ "[hammer],[hookshot]" ],
+						"access_rules": [ "[hammer],[hookshot],[bombs]" ],
 						"item_count": 3
 					  },
 					  //  Back
