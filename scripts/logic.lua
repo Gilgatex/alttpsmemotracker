@@ -142,18 +142,8 @@ end
 
 function countPB()
 	local powerbomb = Tracker:ProviderCountForCode("powerbomb")
-	local powerbomb2 = Tracker:ProviderCountForCode("powerbomb2")
-	local powerbomb3 = Tracker:ProviderCountForCode("powerbomb3")
 	
-	if (powerbomb == 1) then
-		return 1
-	elseif (powerbomb2 == 1) then
-		return 2
-	elseif (powerbomb3 == 1) then
-		return 3
-	end
-	
-	return 0
+	return (powerbomb / 5)
 end
 
 function hasMorph()
