@@ -2774,7 +2774,7 @@
 				  },
 				  {
 					"name": "Maze Race",
-					"access_rules": ["bomb","{}"],
+					"access_rules": ["bombs","{}"],
 					"map_locations": [
 					  {
 						"map": "lightworld",
