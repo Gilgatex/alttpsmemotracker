@@ -286,9 +286,9 @@ function canSpringJump()
 end
 
 function canEnterAndLeaveGauntletTournament()
-	if (hasMorph() == 1 and (hasBasicBombs() == 1 or countPB() >= 2))
+	if ((hasMorph() == 1 and (hasBasicBombs() == 1 or countPB() >= 2))
 					 or hasScrewAttack() == 1
-					 or (hasSpeedBooster() == 1 and canPowerBomb() == 1 and hasEnergyReserves(3)) then
+					 or (hasSpeedBooster() == 1 and canPowerBomb() == 1 and hasEnergyReserves(3))) then
 		return 1
 	end
 	
@@ -296,10 +296,10 @@ function canEnterAndLeaveGauntletTournament()
 end
 
 function canEnterAndLeaveGauntletCasual()
-	if (hasMorph() == 1 and (canBombJump() == 1 or hasSpeedBooster() == 1))
+	if ((hasMorph() == 1 and (canBombJump() == 1 or hasSpeedBooster() == 1))
 					and (canBombJump() == 1
-						or (canPowerBomb() = 1 and countPB() >= 2)
-						or hasScrewAttack() == 1) then
+						or (canPowerBomb() == 1 and countPB() >= 2)
+						or hasScrewAttack() == 1)) then
 		return 1
 	end
 	
