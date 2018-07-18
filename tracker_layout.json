@@ -74,9 +74,9 @@
         "rows": [
 			[ "bow", "silvers", "hookshot", "bombs", "powder", "mushroom", "charge", "ice", "wave", "spazer", "plasma"],
 			[ "firerod", "icerod", "bombos", "ether", "quake", "shovel", "morph", "bomb", "spring", "space","screw"],
-			[ "lamp", "hammer", "ocarina", "net", "book", "pearl", "varia", "gravity", "hijump", "speed", ""],
-			[ "bottle", "somaria", "byrna", "cape", "mirror", "blue_boomerang", "red_boomerang", "grapple", "xray", "etank_icon", "reservetank_icon"],
-			[ "lift1", "boots", "flippers", "halfmagic", "owsword", "shield", "armor", "", "missile_icon", "super_icon", "pb_icon"]
+			[ "lamp", "hammer", "ocarina", "net", "book", "pearl", "varia", "gravity", "hijump", "speed", "grapple"],
+			[ "bottle", "somaria", "byrna", "cape", "mirror", "blue_boomerang", "red_boomerang", "heartpiece", "xray", "etank_icon", "reservetank_icon"],
+			[ "lift1", "boots", "flippers", "halfmagic", "owsword", "shield", "armor", "heart", "missile_icon", "super_icon", "pb_icon"]
 		]
       }
     },

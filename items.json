@@ -692,6 +692,20 @@
     "img": "images/0064.png",
     "codes": "halfmagic"
   },
+  // Heart Container (for capturable)
+  {
+    "name": "Heart Container",
+    "type": "toggle",
+    "img": "images/0060.png",
+    "codes": "heart"
+  },
+  // Heart Piece (for capturable)
+  {
+    "name": "Heart Piece",
+    "type": "toggle",
+    "img": "images/0067.png",
+    "codes": "heartpiece"
+  },
   // Progressive Swords
   {
     "name": "Sword",
