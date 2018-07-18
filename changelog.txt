@@ -1,3 +1,10 @@
+1.0.2
+-----
+Fixed gauntlet logic
+Made missle above crocomire a capturable item
+Added bombs requirement to all zelda areas that require bombs
+
+-----
 1.0.1
 Added readme.txt file with contact information
 Made several wrecked ship spots dependant on phantoon being marked
