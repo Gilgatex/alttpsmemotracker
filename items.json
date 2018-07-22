@@ -35,13 +35,13 @@
         "name": "Overworld Glitches",
         "img": "images/glitch_overworld.png",
         "inherit_codes": "false",
-        "codes": "overworld"
+        "codes": "owglitch"
       },	  
       {
         "name": "Major Glitches",
         "img": "images/glitch_major.png",
         "inherit_codes": "false",
-        "codes": "major"
+        "codes": "majorglitch"
       }
     ]
   },  

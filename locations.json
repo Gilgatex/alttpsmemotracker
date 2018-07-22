@@ -897,6 +897,9 @@
 				"children": [
 				  {
 					"name": "Energy Tank, Kraid",
+					"access_rules": [
+					  "kraid"
+					],
 					"sections": [
 					  {
 						"name": "Energy Tank, Kraid",
@@ -1091,6 +1094,7 @@
 					  "[tournament], grapple, $canHellRun",
 					  "[tournament], hijump, speed, $canHellRun",
 					  "[tournament], hijump, spring, $canHellRun",
+					  "[tournament], hijump, varia, ice, $canHellRun",
 					  "[casual], $canFlySM",
 					  "[casual], grapple",
 					  "[casual], hijump, speed",
@@ -1982,7 +1986,8 @@
 				  {
 					"name": "Missile/Reserve Tank (left Maridia sand pit room)",
 					"access_rules": [
-					  "[tournament],hijump",
+					  "[tournament],hijump,space",
+					  "[tournament],hijump,$canSpringJump",
 					  "[tournament],gravity",
 					  
 					  "[casual],$canBombPassages"
@@ -2414,7 +2419,9 @@
 				  },
 				  {
 					"name": "Graveyard Ledge",
-					"access_rules": [ "mirror,pearl,bombs,$canEnterNWDarkWorld" ],
+					"access_rules": [ 
+						"mirror,pearl,bombs,$canEnterNWDarkWorld"
+					],
 					"sections": [
 					  {
 						"name": "Cave",
@@ -2492,13 +2499,19 @@
 					"sections": [
 					  {
 						"name": "King Zora",
-						"access_rules": [ "lift2", "[flippers]" ],
+						"access_rules": [ 
+							"$canLiftRocks", 
+							"[flippers]" ],
 						"item_count": 1
 					  },
 					  {
 						"name": "Ledge",
 						"capture_item": true,
-						"access_rules": [ "flippers", "[flippers],boots", "{lift1}", "{[flippers]}" ],
+						"access_rules": [ 
+							"flippers", 
+							"{lift1}", 
+							"{[flippers]}"
+						],
 						"item_count": 1
 					  }
 					]
@@ -2522,7 +2535,11 @@
 				  },
 				  {
 					"name": "Waterfall Fairy",
-					"access_rules": [ "flippers", "pearl,[flippers]", "boots,[flippers]" ],
+					"access_rules": [ 
+						"flippers",
+						"pearl,[flippers]",
+						"boots,[flippers]"
+					],
 					"sections": [
 					  {
 						"name": "Waterfall Fairy",
@@ -2660,7 +2677,9 @@
 				  },
 				  {
 					"name": "Hobo",
-					"access_rules": [ "[flippers]" ],
+					"access_rules": [ 
+						"[flippers]"
+					],
 					"sections": [
 					  {
 						"name": "Under The Bridge",
@@ -2678,8 +2697,8 @@
 				  {
 					"name": "Bombos Tablet",
 					"access_rules": [ 
-						"book,sword2,mirror,$canEnterSDarkWorld", 
-						"{mirror,book}" 
+						"book,sword2,mirror,$canEnterSDarkWorld",
+						"{mirror,book}"
 					],
 					"color": "#aa860d",
 					"sections": [
@@ -2704,7 +2723,9 @@
 				  },
 				  {
 					"name": "Cave 45",
-					"access_rules": [ "mirror,$canEnterSDarkWorld" ],
+					"access_rules": [ 
+						"mirror,$canEnterSDarkWorld"
+					],
 					"sections": [
 					  {
 						"name": "Cave 45",
@@ -2845,7 +2866,7 @@
 							"flippers,pearl,mirror,$canEnterSDarkWorld", 
 							"flippers,pearl,mirror,$canEnterNEDarkWorld", 
 							"flippers,mirror,aga1,[pearl]", 
-							"{[flippers]}" 
+							"{[flippers]}"
 						],
 						"capture_item": true,
 						"item_count": 1
@@ -3248,13 +3269,18 @@
 					  },
 					  {
 						"name": "Hookshot Cave",
-						"access_rules": [ "pearl" ],
+						"access_rules": [ 
+							"pearl", 
+						],
 						"sections": [
 						  //  Front chest
 						  {
 							"name": "Bonkable Chest",
 							"short_name": "Front",
-							"access_rules": [ "boots", "hookshot" ],
+							"access_rules": [ 
+								"boots", 
+								"hookshot" 
+							],
 							"item_count": 1
 						  },
 						  //  Back Chests
@@ -3566,8 +3592,9 @@
 					"access_rules": [ "moonpearl" ],
 					"sections": [
 					  {
-						"name": "Thieves Town",
+						"name": "Dungeon",
 						"clear_as_group": false,
+						"access_rules": [ "[hammer]" ],
 						"item_count": 4
 					  },
 					  //  Back
