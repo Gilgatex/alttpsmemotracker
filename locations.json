@@ -2977,9 +2977,8 @@
 				"name": "Death Mountain West",
 				"color": "#934f17",
 				"access_rules": [ 
-					"$canAccessDeathMountainPortal",
-					"[lamp],lift1",
-					"$canFly"
+					"$canEnterDeathMountainWest",
+					"[lamp],lift1"
 				],
 				"children": [
 				  //  Tower of Hera

@@ -671,7 +671,7 @@ function canEnterSDarkWorld()
 end
 
 function canEnterDeathMountainWest()
-	if (canFly() == 1 or (hasHookshot() == 1 and hasHammer() == 1) or canAccessDeathMountainPortal()) then
+	if (canFly() == 1 or (hasHookshot() == 1 and hasHammer() == 1) or canAccessDeathMountainPortal() == 1) then
 		return 1
 	end
 	
