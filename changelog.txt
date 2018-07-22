@@ -1,3 +1,11 @@
+1.0.3
+-----
+Made heart and heart pieces capturable
+Updated a couple logic updates from v10
+Fixed King Zora logic
+Kraid energy tank now requires Kraid to be defeated
+Thieves town now shows partial completion if hammer missing
+
 1.0.2
 -----
 Fixed gauntlet logic
