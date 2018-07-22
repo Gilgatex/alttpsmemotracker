@@ -506,8 +506,8 @@
 					"sections": [
 					  {
 						"name": "Missile (green Brinstar below super missile)",
-						"item_count": 1
-						"capture_item": true,
+						"item_count": 1,
+						"capture_item": true
 					  }
 					],
 					"map_locations": [
