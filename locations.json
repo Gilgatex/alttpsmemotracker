@@ -1061,6 +1061,34 @@
 						"y": 1456
 					  },
 					]
+				  },
+				  {
+					"name": "Missile (above Crocomire)",
+					"access_rules": [
+					  "[tournament], $canFlySM, $canHellRun, $crocomireTournament",
+					  "[tournament], grapple, $canHellRun, $crocomireTournament",
+					  "[tournament], hijump, speed, $canHellRun, $crocomireTournament",
+					  "[tournament], hijump, spring, $canHellRun, $crocomireTournament",
+					  "[tournament], hijump, varia, ice, $canHellRun, $crocomireTournament",
+					  "[casual], $canFlySM, $crocomireCasual",
+					  "[casual], grapple, $crocomireCasual",
+					  "[casual], hijump, speed, $crocomireCasual",
+					  "super,[sequencebreak]"
+					],
+					"sections": [
+					  {
+						"name": "Missile (above Crocomire)",
+						"capture_item": true,
+						"item_count": 1
+					  }
+					],
+					"map_locations": [
+					  {
+						"map": "metroid",
+						"x": 1288,
+						"y": 1488
+					  },
+					]
 				  }
 				]
 			  },
@@ -1084,34 +1112,6 @@
 						"map": "metroid",
 						"x": 1544,
 						"y": 1616
-					  },
-					]
-				  },
-				  {
-					"name": "Missile (above Crocomire)",
-					"access_rules": [
-					  "[tournament], $canFlySM, $canHellRun",
-					  "[tournament], grapple, $canHellRun",
-					  "[tournament], hijump, speed, $canHellRun",
-					  "[tournament], hijump, spring, $canHellRun",
-					  "[tournament], hijump, varia, ice, $canHellRun",
-					  "[casual], $canFlySM",
-					  "[casual], grapple",
-					  "[casual], hijump, speed"
-					],
-					"sections": [
-					  {
-						"name": "Missile (above Crocomire)",
-						"capture_item": true,
-						"access_rules": ["{}"],
-						"item_count": 1
-					  }
-					],
-					"map_locations": [
-					  {
-						"map": "metroid",
-						"x": 1288,
-						"y": 1488
 					  },
 					]
 				  },
