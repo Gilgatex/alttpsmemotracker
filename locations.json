@@ -503,11 +503,11 @@
 					  "$canBombPassages,$canOpenRedDoors",
 					  "{}"
 					],
-					"capture_item": true,
 					"sections": [
 					  {
 						"name": "Missile (green Brinstar below super missile)",
 						"item_count": 1
+						"capture_item": true,
 					  }
 					],
 					"map_locations": [
@@ -1097,13 +1097,13 @@
 					  "[tournament], hijump, varia, ice, $canHellRun",
 					  "[casual], $canFlySM",
 					  "[casual], grapple",
-					  "[casual], hijump, speed",
-					  "{}"
+					  "[casual], hijump, speed"
 					],
 					"sections": [
 					  {
 						"name": "Missile (above Crocomire)",
 						"capture_item": true,
+						"access_rules": "{}",
 						"item_count": 1
 					  }
 					],
