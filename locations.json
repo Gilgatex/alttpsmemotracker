@@ -1419,6 +1419,7 @@
 						"children": [
 						  {
 							"name": "Missile (Mickey Mouse room)",
+							"access_rules": [ "morph, $canBombWalls" ],
 							"sections": [
 							  {
 								"name": "Missile (Mickey Mouse room)",
@@ -1451,6 +1452,7 @@
 						  },
 						  {
 							"name": "Power Bomb (lower Norfair above fire flea room)",
+							"access_rules": [ "$canBombPassages" ],
 							"sections": [
 							  {
 								"name": "Power Bomb (lower Norfair above fire flea room)",
@@ -1486,6 +1488,7 @@
 						  },
 						  {
 							"name": "Missile (lower Norfair near Wave Beam)",
+							"access_rules": [ "morph, $canBombWalls" ],							
 							"sections": [
 							  {
 								"name": "Missile (lower Norfair near Wave Beam)",

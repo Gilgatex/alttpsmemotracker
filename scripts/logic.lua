@@ -350,7 +350,8 @@ function crocomireTournament()
 			and hasSuper() == 1
 			and (hasEnergyReserves()  >= 3 and hasSpeedBooster() == 1 or canHellRun() == 1)
 			and ((canFlySM() == 1 or hasHiJump() == 1 or canSpringJump() == 1 or (hasVaria() == 1 and hasIceBeam() == 1)) or hasSpeedBooster() == 1)
-			and (canBombPassages() == 1 or hasSpeedBooster() == 1 or (heatProof() == 1 and hasMorph() == 1))) then
+			and (canBombPassages() == 1 or hasSpeedBooster() == 1 or (heatProof() == 1 and hasMorph() == 1)))
+			or (canAccessLowerNorfairPortal() == 1 and hasScrewAttack() == 1 and hasSpaceJump() == 1 and hasVaria() == 1 and hasSuper() == 1 and hasEnergyReserves() >= 3) then
 		return 1
 	end
 	
@@ -412,10 +413,12 @@ function lowerNorfairEastTournament()
 						and canPowerBomb() == 1		
 						and (hasHiJump() == 1 or hasGravity() == 1))
 					or (canAccessLowerNorfairPortal() == 1 
-						and canBombWalls() == 1 
+						and canBombWalls() == 1
+						and hasSuper() == 1 
 						and (canFlySM() == 1 or canSpringJump() == 1 or hasSpeedBooster() == 1)))
 				and (canFlySM() == 1 or hasHiJump() == 1 or canSpringJump() == 1 or (hasIceBeam() == 1 and hasChargeBeam() == 1))
-				and (canBombPassages() == 1 or (hasScrewAttack() == 1 and hasSpaceJump() == 1))) then
+				and (canBombPassages() == 1 or (hasScrewAttack() == 1 and hasSpaceJump() == 1))
+				and (hasMorph() == 1 or hasEnergyReserves() >= 6)) then
 		return 1
 	end
 	
