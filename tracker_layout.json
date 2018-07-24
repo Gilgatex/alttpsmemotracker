@@ -150,7 +150,16 @@
                     "darkworld"
                   ]
                 }
-              },			  
+              },
+			  {
+                "title": "Zelda Combined",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "lightworld", "darkworld"
+                  ]
+                }
+              }
             ]
           }
         ]
