@@ -3325,7 +3325,7 @@
 				  {
 					"name": "Catfish",
 					"color": "#35046b",
-					"access_rules": [ "pearl,lift2" ],
+					"access_rules": [ "pearl,lift1" ],
 					"sections": [
 					  {
 						"name": "Ring of Stones",
