@@ -1,3 +1,9 @@
+1.0.5
+-----
+Lower Norfair (east) access changes for upcoming v10
+Death Mountain portal fix
+Added 4th tab for combined Zelda map
+
 1.0.4
 -----
 Fixed death mountain logic
