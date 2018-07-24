@@ -1,3 +1,8 @@
+1.0.6
+-----
+Bugfix with west death mountain
+Bugfix with catfish
+
 1.0.5
 -----
 Lower Norfair (east) access changes for upcoming v10
