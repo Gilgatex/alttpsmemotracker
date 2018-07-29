@@ -1,3 +1,7 @@
+1.1.1
+-----
+Hotfix update to correct graveyard ledge bug
+
 1.1.0
 -----
 Added a couple peek locations
