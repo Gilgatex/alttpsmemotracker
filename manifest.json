@@ -1,8 +1,8 @@
 ﻿{
-  "name": "Super Metroid and ALTTP Randomizer - v9.2",
+  "name": "Super Metroid and ALTTP Randomizer - v10",
   "game_name": "Super Metroid and ALTTP Randomizer",
-  "game_variant": "v9.2",
-  "package_version": "1.0.6",
-  "package_uid": "smalttprando_v9_2_gilgatex",
+  "game_variant": "v10",
+  "package_version": "1.1.0",
+  "package_uid": "smalttprando_v1_gilgatex",
   "author": "gilgatex"
 }

@@ -1,3 +1,8 @@
+1.1.0
+-----
+Added a couple peek locations
+In sync with current released version now (was not "really" v9.2 before)
+
 1.0.6
 -----
 Bugfix with west death mountain
