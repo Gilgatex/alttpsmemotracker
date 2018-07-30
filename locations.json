@@ -2629,6 +2629,7 @@
 				  },
 				  {
 					"name": "Aginah's Cave",
+					"access_rules": ["bombs"],
 					"sections": [
 					  {
 						"name": "Aginah's Cave",
