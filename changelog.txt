@@ -1,3 +1,14 @@
+1.1.2
+-----
+Fixed access rules for death mountain
+Fixed charge beam access rules (can use normal bombs and screw attack in addition to power bombs)
+Bomb required to be marked for desert cave
+Draygon required to be marked for Space Jump and Plasma Beam locations
+
+1.1.1
+-----
+Hotfix update to correct graveyard ledge bug
+
 1.1.0
 -----
 Added a couple peek locations

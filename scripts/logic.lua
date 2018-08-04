@@ -653,7 +653,7 @@ function canEnterNWDarkWorld()
 	if (hasMoonPearl() == 1
 			and ((canEnterNEDarkWorld() == 1
 				and (hasHookshot() == 1 and (hasFlippers() == 1 or canLiftRocks() == 1 or hasHammer() == 1)))
-				or (hasHammer() == 1 and canLiftDarkRocks() == 1)
+				or (hasHammer() == 1 and canLiftRocks() == 1)
 				or canLiftDarkRocks() == 1)) then
 		return 1
 	end
@@ -674,7 +674,7 @@ function canEnterSDarkWorld()
 end
 
 function canEnterDeathMountainWest()
-	if (canFly() == 1 or (hasHookshot() == 1 and hasHammer() == 1) or canAccessDeathMountainPortal() == 1) then
+	if (canFly() == 1 or (hasLamp() == 1 and canLiftRocks() == 1) or canAccessDeathMountainPortal() == 1) then
 		return 1
 	end
 	

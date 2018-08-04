@@ -617,7 +617,7 @@
 				  {
 					"name": "Charge Beam",
 					"access_rules": [
-					  "$canPowerBomb"
+					  "$canBombPassages"
 					],
 					"sections": [
 					  {
@@ -1967,11 +1967,11 @@
 				  {
 					"name": "Plasma Beam",
 					"access_rules": [
-					  "[tournament],$plasmaBeamTournament",
-					  "[casual],$canDefeatDraygon,screw,hijump",
-					  "[casual],$canDefeatDraygon,screw,$canFlySM",
-					  "[casual],$canDefeatDraygon,plasma,hijump",
-					  "[casual],$canDefeatDraygon,plasma,$canFlySM"
+					  "[tournament],draygon,$plasmaBeamTournament",
+					  "[casual],draygon,$canDefeatDraygon,screw,hijump",
+					  "[casual],draygon,$canDefeatDraygon,screw,$canFlySM",
+					  "[casual],draygon,$canDefeatDraygon,plasma,hijump",
+					  "[casual],draygon,$canDefeatDraygon,plasma,$canFlySM"
 					],
 					"sections": [
 					  {
@@ -2157,9 +2157,9 @@
 				  {
 					"name": "Space Jump",
 					"access_rules": [
-					  "[tournament],$canDefeatDraygon",
-					  "[casual],$canDefeatDraygon,$canFlySM",
-					  "[casual],$canDefeatDraygon,speed,hijump"
+					  "[tournament],draygon,$canDefeatDraygon",
+					  "[casual],draygon,$canDefeatDraygon,$canFlySM",
+					  "[casual],draygon,$canDefeatDraygon,speed,hijump"
 					],
 					"sections": [
 					  {
@@ -2629,6 +2629,7 @@
 				  },
 				  {
 					"name": "Aginah's Cave",
+					"access_rules": ["bombs"],
 					"sections": [
 					  {
 						"name": "Aginah's Cave",
