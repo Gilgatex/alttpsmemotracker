@@ -2157,9 +2157,9 @@
 				  {
 					"name": "Space Jump",
 					"access_rules": [
-					  "[tournament],$canDefeatDraygon",
-					  "[casual],$canDefeatDraygon,$canFlySM",
-					  "[casual],$canDefeatDraygon,speed,hijump"
+					  "[tournament],draygon,$canDefeatDraygon",
+					  "[casual],draygon,$canDefeatDraygon,$canFlySM",
+					  "[casual],draygon,$canDefeatDraygon,speed,hijump"
 					],
 					"sections": [
 					  {
