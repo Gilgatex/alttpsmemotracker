@@ -617,7 +617,7 @@
 				  {
 					"name": "Charge Beam",
 					"access_rules": [
-					  "$canPowerBomb"
+					  "$canBombPassages"
 					],
 					"sections": [
 					  {
