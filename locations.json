@@ -849,8 +849,8 @@
 					"name": "Power Bomb (red Brinstar spike room)",
 					"access_rules": [
 					  "[tournament],super",
-					  "[casual],$canPowerBomb,ice",
 					  "[casual],$canPowerBomb,super",
+					  "[casual],ice,super",
 					],
 					"sections": [
 					  {
