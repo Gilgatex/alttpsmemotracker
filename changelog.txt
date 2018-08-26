@@ -1,3 +1,7 @@
+1.1.5
+-----
+Updated game name to work with EmoTracker v2.0
+
 1.1.4
 -----
 Fixed bug where dark world portal wasn't working in hard mode
