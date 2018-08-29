@@ -1,3 +1,11 @@
+1.1.6
+-----
+Fixed not needing moon pearl to show palace of darkness
+Added a peek to the after-gauntlet spots
+Fixed not being able to add a ether check
+Removed ability to add bombos check if you don't have south death world access
+Added cane/mushroom sequence break to magic bat
+
 1.1.5
 -----
 Updated game name to work with EmoTracker v2.0
