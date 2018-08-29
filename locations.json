@@ -280,10 +280,12 @@
 					"sections": [
 					  {
 						"name": "Missile (Crateria gauntlet left)",
+						"capture_item": true,
 						"item_count": 1
 					  },
 					  {
 						"name": "Missile (Crateria gauntlet right)",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -2358,12 +2360,13 @@
 					  }
 					],
 					"access_rules": [ 
-						"powder, hammer", 
-						"powder, moonpearl, mirror, lift2" 
+						"hammer", 
+						"moonpearl, mirror, lift2" 
 					],
 					"sections": [
 					  {
 						"name": "Magic Bowl",
+						"access_rules": [ "powder", "somaria,mushroom,[powder]" ],
 						"item_count": 1
 					  }
 					]
@@ -2703,7 +2706,7 @@
 					"name": "Bombos Tablet",
 					"access_rules": [ 
 						"book,sword2,mirror,$canEnterSDarkWorld",
-						"{mirror,book}"
+						"{mirror,book,$canEnterSDarkWorld}"
 					],
 					"color": "#aa860d",
 					"sections": [
@@ -3067,8 +3070,11 @@
 				  //  Ether Tablet
 				  {
 					"name": "Ether Tablet",
-					"access_rules": [ "mirror,book,sword2", "mirror,{book}",
-						"hookshot,hammer,book,sword2", "hookshot,hammer,{book}" ],
+					"access_rules": [ 
+						"mirror,book,sword2", 
+						"hookshot,hammer,book,sword2", 
+						"{book}"
+					],
 					"sections": [
 					  {
 						"name": "Tablet",
@@ -3400,14 +3406,14 @@
 					  {
 						"name": "Dungeon",
 						"clear_as_group": false,
-						"access_rules": [ "[bow],[lamp],[bombs]" ],
+						"access_rules": [ "pearl,[bow],[lamp],[bombs]" ],
 						"item_count": 5
 					  },
 					  //  Back
 					  {
 						"name": "Helmasaur King",
 						"short_name": "Helma",
-						"access_rules": [ "bow,hammer,[lamp],[bombs]" ],
+						"access_rules": [ "pearl,bow,hammer,[lamp],[bombs]" ],
 						"hosted_item": "palaceofdarkness"
 					  }
 					],
