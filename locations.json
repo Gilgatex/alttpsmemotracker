@@ -699,13 +699,13 @@
 					]
 				  },
 				  {
-					"name": "Pink Brinstar Super",
+					"name": "Super Missile (Pink Brinstar)",
 					"access_rules": [
 					  "$canBombPassages,super"
 					],
 					"sections": [
 					  {
-						"name": "Pink Brinstar Super",
+						"name": "Super Missile (Pink Brinstar)",
 						"item_count": 1
 					  }
 					],
@@ -718,13 +718,13 @@
 					]
 				  },
 				  {
-					"name": "Super Missile (pink Brinstar)",
+					"name": "Power Bomb (pink Brinstar)",
 					"access_rules": [
-					  "$canBombPassages,super"
+					  "$canPowerBomb,super"
 					],
 					"sections": [
 					  {
-						"name": "Super Missile (pink Brinstar)",
+						"name": "Power Bomb (pink Brinstar)",
 						"item_count": 1
 					  }
 					],
