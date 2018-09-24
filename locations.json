@@ -505,7 +505,7 @@
 					"name": "Missile (green Brinstar below super missile)",
 					"access_rules": [
 					  "$canBombPassages,$canOpenRedDoors",
-					  "{}"
+					  "{$canOpenRedDoors}"
 					],
 					"sections": [
 					  {
@@ -1589,11 +1589,13 @@
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canFly",
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canSpringJump",
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,speed",
-							  "[casual],$canPowerBomb,space,super"
+							  "[casual],$canPowerBomb,space,super",
+							  "{$canAccessLowerNorfairPortal}"
 							],							
 							"sections": [
 							  {
 								"name": "Missile (Gold Torizo)",
+								"capture_item": true,
 								"item_count": 1
 							  }
 							],
