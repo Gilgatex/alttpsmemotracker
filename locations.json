@@ -37,13 +37,15 @@
 				  {
 					"name": "Super Missile (Crateria)",
 					"access_rules": [
-					  "$canPowerBomb, [speed], $hasEnergyReserves:3",	  
-					  "$canPowerBomb, [speed], varia, [$hasEnergyReserves:3]",	  
-					  "$canPowerBomb, [speed], gravity, [$hasEnergyReserves:3]"
+					  "$canPowerBomb, speed, $hasEnergyReserves:3",	  
+					  "$canPowerBomb, speed, varia, [$hasEnergyReserves:3]",	  
+					  "$canPowerBomb, speed, gravity, [$hasEnergyReserves:3]",
+					  "{$canPowerBomb}"
 					],
 					"sections": [
 					  {
 						"name": "Super Missile (Crateria)",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -1650,17 +1652,19 @@
 			  {
 				"name": "Reserve Tank, Wrecked Ship",
 				"access_rules": [
-				  "[tournament],phantoon,$canPowerBomb,[speed],varia",
-				  "[tournament],phantoon,$canPowerBomb,[speed],$hasEnergyReserves:3",
+				  "[tournament],phantoon,$canPowerBomb,speed,varia",
+				  "[tournament],phantoon,$canPowerBomb,speed,$hasEnergyReserves:3",
 				  
-				  "[casual],phantoon,[speed],$canPowerBomb,grapple",
-				  "[casual],phantoon,[speed],$canPowerBomb,space",
-				  "[casual],phantoon,[speed],$canPowerBomb,varia,$hasEnergyReserves:3",
-				  "[casual],phantoon,[speed],$canPowerBomb,$hasEnergyReserves:4",
+				  "[casual],phantoon,speed,$canPowerBomb,grapple",
+				  "[casual],phantoon,speed,$canPowerBomb,space",
+				  "[casual],phantoon,speed,$canPowerBomb,varia,$hasEnergyReserves:3",
+				  "[casual],phantoon,speed,$canPowerBomb,$hasEnergyReserves:4",
+				  "{phantoon, $canPowerBomb}"
 				],
 				"sections": [
 				  {
 					"name": "Reserve Tank, Wrecked Ship",
+					"capture_item": true,					
 					"item_count": 1
 				  }
 				],
