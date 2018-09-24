@@ -1,3 +1,9 @@
+1.1.7
+-----
+Can now peek at missile above Gold Torizo coming from Lower Norfair Portal
+Need to be able to open the door to peek at first green brinstar missile now
+Chest game now correctly shows one item
+
 1.1.6
 -----
 Fixed not needing moon pearl to show palace of darkness
