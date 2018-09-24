@@ -37,13 +37,15 @@
 				  {
 					"name": "Super Missile (Crateria)",
 					"access_rules": [
-					  "$canPowerBomb, [speed], $hasEnergyReserves:3",	  
-					  "$canPowerBomb, [speed], varia, [$hasEnergyReserves:3]",	  
-					  "$canPowerBomb, [speed], gravity, [$hasEnergyReserves:3]"
+					  "$canPowerBomb, speed, $hasEnergyReserves:3",	  
+					  "$canPowerBomb, speed, varia, [$hasEnergyReserves:3]",	  
+					  "$canPowerBomb, speed, gravity, [$hasEnergyReserves:3]",
+					  "{$canPowerBomb}"
 					],
 					"sections": [
 					  {
 						"name": "Super Missile (Crateria)",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -280,10 +282,12 @@
 					"sections": [
 					  {
 						"name": "Missile (Crateria gauntlet left)",
+						"capture_item": true,
 						"item_count": 1
 					  },
 					  {
 						"name": "Missile (Crateria gauntlet right)",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -501,7 +505,7 @@
 					"name": "Missile (green Brinstar below super missile)",
 					"access_rules": [
 					  "$canBombPassages,$canOpenRedDoors",
-					  "{}"
+					  "{$canOpenRedDoors}"
 					],
 					"sections": [
 					  {
@@ -697,13 +701,13 @@
 					]
 				  },
 				  {
-					"name": "Pink Brinstar Super",
+					"name": "Super Missile (Pink Brinstar)",
 					"access_rules": [
 					  "$canBombPassages,super"
 					],
 					"sections": [
 					  {
-						"name": "Pink Brinstar Super",
+						"name": "Super Missile (Pink Brinstar)",
 						"item_count": 1
 					  }
 					],
@@ -716,13 +720,13 @@
 					]
 				  },
 				  {
-					"name": "Super Missile (pink Brinstar)",
+					"name": "Power Bomb (pink Brinstar)",
 					"access_rules": [
-					  "$canBombPassages,super"
+					  "$canPowerBomb,super"
 					],
 					"sections": [
 					  {
-						"name": "Super Missile (pink Brinstar)",
+						"name": "Power Bomb (pink Brinstar)",
 						"item_count": 1
 					  }
 					],
@@ -849,8 +853,8 @@
 					"name": "Power Bomb (red Brinstar spike room)",
 					"access_rules": [
 					  "[tournament],super",
-					  "[casual],$canPowerBomb,ice",
 					  "[casual],$canPowerBomb,super",
+					  "[casual],ice,super",
 					],
 					"sections": [
 					  {
@@ -1585,11 +1589,13 @@
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canFly",
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canSpringJump",
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,speed",
-							  "[casual],$canPowerBomb,space,super"
+							  "[casual],$canPowerBomb,space,super",
+							  "{$canAccessLowerNorfairPortal}"
 							],							
 							"sections": [
 							  {
 								"name": "Missile (Gold Torizo)",
+								"capture_item": true,
 								"item_count": 1
 							  }
 							],
@@ -1648,17 +1654,19 @@
 			  {
 				"name": "Reserve Tank, Wrecked Ship",
 				"access_rules": [
-				  "[tournament],phantoon,$canPowerBomb,[speed],varia",
-				  "[tournament],phantoon,$canPowerBomb,[speed],$hasEnergyReserves:3",
+				  "[tournament],phantoon,$canPowerBomb,speed,varia",
+				  "[tournament],phantoon,$canPowerBomb,speed,$hasEnergyReserves:3",
 				  
-				  "[casual],phantoon,[speed],$canPowerBomb,grapple",
-				  "[casual],phantoon,[speed],$canPowerBomb,space",
-				  "[casual],phantoon,[speed],$canPowerBomb,varia,$hasEnergyReserves:3",
-				  "[casual],phantoon,[speed],$canPowerBomb,$hasEnergyReserves:4",
+				  "[casual],phantoon,speed,$canPowerBomb,grapple",
+				  "[casual],phantoon,speed,$canPowerBomb,space",
+				  "[casual],phantoon,speed,$canPowerBomb,varia,$hasEnergyReserves:3",
+				  "[casual],phantoon,speed,$canPowerBomb,$hasEnergyReserves:4",
+				  "{phantoon, $canPowerBomb}"
 				],
 				"sections": [
 				  {
 					"name": "Reserve Tank, Wrecked Ship",
+					"capture_item": true,					
 					"item_count": 1
 				  }
 				],
@@ -2358,12 +2366,13 @@
 					  }
 					],
 					"access_rules": [ 
-						"powder, hammer", 
-						"powder, moonpearl, mirror, lift2" 
+						"hammer", 
+						"moonpearl, mirror, lift2" 
 					],
 					"sections": [
 					  {
 						"name": "Magic Bowl",
+						"access_rules": [ "powder", "somaria,mushroom,[powder]" ],
 						"item_count": 1
 					  }
 					]
@@ -2703,7 +2712,7 @@
 					"name": "Bombos Tablet",
 					"access_rules": [ 
 						"book,sword2,mirror,$canEnterSDarkWorld",
-						"{mirror,book}"
+						"{mirror,book,$canEnterSDarkWorld}"
 					],
 					"color": "#aa860d",
 					"sections": [
@@ -3067,8 +3076,11 @@
 				  //  Ether Tablet
 				  {
 					"name": "Ether Tablet",
-					"access_rules": [ "mirror,book,sword2", "mirror,{book}",
-						"hookshot,hammer,book,sword2", "hookshot,hammer,{book}" ],
+					"access_rules": [ 
+						"mirror,book,sword2", 
+						"hookshot,hammer,book,sword2", 
+						"{book}"
+					],
 					"sections": [
 					  {
 						"name": "Tablet",
@@ -3400,14 +3412,14 @@
 					  {
 						"name": "Dungeon",
 						"clear_as_group": false,
-						"access_rules": [ "[bow],[lamp],[bombs]" ],
+						"access_rules": [ "pearl,[bow],[lamp],[bombs]" ],
 						"item_count": 5
 					  },
 					  //  Back
 					  {
 						"name": "Helmasaur King",
 						"short_name": "Helma",
-						"access_rules": [ "bow,hammer,[lamp],[bombs]" ],
+						"access_rules": [ "pearl,bow,hammer,[lamp],[bombs]" ],
 						"hosted_item": "palaceofdarkness"
 					  }
 					],
@@ -3471,7 +3483,7 @@
 					"sections": [
 					  {
 						"name": "Chest Game",
-						"item_count": 2
+						"item_count": 1
 					  }
 					],
 					"map_locations": [

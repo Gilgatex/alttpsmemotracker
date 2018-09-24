@@ -478,7 +478,7 @@ function canAccessDarkWorldPortal()
 		(hasSuper() == 1 and 
 			(hasChargeBeam() == 1 or (hasSuper() == 1 and hasMissiles() == 1)) and
 			(hasGravity() == 1 or (hasHiJump() == 1 and hasIceBeam() == 1 and hasGrapple() == 1)) and
-			(hasIceBeam() == 1 or (hasSpeedBooster() == 1 and hasGravity == 1)))) then
+			(hasIceBeam() == 1 or (hasSpeedBooster() == 1 and hasGravity() == 1)))) then
 		return 1
 	end
 	
