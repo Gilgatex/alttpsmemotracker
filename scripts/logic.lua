@@ -296,7 +296,7 @@ function canEnterAndLeaveGauntletTournament()
 end
 
 function canEnterAndLeaveGauntletCasual()
-	if ((hasMorph() == 1 and (canBombJump() == 1 or hasSpeedBooster() == 1))
+	if ((hasMorph() == 1 and (canFlySM() == 1 or hasSpeedBooster() == 1))
 					and (canBombJump() == 1
 						or (canPowerBomb() == 1 and countPB() >= 2)
 						or hasScrewAttack() == 1)) then
