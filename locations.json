@@ -1511,7 +1511,7 @@
 						  {
 							"name": "Energy Tank, Ridley",
 							"access_rules": [
-							  "$canPowerBomb,super,charge"
+							  "$canPowerBomb,super,[charge]"
 							],
 							"sections": [
 							  {
