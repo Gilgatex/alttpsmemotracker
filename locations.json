@@ -1078,7 +1078,7 @@
 					  "[casual], $canFlySM, $crocomireCasual",
 					  "[casual], grapple, $crocomireCasual",
 					  "[casual], hijump, speed, $crocomireCasual",
-					  "super,[sequencebreak]"
+					  "{}"
 					],
 					"sections": [
 					  {
