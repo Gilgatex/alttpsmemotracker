@@ -21,10 +21,10 @@
 			  "item_margin": "1,2",
 			  "rows": [
 				[ "bowandarrows", "boomerangs", "hookshot", "bombs", "powder", "mushroom", "aga"],
-				[ "firerod", "icerod", "bombos", "ether", "quake", "shovel", "ridley"],
+				[ "firerod", "icerod", "bombos", "ether", "quake", "shovel", "kraid"],
 				[ "lamp", "hammer", "ocarina", "net", "book", "pearl", "phantoon"],
-				[ "bottle", "somaria", "byrna", "cape", "mirror", "gomode", "kraid"],
-				[ "lift1", "boots", "flippers", "halfmagic", "", "", "draygon"],
+				[ "bottle", "somaria", "byrna", "cape", "mirror", "gomode", "draygon"],
+				[ "lift1", "boots", "flippers", "halfmagic", "", "", "ridley"],
 				[ "easternpalace", "desertpalace", "towerofhera", "", "owsword", "shield", "armor"],
 				[ "palaceofdarkness", "swamppalace", "skullwoods", "thievestown", "icepalace", "miserymire", "turtlerock"]
 			  ]
