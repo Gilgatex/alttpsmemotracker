@@ -1,3 +1,9 @@
+1.2.0
+-----
+Major map overhaul, now has nested tabs and region maps for both Zelda and Metroid.
+Made the missiles above crocomire properly peek (blue), not sequence break (yellow).
+Reordered the bosses on the tracker to be more "normal" order.
+
 1.1.9
 -----
 In normal mode screw+space+morph can get you to gauntlet.
