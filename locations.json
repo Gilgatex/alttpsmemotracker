@@ -1931,9 +1931,9 @@
 							"access_rules": [
 							  "[tournament],$canPowerBomb,space,$heatProof,hijump",
 							  "[tournament],$canPowerBomb,space,$heatProof,gravity",
-							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canFly",
-							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canSpringJump",
-							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,speed",
+							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canFly,super",
+							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canSpringJump,super",
+							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,speed,super",
 							  "[casual],$canPowerBomb,space,super",
 							  "{$canAccessLowerNorfairPortal}"
 							],							
@@ -1960,9 +1960,12 @@
 						  {
 							"name": "Super Missile (Gold Torizo)",
 							"access_rules": [
-							  "[tournament],$canBombWalls,$heatProof",
-							  "[casual],$canBombWalls,$canAccessLowerNorfairPortal",
-							  "[casual],$canBombWalls,space,$canPowerBomb"
+							  "[tournament],$canBombWalls,$heatProof,charge",
+							  "[tournament],$canBombWalls,$heatProof,super",
+							  "[casual],$canBombWalls,charge,$canAccessLowerNorfairPortal",
+							  "[casual],$canBombWalls,charge,space,$canPowerBomb",
+							  "[casual],$canBombWalls,super,$canAccessLowerNorfairPortal",
+							  "[casual],$canBombWalls,super,space,$canPowerBomb"
 							],							
 							"sections": [
 							  {
@@ -2285,7 +2288,8 @@
 					  "$canFlySM",
 					  "speed",
 					  "grapple",
-					  "[tournament],$canSpringJump"
+					  "[tournament],gravity,$canSpringJump",
+					  "[tournament],hijump,$canSpringJump"
 					],
 					"sections": [
 					  {
@@ -2560,7 +2564,7 @@
 					"access_rules": [
 					  "[tournament],grapple,$canPowerBomb,gravity,$canFlySM",
 					  "[tournament],grapple,$canPowerBomb,gravity,hijump",
-					  "[tournament],grapple,$canPowerBomb,hijump,$canSpringJump,space",
+					  "[tournament],grapple,$canPowerBomb,ice,hijump,$canSpringJump,space",
 					  "[casual],$canPowerBomb,grapple,space",
 					  "[casual],$canPowerBomb,grapple,hijump"
 					],

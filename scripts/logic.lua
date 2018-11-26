@@ -372,12 +372,15 @@ function crocomireCasual()
 end
 
 function norfairEastTournament()
-	if ((((canBombWalls() == 1 or hasSpeedBooster() == 1)
-                and (hasSuper() == 1 and hasMorph() == 1))
-                or canAccessNorfairPortal() == 1)
-                and canHellRun() == 1
-                and (hasSuper() == 1 and (canFlySM() == 1 or hasHiJump() == 1 or canSpringJump() == 1 or (hasVaria() == 1 and (hasIceBeam() == 1 or hasSpeedBooster() == 1)))
-                 or (hasSpeedBooster() == 1 and canPowerBomb() == 1))) then
+	if ((((canBombWalls() or hasSpeedBooster())
+                	and (hasSuper() and hasMorph()))
+		    or canAccessNorfairPortal())
+		    and canHellRun()
+		    and (hasSuper() 
+		    
+		    and (canFlySM() or hasHiJump() or hasSpeedBooster() or canSpringBallJump() or (hasVaria() and (hasIceBeam() or hasSpeedBooster())))
+		    
+		      or (hasSpeedBooster() and canPowerBomb()))) then
 		return 1
 	end
 	
@@ -434,8 +437,7 @@ function lowerNorfairEastCasual()
 						and canBombWalls() == 1
 						and hasSuper() == 1
 						and canPowerBomb() == 1
-						and (canFlySM() == 1 or hasSpeedBooster() == 1)))
-				and (canFlySM() == 1 or hasHiJump() == 1)) then
+						and canFlySM() == 1)) then
 		return 1
 	end
 	
