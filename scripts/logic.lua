@@ -437,7 +437,7 @@ function lowerNorfairEastCasual()
 						and canBombWalls() == 1
 						and hasSuper() == 1
 						and canPowerBomb() == 1
-						and canFlySM() == 1)) then
+						and canFlySM() == 1))) then
 		return 1
 	end
 	
