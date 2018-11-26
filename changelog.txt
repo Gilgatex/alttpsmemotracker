@@ -1,3 +1,7 @@
+1.3.1
+-----
+Typo fix causing script file not to work
+
 1.3.0
 -----
 Blind no longer in logic unless you have a weapon to defeat him
