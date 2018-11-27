@@ -1,3 +1,7 @@
+1.3.2
+-----
+Fixed east norfair entry function
+
 1.3.1
 -----
 Typo fix causing script file not to work
