@@ -1,3 +1,17 @@
+1.3.3
+----- 
+Updated Gauntlet Etank to be blue (checkable) if you can get in but not out
+Updated After Gauntlet end to be blue (checkable) if you can get underneath it with power bombs, but not enough power bombs to get through gauntlet
+Fixed (again) missile above crocomire to be blue instead of yellow when you can't get it
+Extended out the dark death mountain lampless sequence break further into Norfair
+Updated Space Jump to no longer require marking draygon as complete (to be consistent with other bosses).
+Space Jump can be checkable now if you can defeat draygon but can't get out
+Updated Plasma Beam to be blue (checkable) if you can get in but not out.
+Ether tablet fixed so no longer blue unless you can reach it.
+Changed early brinstar supers to sequence break without any bombs because you can technically get it with a quick drop.  They are still capturable/pinnable.
+Fixed some weird issues with sequence breaks showing up in hard logic when they shouldn't, mostly in Maridia
+Fixed energy reserve requirements for gauntlet in tournament logic
+
 1.3.2
 -----
 Fixed east norfair entry function
