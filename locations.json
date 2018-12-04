@@ -18,7 +18,7 @@
 					"name": "Bomb Torizo",
 					"access_rules": [
 					  "[tournament],morph,$canOpenRedDoors",
-					  "[casual],$canBombPassages,$canOpenRedDoors"
+					  "casual,$canBombPassages,$canOpenRedDoors"
 					],
 					"sections": [
 					  {
@@ -147,15 +147,15 @@
 				"access_rules": [
 				
 				  "$canPowerBomb, super",
-				  "$canAccessNorfairPortal, $canPowerBomb, ice",
-				  "$canAccessNorfairPortal, $canPowerBomb, hijump",
+				  "[$canAccessNorfairPortal],$canAccessNorfairPortalSB, $canPowerBomb, ice",
+				  "[$canAccessNorfairPortal],$canAccessNorfairPortalSB, $canPowerBomb, hijump",
 				  
-				  "[tournament],$canAccessNorfairPortal, $canPowerBomb, $canSpringJump",
-				  "[tournament],$canAccessNorfairPortal, $canPowerBomb, $canFlySM",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB, $canPowerBomb, $canSpringJump",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB, $canPowerBomb, $canFlySM",
 				  "[tournament],$canAccessMaridiaPortal, hijump, super",
 				  
-				  "[casual],$canAccessNorfairPortal, $canPowerBomb, space",
-				  "[casual],$canAccessMaridiaPortal, gravity, super"
+				  "casual,[$canAccessNorfairPortal],$canAccessNorfairPortalSB, $canPowerBomb, space",
+				  "casual,$canAccessMaridiaPortal, gravity, super"
 				],
 				"children": [
 				  {
@@ -163,11 +163,11 @@
 					"access_rules": [
 					  "[tournament]",
 					  
-					  "[casual],[speed]",
-					  "[casual],[grapple]",
-					  "[casual],[space]",
-					  "[casual],[$canSpringJump]",
-					  "[casual],[$canAccessMaridiaPortal]"
+					  "casual,[speed]",
+					  "casual,[grapple]",
+					  "casual,[space]",
+					  "casual,[$canSpringJump]",
+					  "casual,[$canAccessMaridiaPortal]"
 					],
 					"sections": [
 					  {
@@ -193,14 +193,14 @@
 					"access_rules": [
 					  "[tournament],phantoon,super,$canBombPassages",
 					  
-					  "[casual],phantoon,super,speed",
-					  "[casual],phantoon,super,grapple",
-					  "[casual],phantoon,super,$canFlySM",
-					  "[casual],phantoon,super,space",
-					  "[casual],phantoon,super,$canSpringJump,hijump",
-					  "[casual],phantoon,$canAccessMaridiaPortal,hijump",
-					  "[casual],phantoon,$canAccessMaridiaPortal,$canFly",
-					  "[casual],phantoon,$canAccessMaridiaPortal,speed"
+					  "casual,phantoon,super,speed",
+					  "casual,phantoon,super,grapple",
+					  "casual,phantoon,super,$canFlySM",
+					  "casual,phantoon,super,space",
+					  "casual,phantoon,super,$canSpringJump,hijump",
+					  "casual,phantoon,$canAccessMaridiaPortal,hijump",
+					  "casual,phantoon,$canAccessMaridiaPortal,$canFly",
+					  "casual,phantoon,$canAccessMaridiaPortal,speed"
 					],
 					"sections": [
 					  {
@@ -226,11 +226,11 @@
 					"access_rules": [
 					  "[tournament],phantoon,super,$canBombPassages",
 					  
-					  "[casual],phantoon,super,speed",
-					  "[casual],phantoon,super,grapple",
-					  "[casual],phantoon,super,space",
-					  "[casual],phantoon,super,$canSpringJump",
-					  "[casual],phantoon,super,$canAccessMaridiaPortal"
+					  "casual,phantoon,super,speed",
+					  "casual,phantoon,super,grapple",
+					  "casual,phantoon,super,space",
+					  "casual,phantoon,super,$canSpringJump",
+					  "casual,phantoon,super,$canAccessMaridiaPortal"
 					],
 					"sections": [
 					  {
@@ -286,11 +286,13 @@
 					"name": "Energy Tank, Gauntlet",
 					"access_rules": [
 					  "[tournament],$canEnterAndLeaveGauntletTournament",
-					  "[casual],$canEnterAndLeaveGauntletCasual,[$hasEnergyReserves:2]"
+					  "casual,$canEnterAndLeaveGauntletCasual,[$hasEnergyReserves:2]",
+					  "{$canPeekGauntlet}"
 					],
 					"sections": [
 					  {
 						"name": "Energy Tank, Gauntlet",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -332,7 +334,9 @@
 					"name": "After Gauntlet",
 					"access_rules": [
 					  "[tournament],$canEnterAndLeaveGauntletTournament,$canBombPassages",
-					  "[casual],$canEnterAndLeaveGauntletCasual,$canBombPassages,[$hasEnergyReserves:3]"
+					  "casual,$canEnterAndLeaveGauntletCasual,$canBombPassages,[$hasEnergyReserves:3]",
+					  "{$canPowerBomb}",
+					  "{screw}"
 					],
 					"sections": [
 					  {
@@ -397,10 +401,10 @@
 					  {
 						"name": "Energy Tank, Brinstar Ceiling",
 						"access_rules": [
-							"[casual],$canFlySM",
-							"[casual],ice",
-							"[casual],hijump",
-							"[casual],speed",
+							"casual,$canFlySM",
+							"casual,ice",
+							"casual,hijump",
+							"casual,speed",
 							
 							"[tournament]",
 							"{}"
@@ -610,7 +614,7 @@
 					"name": "Missile (green Brinstar below super missile)",
 					"access_rules": [
 					  "$canBombPassages,$canOpenRedDoors",
-					  "{$canOpenRedDoors}"
+					  "[$canOpenRedDoors]"
 					],
 					"sections": [
 					  {
@@ -635,7 +639,7 @@
 				  {
 					"name": "Super Missile (green Brinstar top)",
 					"access_rules": [
-					  "[casual],$canOpenRedDoors,speed",
+					  "casual,$canOpenRedDoors,speed",
 					  
 					  "[tournament],$canOpenRedDoors,speed",
 					  "[tournament],$canOpenRedDoors,morph"
@@ -669,7 +673,7 @@
 						"name": "Missile (green Brinstar behind reserve tank)",
 						"access_rules": [
 						  "[tournament],$canOpenRedDoors,morph",
-						  "[casual],$canOpenRedDoors,morph,[speed]"
+						  "casual,$canOpenRedDoors,morph,[speed]"
 						],
 						"item_count": 1
 					  },
@@ -678,7 +682,7 @@
 						"access_rules": [
 						  "[tournament],$canBombPassages,$canOpenRedDoors",
 						  "[tournament],morph,screw,$canOpenRedDoors",
-						  "[casual],speed,$canBombPassages,morph"
+						  "casual,speed,$canBombPassages,morph"
 						],
 						"item_count": 1
 					  }
@@ -729,18 +733,18 @@
 				  "$canPowerBomb",
 				  "$canOpenRedDoors,$canBombWalls",
 				  "$canOpenRedDoors,speed",
-				  "$canAccessNorfairPortal,morph,wave,ice",
-				  "$canAccessNorfairPortal,morph,wave,hijump",
+				  "[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,wave,ice",
+				  "[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,wave,hijump",
 				  
-				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,ice",
-				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,hijump",
-				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,$canSpringJump",
-				  "[tournament],$canAccessNorfairPortal,morph,$canOpenRedDoors,$canFlySM",
-				  "[tournament],$canAccessNorfairPortal,morph,wave,$canSpringJump",
-				  "[tournament],$canAccessNorfairPortal,morph,wave,$canFlySM",
-				  "[tournament],$canAccessNorfairPortal,morph,wave,[space]",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,$canOpenRedDoors,ice",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,$canOpenRedDoors,hijump",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,$canOpenRedDoors,$canSpringJump",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,$canOpenRedDoors,$canFlySM",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,wave,$canSpringJump",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,wave,$canFlySM",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,wave,[space]",
 				  
-				  "open,$canAccessNorfairPortal,morph,wave,space"
+				  "open,[$canAccessNorfairPortal],$canAccessNorfairPortalSB,morph,wave,space"
 				],
 				"children": [
 				  {
@@ -772,7 +776,7 @@
 					"access_rules": [
 					  "morph,powerbomb",
 					  "morph,super",
-					  "morph,$canAccessNorfairPortal",
+					  "morph,[$canAccessNorfairPortal],$canAccessNorfairPortalSB",
 
 					],
 					"sections": [
@@ -824,7 +828,7 @@
 					"access_rules": [
 					  "[tournament],$canPowerBomb,wave",
 					  "[tournament],$canPowerBomb,super",
-					  "[casual],$canPowerBomb,wave,[$hasEnergyReserves:2]"
+					  "casual,$canPowerBomb,wave,[$hasEnergyReserves:2]"
 					],
 					"sections": [
 					  {
@@ -943,11 +947,11 @@
 				"access_rules": [
 				  "$canBombWalls,super,morph",
 				  "speed,super,morph",
-				  "$canAccessNorfairPortal,ice",
-				  "$canAccessNorfairPortal,hijump",
-				  "[tournament],$canAccessNorfairPortal,$canSpringJump",
-				  "[tournament],$canAccessNorfairPortal,$canFlySM",
-				  "[casual],$canAccessNorfairPortal,space"
+				  "[$canAccessNorfairPortal],$canAccessNorfairPortalSB,ice",
+				  "[$canAccessNorfairPortal],$canAccessNorfairPortalSB,hijump",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,$canSpringJump",
+				  "[tournament],[$canAccessNorfairPortal],$canAccessNorfairPortalSB,$canFlySM",
+				  "casual,[$canAccessNorfairPortal],$canAccessNorfairPortalSB,space"
 				],
 				"children": [
 				  {
@@ -1033,8 +1037,8 @@
 					"name": "Power Bomb (red Brinstar spike room)",
 					"access_rules": [
 					  "[tournament],super",
-					  "[casual],$canPowerBomb,super",
-					  "[casual],ice,super",
+					  "casual,$canPowerBomb,super",
+					  "casual,ice,super",
 					],
 					"sections": [
 					  {
@@ -1087,7 +1091,7 @@
 				"access_rules": [
 				  "$canBombWalls, super, morph, $canBombPassages",
 				  "speed, super, morph, $canBombPassages",
-				  "$canAccessNorfairPortal, super, morph, $canBombPassages"				  
+				  "[$canAccessNorfairPortal],$canAccessNorfairPortalSB, super, morph, $canBombPassages"				  
 				],
 				"children": [
 				  {
@@ -1170,7 +1174,7 @@
 				"name": "West Norfair",
 				"color": "#b81818",
 				"access_rules": [
-				  "$norfairWest"
+				  "[$norfairWest],$norfairWestSB"
 				],
 				"children": [
 				  {
@@ -1178,7 +1182,7 @@
 					"access_rules": [
 					  "[tournament],super,morph,$heatProof",
 					  "[tournament],super,morph,$hasEnergyReserves:4",
-					  "[casual],super,$canPowerBomb,varia,speed"
+					  "casual,super,$canPowerBomb,varia,speed"
 					],
 					"sections": [
 					  {
@@ -1300,15 +1304,15 @@
 				  {
 					"name": "Missile (above Crocomire)",
 					"access_rules": [
-					  "[tournament], $canFlySM, $canHellRun, $crocomireTournament",
-					  "[tournament], grapple, $canHellRun, $crocomireTournament",
-					  "[tournament], hijump, speed, $canHellRun, $crocomireTournament",
-					  "[tournament], hijump, spring, $canHellRun, $crocomireTournament",
-					  "[tournament], hijump, varia, ice, $canHellRun, $crocomireTournament",
-					  "[casual], $canFlySM, $crocomireCasual",
-					  "[casual], grapple, $crocomireCasual",
-					  "[casual], hijump, speed, $crocomireCasual",
-					  "super,[sequencebreak]"
+					  "[tournament], $canFlySM, $canHellRun, [$crocomireTournament],$crocomireTournamentSB",
+					  "[tournament], grapple, $canHellRun, [$crocomireTournament],$crocomireTournamentSB",
+					  "[tournament], hijump, speed, $canHellRun, [$crocomireTournament],$crocomireTournamentSB",
+					  "[tournament], hijump, spring, $canHellRun, [$crocomireTournament],$crocomireTournamentSB",
+					  "[tournament], hijump, varia, ice, $canHellRun, [$crocomireTournament],$crocomireTournamentSB",
+					  "casual, $canFlySM, [$crocomireCasual],$crocomireCasualSB",
+					  "casual, grapple, [$crocomireCasual],$crocomireCasualSB",
+					  "casual, hijump, speed, [$crocomireCasual],$crocomireCasualSB",
+					  "{super}"
 					],
 					"sections": [
 					  {
@@ -1335,8 +1339,8 @@
 			  {
 			    "name": "Crocomire",
 				"access_rules": [
-				  "[tournament],$crocomireTournament",
-				  "[casual],$crocomireCasual"
+				  "[tournament],[$crocomireTournament],$crocomireTournamentSB",
+				  "casual,[$crocomireCasual],$crocomireCasualSB"
 				],
 				"children": [
 				  {
@@ -1388,9 +1392,9 @@
 					"name": "Power Bomb (Crocomire)",
 					"access_rules": [
 					  "[tournament]",
-					  "[casual],$canFlySM",
-					  "[casual],hijump",
-					  "[casual],grapple"
+					  "casual,$canFlySM",
+					  "casual,hijump",
+					  "casual,grapple"
 					],
 					"sections": [
 					  {
@@ -1417,8 +1421,8 @@
 					  "[tournament],speed",
 					  "[tournament],morph,$canFlySM",
 					  "[tournament],morph,grapple",
-					  "[casual],morph,$canFlySM,$canPowerBomb",
-					  "[casual],morph,speed,$canPowerBomb"				  
+					  "casual,morph,$canFlySM,$canPowerBomb",
+					  "casual,morph,speed,$canPowerBomb"				  
 					],
 					"sections": [
 					  {
@@ -1446,8 +1450,8 @@
 					  "[tournament],morph",
 					  "[tournament],grapple",
 					  "[tournament],hijump,speed",
-					  "[casual],morph,$canFlySM",
-					  "[casual],morph,speed,$canPowerBomb"
+					  "casual,morph,$canFlySM",
+					  "casual,morph,speed,$canPowerBomb"
 					],
 					"sections": [
 					  {
@@ -1473,19 +1477,19 @@
 			  {
 			    "name": "Norfair East",
 				"access_rules": [
-				  "[tournament],$norfairEastTournament",
-				  "[casual],$norfairEastCasual"
+				  "[tournament],[$norfairEastTournament],$norfairEastTournamentSB",
+				  "casual,[$norfairEastCasual],$norfairEastCasualSB"
 				],
 				"children": [
 				  {
 					"name": "Norfair Reserve Tank/Missile",
 					"access_rules": [
 					  "[tournament],morph,super",
-					  "[casual],morph,$canFlySM",
-					  "[casual],morph,hijump",
-					  "[casual],morph,ice",
-					  "[casual],morph,grapple,speed",
-					  "[casual],morph,grapple,bomb"
+					  "casual,morph,$canFlySM",
+					  "casual,morph,hijump",
+					  "casual,morph,ice",
+					  "casual,morph,grapple,speed",
+					  "casual,morph,grapple,bomb"
 					],					
 					"sections": [
 					  {
@@ -1515,11 +1519,11 @@
 					"access_rules": [
 					  "[tournament],super",
 					  
-					  "[casual],$canFlySM",
-					  "[casual],morph,speed",
-					  "[casual],morph,$canBombPassages",
-					  "[casual],hijump",
-					  "[casual],ice"
+					  "casual,$canFlySM",
+					  "casual,morph,speed",
+					  "casual,morph,$canBombPassages",
+					  "casual,hijump",
+					  "casual,ice"
 					],
 					"sections": [
 					  {
@@ -1550,11 +1554,11 @@
 					"access_rules": [
 					  "[tournament],super",
 					  
-					  "[casual],$canFlySM",
-					  "[casual],morph,speed",
-					  "[casual],morph,$canBombPassages",
-					  "[casual],hijump",
-					  "[casual],ice"
+					  "casual,$canFlySM",
+					  "casual,morph,speed",
+					  "casual,morph,$canBombPassages",
+					  "casual,hijump",
+					  "casual,ice"
 					],
 					"sections": [
 					  {
@@ -1583,11 +1587,11 @@
 					  "[tournament],$canOpenRedDoors,hijump,$heatProof",
 					  "[tournament],$canOpenRedDoors,space",
 					  
-					  "[casual],morph,$canFly",
-					  "[casual],morph,speed",
-					  "[casual],morph,$canBombPassages",
-					  "[casual],morph,hijump",
-					  "[casual],morph,ice"
+					  "casual,morph,$canFly",
+					  "casual,morph,speed",
+					  "casual,morph,$canBombPassages",
+					  "casual,morph,hijump",
+					  "casual,morph,ice"
 					],
 					"sections": [
 					  {
@@ -1613,11 +1617,11 @@
 					"access_rules": [
 					  "[tournament]",
 					  
-					  "[casual],$canFly",
-					  "[casual],morph,speed",
-					  "[casual],morph,$canBombPassages",
-					  "[casual],hijump",
-					  "[casual],ice"
+					  "casual,$canFly",
+					  "casual,morph,speed",
+					  "casual,morph,$canBombPassages",
+					  "casual,hijump",
+					  "casual,ice"
 					],
 					"sections": [
 					  {
@@ -1666,11 +1670,11 @@
 					"name": "Missile (bubble Norfair green door)",
 					"access_rules": [
 					  "[tournament],super",
-					  "[casual],$canFlySM",
-					  "[casual],grapple,morph,speed",
-					  "[casual],grapple,morph,$canBombPassages",
-					  "[casual],hijump",
-					  "[casual],ice",					  
+					  "casual,$canFlySM",
+					  "casual,grapple,morph,speed",
+					  "casual,grapple,morph,$canBombPassages",
+					  "casual,hijump",
+					  "casual,ice",					  
 					],
 					"sections": [
 					  {
@@ -1723,8 +1727,8 @@
 					"children": [
 					  {
 						"access_rules": [
-						  "[tournament],$lowerNorfairEastTournament",
-						  "[casual],$lowerNorfairEastCasual"
+						  "[tournament],[$lowerNorfairEastTournament],$lowerNorfairEastTournamentSB",
+						  "casual,[$lowerNorfairEastCasual],$lowerNorfairEastCasualSB"
 						],
 						"children": [
 						  {
@@ -1892,12 +1896,12 @@
 					"children": [
 					  {
 						"access_rules": [
-						  "[tournament],$lowerNorfairEastTournament,$canPowerBomb,$heatProof,hijump",
-						  "[tournament],$lowerNorfairEastTournament,$canPowerBomb,$heatProof,gravity",
+						  "[tournament],[$lowerNorfairEastTournament],$lowerNorfairEastTournamentSB,$canPowerBomb,$heatProof,hijump",
+						  "[tournament],[$lowerNorfairEastTournament],$lowerNorfairEastTournamentSB,$canPowerBomb,$heatProof,gravity",
 						  "[tournament],$canAccessLowerNorfairPortal,$canBombWalls",
-						  "[casual],$heatProof,$lowerNorfairEastCasual,$canPowerBomb,gravity",
-						  "[casual],$heatProof,$lowerNorfairEastCasual,$canPowerBomb,hijump",
-						  "[casual],$heatProof,$canAccessLowerNorfairPortal,$canBombWalls"
+						  "casual,$heatProof,[$lowerNorfairEastCasual],$lowerNorfairEastCasualSB,$canPowerBomb,gravity",
+						  "casual,$heatProof,[$lowerNorfairEastCasual],$lowerNorfairEastCasualSB,$canPowerBomb,hijump",
+						  "casual,$heatProof,$canAccessLowerNorfairPortal,$canBombWalls"
 						],
 						"children": [
 						  {
@@ -1905,7 +1909,7 @@
 							"access_rules": [
 							  "$canBombWalls,$canAccessLowerNorfairPortal",
 							  "[tournament],$canBombWalls,$heatProof",
-							  "[casual],$canBombWalls,space,$canPowerBomb",
+							  "casual,$canBombWalls,space,$canPowerBomb",
 							],
 							"sections": [
 							  {
@@ -1934,7 +1938,7 @@
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canFly,super",
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,$canSpringJump,super",
 							  "[tournament],$canPowerBomb,space,$heatProof,$canAccessLowerNorfairPortal,speed,super",
-							  "[casual],$canPowerBomb,space,super",
+							  "casual,$canPowerBomb,space,super",
 							  "{$canAccessLowerNorfairPortal}"
 							],							
 							"sections": [
@@ -1962,10 +1966,10 @@
 							"access_rules": [
 							  "[tournament],$canBombWalls,$heatProof,charge",
 							  "[tournament],$canBombWalls,$heatProof,super",
-							  "[casual],$canBombWalls,charge,$canAccessLowerNorfairPortal",
-							  "[casual],$canBombWalls,charge,space,$canPowerBomb",
-							  "[casual],$canBombWalls,super,$canAccessLowerNorfairPortal",
-							  "[casual],$canBombWalls,super,space,$canPowerBomb"
+							  "casual,$canBombWalls,charge,$canAccessLowerNorfairPortal",
+							  "casual,$canBombWalls,charge,space,$canPowerBomb",
+							  "casual,$canBombWalls,super,$canAccessLowerNorfairPortal",
+							  "casual,$canBombWalls,super,space,$canPowerBomb"
 							],							
 							"sections": [
 							  {
@@ -2002,11 +2006,11 @@
 			  "[tournament],super,$canAccessMaridiaPortal,hijump,$canBombPassages",
 			  "[tournament],super,$canAccessMaridiaPortal,gravity,$canBombPassages",
 			  
-			  "[casual],super,$canPowerBomb,speed",
-			  "[casual],super,$canPowerBomb,grapple",
-			  "[casual],super,$canPowerBomb,space",
-			  "[casual],super,$canPowerBomb,$canSpringJump",
-			  "[casual],super,$canAccessMaridiaPortal,gravity,$canBombPassages"
+			  "casual,super,$canPowerBomb,speed",
+			  "casual,super,$canPowerBomb,grapple",
+			  "casual,super,$canPowerBomb,space",
+			  "casual,super,$canPowerBomb,$canSpringJump",
+			  "casual,super,$canAccessMaridiaPortal,gravity,$canBombPassages"
 			],
 			"children": [
 			  {
@@ -2015,10 +2019,10 @@
 				  "[tournament],phantoon,$canPowerBomb,speed,varia",
 				  "[tournament],phantoon,$canPowerBomb,speed,$hasEnergyReserves:3",
 				  
-				  "[casual],phantoon,speed,$canPowerBomb,grapple",
-				  "[casual],phantoon,speed,$canPowerBomb,space",
-				  "[casual],phantoon,speed,$canPowerBomb,varia,$hasEnergyReserves:3",
-				  "[casual],phantoon,speed,$canPowerBomb,$hasEnergyReserves:4",
+				  "casual,phantoon,speed,$canPowerBomb,grapple",
+				  "casual,phantoon,speed,$canPowerBomb,space",
+				  "casual,phantoon,speed,$canPowerBomb,varia,$hasEnergyReserves:3",
+				  "casual,phantoon,speed,$canPowerBomb,$hasEnergyReserves:4",
 				  "{phantoon, $canPowerBomb}"
 				],
 				"sections": [
@@ -2099,10 +2103,10 @@
 				  "[tournament],phantoon,varia",
 				  "[tournament],phantoon,$hasEnergyReserves:2",
 				  
-				  "[casual],phantoon,grapple",
-				  "[casual],phantoon,space",				  
-				  "[casual],phantoon,varia,$hasEnergyReserves:3",
-				  "[casual],phantoon,$hasEnergyReserves:4"
+				  "casual,phantoon,grapple",
+				  "casual,phantoon,space",				  
+				  "casual,phantoon,varia,$hasEnergyReserves:3",
+				  "casual,phantoon,$hasEnergyReserves:4"
 				],
 				"sections": [
 				  {
@@ -2150,10 +2154,10 @@
 				  "[tournament],phantoon,varia",
 				  "[tournament],phantoon,$hasEnergyReserves:2",
 				  
-				  "[casual],phantoon,grapple",
-				  "[casual],phantoon,space",				  
-				  "[casual],phantoon,varia,$hasEnergyReserves:3",
-				  "[casual],phantoon,$hasEnergyReserves:4"
+				  "casual,phantoon,grapple",
+				  "casual,phantoon,space",				  
+				  "casual,phantoon,varia,$hasEnergyReserves:3",
+				  "casual,phantoon,$hasEnergyReserves:4"
 				],
 				"sections": [
 				  {
@@ -2227,11 +2231,11 @@
 				"name": "Outer Maridia",
 				"access_rules": [
 				  "[tournament],$canAccessMaridiaPortal",
-				  "[tournament],$norfairWest,$canPowerBomb,gravity",
-				  "[tournament],$norfairWest,$canPowerBomb,hijump,$canSpringJump",
-				  "[tournament],$norfairWest,$canPowerBomb,hijump,ice",
-				  "[casual],gravity,$norfairWest,$canPowerBomb",
-				  "[casual],gravity,$canAccessMaridiaPortal"
+				  "[tournament],[$norfairWest],$norfairWestSB,$canPowerBomb,gravity",
+				  "[tournament],[$norfairWest],$norfairWestSB,$canPowerBomb,hijump,$canSpringJump",
+				  "[tournament],[$norfairWest],$norfairWestSB,$canPowerBomb,hijump,ice",
+				  "casual,gravity,[$norfairWest],$norfairWestSB,$canPowerBomb",
+				  "casual,gravity,$canAccessMaridiaPortal"
 				],				
 				"color": "#409078",
 				"children": [
@@ -2239,7 +2243,7 @@
 					"name": "Missile (green Maridia shinespark)",
 					"access_rules": [
 					  "[tournament],gravity,speed",
-					  "[casual],speed",
+					  "casual,speed",
 					  "{}"
 					],
 					"sections": [
@@ -2337,13 +2341,13 @@
 				"name": "Inner Maridia",
 				"access_rules": [
 				  "[tournament],$canAccessMaridiaPortal",
-				  "[tournament],$norfairWest,$canPowerBomb,gravity",
-				  "[tournament],$norfairWest,$canPowerBomb,hijump,$canSpringJump,grapple",
-				  "[tournament],$norfairWest,$canPowerBomb,hijump,ice,grapple",
-				  "[casual],gravity,$norfairWest,$canPowerBomb,$canFlySM",
-				  "[casual],gravity,$norfairWest,$canPowerBomb,speed",
-				  "[casual],gravity,$norfairWest,$canPowerBomb,grapple",
-				  "[casual],gravity,$canAccessMaridiaPortal"
+				  "[tournament],[$norfairWest],$norfairWestSB,$canPowerBomb,gravity",
+				  "[tournament],[$norfairWest],$norfairWestSB,$canPowerBomb,hijump,$canSpringJump,grapple",
+				  "[tournament],[$norfairWest],$norfairWestSB,$canPowerBomb,hijump,ice,grapple",
+				  "casual,gravity,[$norfairWest],$norfairWestSB,$canPowerBomb,$canFlySM",
+				  "casual,gravity,[$norfairWest],$norfairWestSB,$canPowerBomb,speed",
+				  "casual,gravity,[$norfairWest],$norfairWestSB,$canPowerBomb,grapple",
+				  "casual,gravity,$canAccessMaridiaPortal"
 				],
 				"color": "#409078",
 				"children": [
@@ -2353,7 +2357,7 @@
 					  "[tournament],$canBombPassages,gravity",
 					  "[tournament],$canBombPassages,ice",
 					  "[tournament],$canBombPassages,hijump,$canSpringJump",
-					  "[casual],$canBombPassages"
+					  "casual,$canBombPassages"
 					],
 					"sections": [
 					  {
@@ -2380,7 +2384,7 @@
 					  "[tournament],$canBombPassages,gravity",
 					  "[tournament],$canBombPassages,ice",
 					  "[tournament],$canBombPassages,hijump,$canSpringJump",
-					  "[casual],$canBombPassages"
+					  "casual,$canBombPassages"
 					],
 					"sections": [
 					  {
@@ -2405,14 +2409,17 @@
 					"name": "Plasma Beam",
 					"access_rules": [
 					  "[tournament],draygon,$plasmaBeamTournament",
-					  "[casual],draygon,$canDefeatDraygon,screw,hijump",
-					  "[casual],draygon,$canDefeatDraygon,screw,$canFlySM",
-					  "[casual],draygon,$canDefeatDraygon,plasma,hijump",
-					  "[casual],draygon,$canDefeatDraygon,plasma,$canFlySM"
+					  "casual,draygon,$canDefeatDraygonCasual,screw,hijump",
+					  "casual,draygon,$canDefeatDraygonCasual,screw,$canFlySM",
+					  "casual,draygon,$canDefeatDraygonCasual,plasma,hijump",
+					  "casual,draygon,$canDefeatDraygonCasual,plasma,$canFlySM",
+					  "{tournament,draygon,$canDefeatDraygonTournament}",
+					  "{casual,draygon,$canDefeatDraygonCasual}"
 					],
 					"sections": [
 					  {
 						"name": "Plasma Beam",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -2436,7 +2443,7 @@
 					  "[tournament],hijump,$canSpringJump",
 					  "[tournament],gravity",
 					  
-					  "[casual],$canBombPassages"
+					  "casual,$canBombPassages"
 					],
 					"sections": [
 					  {
@@ -2513,7 +2520,7 @@
 					"name": "Super Missile (pink Maridia)",
 					"access_rules": [
 					  "[tournament],gravity",
-					  "[casual],speed"
+					  "casual,speed"
 					],
 					"sections": [
 					  {
@@ -2538,7 +2545,7 @@
 					"name": "Missile (pink Maridia)",
 					"access_rules": [
 					  "[tournament],gravity",
-					  "[casual],speed"
+					  "casual,speed"
 					],
 					"sections": [
 					  {
@@ -2565,8 +2572,8 @@
 					  "[tournament],grapple,$canPowerBomb,gravity,$canFlySM",
 					  "[tournament],grapple,$canPowerBomb,gravity,hijump",
 					  "[tournament],grapple,$canPowerBomb,ice,hijump,$canSpringJump,space",
-					  "[casual],$canPowerBomb,grapple,space",
-					  "[casual],$canPowerBomb,grapple,hijump"
+					  "casual,$canPowerBomb,grapple,space",
+					  "casual,$canPowerBomb,grapple,hijump"
 					],
 					"sections": [
 					  {
@@ -2590,8 +2597,8 @@
 				  {
 					"name": "Missile (Draygon)",
 					"access_rules": [
-					  "[tournament],$canDefeatBotwoon,gravity",
-					  "[casual],$canDefeatBotwoon"
+					  "[tournament],$canDefeatBotwoonTournament,gravity",
+					  "casual,$canDefeatBotwoonCasual"
 					],
 					"sections": [
 					  {
@@ -2615,7 +2622,8 @@
 				  {
 					"name": "Energy Tank, Botwoon",
 					"access_rules": [
-					  "$canDefeatBotwoon"
+					  "tournament,$canDefeatBotwoonTournament",
+					  "casual,$canDefeatBotwoonCasual"
 					],
 					"sections": [
 					  {
@@ -2639,13 +2647,13 @@
 				  {
 					"name": "Space Jump",
 					"access_rules": [
-					  "[tournament],draygon,$canDefeatDraygon",
-					  "[casual],draygon,$canDefeatDraygon,$canFlySM",
-					  "[casual],draygon,$canDefeatDraygon,speed,hijump"
+					  "[tournament],$canDefeatDraygonTournament",
+					  "casual,$canDefeatDraygonCasual"
 					],
 					"sections": [
 					  {
 						"name": "Space Jump",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -3558,7 +3566,8 @@
 					"access_rules": [ 
 						"mirror,book,sword2", 
 						"hookshot,hammer,book,sword2", 
-						"{book}"
+						"{mirror,book}",
+						"{hookshot,hammer,book}"
 					],
 					"sections": [
 					  {

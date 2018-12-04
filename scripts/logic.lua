@@ -285,10 +285,19 @@ function canSpringJump()
 	return 0
 end
 
+function canPeekGauntlet()
+	if ((hasMorph() == 1 and countPB() >= 1)
+			or (hasSpeedBooster() == 1 and hasEnergyReserves() >= 3)) then
+		return 1
+	end
+	
+	return 0
+end
+
 function canEnterAndLeaveGauntletTournament()
 	if ((hasMorph() == 1 and (hasBasicBombs() == 1 or countPB() >= 2))
 					 or hasScrewAttack() == 1
-					 or (hasSpeedBooster() == 1 and canPowerBomb() == 1 and hasEnergyReserves(3))) then
+					 or (hasSpeedBooster() == 1 and canPowerBomb() == 1 and hasEnergyReserves() >= 3)) then
 		return 1
 	end
 	
@@ -306,10 +315,16 @@ function canEnterAndLeaveGauntletCasual()
 	return 0
 end
 
-function canDefeatBotwoon()
-	if (isCasual() == 1 and (hasSpeedBooster() == 1 or canAccessMaridiaPortal() == 1)) then
+function canDefeatBotwoonCasual()
+	if (hasSpeedBooster() == 1 or canAccessMaridiaPortal() == 1) then
 		return 1
-	elseif (isTournament() == 1 and (hasIceBeam() == 1 or hasSpeedBooster() == 1 or canAccessMaridiaPortal() == 1)) then
+	end
+	
+	return 0
+end
+
+function canDefeatBotwoonTournament()
+	if (hasIceBeam() == 1 or hasSpeedBooster() == 1 or canAccessMaridiaPortal() == 1) then
 		return 1
 	end
 	
@@ -317,10 +332,16 @@ function canDefeatBotwoon()
 end
 
 
-function canDefeatDraygon()
-	if (isCasual() == 1 and canDefeatBotwoon() == 1 and hasGravity() == 1 and ((hasSpeedBooster() == 1 and hasHiJump() == 1) or canFlySM() == 1)) then
+function canDefeatDraygonTournament()
+	if (canDefeatBotwoonTournament() == 1 and hasGravity() == 1) then
 		return 1
-	elseif (isTournament() == 1 and canDefeatBotwoon() == 1 and hasGravity() == 1) then
+	end
+	
+	return 0
+end
+
+function canDefeatDraygonCasual()
+	if (canDefeatBotwoonCasual() == 1 and hasGravity() == 1 and ((hasSpeedBooster() == 1 and hasHiJump() == 1) or canFlySM() == 1)) then
 		return 1
 	end
 	
@@ -358,10 +379,38 @@ function crocomireTournament()
 	return 0
 end
 
+function crocomireTournamentSB()
+	if ((((canBombWalls() == 1 or hasSpeedBooster() == 1)
+			and (hasSuper() == 1 and hasMorph() == 1))
+			or canAccessNorfairPortal() == 1)
+			and hasSuper() == 1
+			and (hasEnergyReserves()  >= 3 and hasSpeedBooster() == 1 or canHellRun() == 1)
+			and ((canFlySM() == 1 or hasHiJump() == 1 or canSpringJump() == 1 or (hasVaria() == 1 and hasIceBeam() == 1)) or hasSpeedBooster() == 1)
+			and (canBombPassages() == 1 or hasSpeedBooster() == 1 or (heatProof() == 1 and hasMorph() == 1)))
+			or (canAccessLowerNorfairPortalSB() == 1 and hasScrewAttack() == 1 and hasSpaceJump() == 1 and hasVaria() == 1 and hasSuper() == 1 and hasEnergyReserves() >= 3) then
+		return 1
+	end
+	
+	return 0
+end
+
 function crocomireCasual()
 	if ((((canBombWalls() == 1 or hasSpeedBooster() == 1)
                 and (hasSuper() == 1 and hasMorph() == 1))
                 or canAccessNorfairPortal() == 1)
+                and hasVaria() == 1
+				and hasSuper() == 1
+				and ((canPowerBomb() == 1 and hasSpeedBooster() == 1) or (hasSpeedBooster() == 1 and hasWave() == 1) or (hasMorph() == 1 and (canFlySM() == 1 or hasHiJump() == 1) and hasWave() == 1))) then
+		return 1
+	end
+	
+	return 0
+end
+
+function crocomireCasualSB()
+	if ((((canBombWalls() == 1 or hasSpeedBooster() == 1)
+                and (hasSuper() == 1 and hasMorph() == 1))
+                or canAccessNorfairPortalSB() == 1)
                 and hasVaria() == 1
 				and hasSuper() == 1
 				and ((canPowerBomb() == 1 and hasSpeedBooster() == 1) or (hasSpeedBooster() == 1 and hasWave() == 1) or (hasMorph() == 1 and (canFlySM() == 1 or hasHiJump() == 1) and hasWave() == 1))) then
@@ -387,10 +436,39 @@ function norfairEastTournament()
 	return 0
 end
 
+function norfairEastTournamentSB()
+	if ((((canBombWalls() == 1 or hasSpeedBooster() == 1)
+                	and (hasSuper() == 1 and hasMorph() == 1))
+		    or canAccessNorfairPortalSB() == 1)
+		    and canHellRun() == 1
+		    and (hasSuper() == 1 
+		    
+		    and (canFlySM() == 1 or hasHiJump() == 1 or hasSpeedBooster() == 1 or canSpringBallJump() == 1 or (hasVaria() == 1 and (hasIceBeam() == 1 or hasSpeedBooster() == 1)))
+		    
+		      or (hasSpeedBooster() == 1 and canPowerBomb() == 1))) then
+		return 1
+	end
+	
+	return 0
+end
+
 function norfairEastCasual()
 	if ((((canBombWalls() == 1 or hasSpeedBooster() == 1)
                 and (hasSuper() == 1 and hasMorph() == 1))
                 or canAccessNorfairPortal() == 1)
+                and hasVaria() == 1
+                and hasSuper() == 1
+                and (canFlySM() == 1 or hasHiJump() == 1 or hasSpeedBooster() == 1)) then
+		return 1
+	end
+	
+	return 0
+end
+
+function norfairEastCasualSB()
+	if ((((canBombWalls() == 1 or hasSpeedBooster() == 1)
+                and (hasSuper() == 1 and hasMorph() == 1))
+                or canAccessNorfairPortalSB() == 1)
                 and hasVaria() == 1
                 and hasSuper() == 1
                 and (canFlySM() == 1 or hasHiJump() == 1 or hasSpeedBooster() == 1)) then
@@ -410,12 +488,40 @@ function norfairWest()
 	return 0
 end
 
+function norfairWestSB()
+	if (((canBombWalls() == 1 or hasSpeedBooster() == 1)
+                and (hasSuper() == 1 and hasMorph() == 1))
+                or canAccessNorfairPortalSB() == 1) then
+		return 1
+	end
+	
+	return 0
+end
+
 function lowerNorfairEastTournament()
 	if (heatProof() == 1
 				and	((norfairEastTournament() == 1
 						and canPowerBomb() == 1		
 						and (hasHiJump() == 1 or hasGravity() == 1))
 					or (canAccessLowerNorfairPortal() == 1 
+						and canBombWalls() == 1
+						and hasSuper() == 1 
+						and (canFlySM() == 1 or canSpringJump() == 1 or hasSpeedBooster() == 1)))
+				and (canFlySM() == 1 or hasHiJump() == 1 or canSpringJump() == 1 or (hasIceBeam() == 1 and hasChargeBeam() == 1))
+				and (canBombPassages() == 1 or (hasScrewAttack() == 1 and hasSpaceJump() == 1))
+				and (hasMorph() == 1 or hasEnergyReserves() >= 6)) then
+		return 1
+	end
+	
+	return 0
+end
+
+function lowerNorfairEastTournamentSB()
+	if (heatProof() == 1
+				and	((norfairEastTournamentSB() == 1
+						and canPowerBomb() == 1		
+						and (hasHiJump() == 1 or hasGravity() == 1))
+					or (canAccessLowerNorfairPortalSB() == 1 
 						and canBombWalls() == 1
 						and hasSuper() == 1 
 						and (canFlySM() == 1 or canSpringJump() == 1 or hasSpeedBooster() == 1)))
@@ -444,8 +550,24 @@ function lowerNorfairEastCasual()
 	return 0
 end
 
+function lowerNorfairEastCasualSB()
+	if (heatProof() == 1
+				and	((norfairEastCasualSB() == 1
+						and canPowerBomb() == 1		
+						and (hasSpaceJump() == 1 and hasGravity() == 1))
+					or (canAccessLowerNorfairPortalSB() == 1 
+						and canBombWalls() == 1
+						and hasSuper() == 1
+						and canPowerBomb() == 1
+						and canFlySM() == 1))) then
+		return 1
+	end
+	
+	return 0
+end
+
 function plasmaBeamTournament()
-	if (canDefeatDraygon() == 1
+	if (canDefeatDraygonTournament() == 1
 				and ((hasChargeBeam() == 1 and hasEnergyReserves() >= 4) or hasScrewAttack() == 1 or hasPlasmaBeam() == 1 or hasSpeedBooster() == 1)
 				and (hasHiJump() == 1 or canSpringJump() == 1 or canFlySM() == 1 or hasSpeedBooster() == 1)) then
 		return 1
@@ -615,6 +737,14 @@ end
 
 function canAccessNorfairPortal()
 	if (canFly() == 1 or (canLiftRocks() == 1 and hasLamp() == 1)) then
+		return 1
+	end
+	
+	return 0
+end
+
+function canAccessNorfairPortalSB()
+	if (canFly() == 1 or (canLiftRocks() == 1)) then
 		return 1
 	end
 	
