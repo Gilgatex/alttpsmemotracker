@@ -555,7 +555,7 @@ function lowerNorfairEastCasualSB()
 				and	((norfairEastCasualSB() == 1
 						and canPowerBomb() == 1		
 						and (hasSpaceJump() == 1 and hasGravity() == 1))
-					or (canAccessLowerNorfairPortalSB() == 1 
+					or (canAccessLowerNorfairPortal() == 1 
 						and canBombWalls() == 1
 						and hasSuper() == 1
 						and canPowerBomb() == 1
