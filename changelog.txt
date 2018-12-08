@@ -1,3 +1,7 @@
+1.3.5
+-----
+Fix lower norfair again, this time on hard mode
+
 1.3.4
 -----
 Lower norfair fix relating to the sequence break changes
