@@ -2249,6 +2249,7 @@
 					"sections": [
 					  {
 						"name": "Missile (green Maridia shinespark)",
+						"capture_item": true,
 						"item_count": 1
 					  }
 					],
@@ -3874,12 +3875,10 @@
 					"sections": [
 					  {
 						"name": "Sword Chest (left)",
-						"access_rules": [ "[sword]" ],
 						"item_count": 1
 					  },
 					  {
 						"name": "Bow Chest (right)",
-						"access_rules": [ "[bow]" ],
 						"item_count": 1
 					  }
 					],
