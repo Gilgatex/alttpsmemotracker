@@ -6,16 +6,16 @@
     "loop": "true",
     "stages": [
       {
-        "name": "Hard",
-        "img": "images/diff_hard_border.png",
-        "inherit_codes": "false",
-        "codes": "difficulty,tournament"
-      },
-      {
         "name": "Normal",
         "img": "images/diff_normal_border.png",
         "inherit_codes": "false",
         "codes": "casual"
+      },
+      {
+        "name": "Hard",
+        "img": "images/diff_hard_border.png",
+        "inherit_codes": "false",
+        "codes": "difficulty,tournament"
       }
     ]
   },
