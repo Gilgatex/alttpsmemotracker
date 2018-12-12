@@ -614,7 +614,7 @@
 					"name": "Missile (green Brinstar below super missile)",
 					"access_rules": [
 					  "$canBombPassages,$canOpenRedDoors",
-					  "[$canOpenRedDoors]"
+					  "{$canOpenRedDoors}"
 					],
 					"sections": [
 					  {
