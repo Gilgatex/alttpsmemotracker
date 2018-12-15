@@ -3252,7 +3252,7 @@
 					"color": "#aa860d",
 					"access_rules": [ 
 						"$canFly,lift2,mirror", 
-						"$canAccessMiseryMirePortal,mirror"
+						"$canAccessMiseryMirePortal,lift1,mirror"
 					],
 					"sections": [
 					  //  Cave
