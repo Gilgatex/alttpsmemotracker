@@ -335,8 +335,7 @@
 					"access_rules": [
 					  "[tournament],$canEnterAndLeaveGauntletTournament,$canBombPassages",
 					  "casual,$canEnterAndLeaveGauntletCasual,$canBombPassages,[$hasEnergyReserves:3]",
-					  "{$canPowerBomb}",
-					  "{screw}"
+					  "{$canPowerBomb}"
 					],
 					"sections": [
 					  {
