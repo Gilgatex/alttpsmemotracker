@@ -1965,10 +1965,10 @@
 							"access_rules": [
 							  "[tournament],$canBombWalls,$heatProof,charge",
 							  "[tournament],$canBombWalls,$heatProof,super",
-							  "casual,$canBombWalls,charge,$canAccessLowerNorfairPortal",
-							  "casual,$canBombWalls,charge,space,$canPowerBomb",
-							  "casual,$canBombWalls,super,$canAccessLowerNorfairPortal",
-							  "casual,$canBombWalls,super,space,$canPowerBomb"
+							  "[casual],$canBombWalls,charge,$canAccessLowerNorfairPortal",
+							  "[casual],$canBombWalls,charge,space,$canPowerBomb",
+							  "[casual],$canBombWalls,super,$canAccessLowerNorfairPortal",
+							  "[casual],$canBombWalls,super,space,$canPowerBomb"
 							],							
 							"sections": [
 							  {
