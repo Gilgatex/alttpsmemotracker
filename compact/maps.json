@@ -1,0 +1,16 @@
+[
+  {
+    "name": "metroid",
+    "location_size": 8,
+    "location_border_thickness": 1,
+    "img": "images/metroidmapmini.png"
+  },  
+  {
+    "name": "lightworld",
+    "img": "images/lttp_lightworld.png"
+  },
+  {
+    "name": "darkworld",
+    "img": "images/lttp_darkworld.png"
+  }
+]

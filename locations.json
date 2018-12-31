@@ -335,7 +335,8 @@
 					"access_rules": [
 					  "[tournament],$canEnterAndLeaveGauntletTournament,$canBombPassages",
 					  "casual,$canEnterAndLeaveGauntletCasual,$canBombPassages,[$hasEnergyReserves:3]",
-					  "{$canPowerBomb}"
+					  "{$canPowerBomb}",
+					  "{screw}"
 					],
 					"sections": [
 					  {
@@ -1454,7 +1455,7 @@
 					],
 					"sections": [
 					  {
-						"name": "Major Item",
+						"name": "Grapple Beam",
 						"item_count": 1
 					  }
 					],
@@ -1965,10 +1966,10 @@
 							"access_rules": [
 							  "[tournament],$canBombWalls,$heatProof,charge",
 							  "[tournament],$canBombWalls,$heatProof,super",
-							  "[casual],$canBombWalls,charge,$canAccessLowerNorfairPortal",
-							  "[casual],$canBombWalls,charge,space,$canPowerBomb",
-							  "[casual],$canBombWalls,super,$canAccessLowerNorfairPortal",
-							  "[casual],$canBombWalls,super,space,$canPowerBomb"
+							  "casual,$canBombWalls,charge,$canAccessLowerNorfairPortal",
+							  "casual,$canBombWalls,charge,space,$canPowerBomb",
+							  "casual,$canBombWalls,super,$canAccessLowerNorfairPortal",
+							  "casual,$canBombWalls,super,space,$canPowerBomb"
 							],							
 							"sections": [
 							  {
@@ -2577,7 +2578,7 @@
 					],
 					"sections": [
 					  {
-						"name": "Major Item",
+						"name": "Spring Ball",
 						"item_count": 1
 					  }
 					],
@@ -3251,7 +3252,7 @@
 					"color": "#aa860d",
 					"access_rules": [ 
 						"$canFly,lift2,mirror", 
-						"$canAccessMiseryMirePortal,lift1,mirror"
+						"$canAccessMiseryMirePortal,mirror"
 					],
 					"sections": [
 					  //  Cave

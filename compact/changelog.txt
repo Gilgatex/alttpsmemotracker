@@ -1,0 +1,139 @@
+1.4.0
+-----
+Fixed pyramid fairy sequence break
+Made "normal" mode the default
+
+1.3.5
+-----
+Fix lower norfair again, this time on hard mode
+
+1.3.4
+-----
+Lower norfair fix relating to the sequence break changes
+
+1.3.3
+----- 
+Updated Gauntlet Etank to be blue (checkable) if you can get in but not out
+Updated After Gauntlet end to be blue (checkable) if you can get underneath it with power bombs, but not enough power bombs to get through gauntlet
+Fixed (again) missile above crocomire to be blue instead of yellow when you can't get it
+Extended out the dark death mountain lampless sequence break further into Norfair
+Updated Space Jump to no longer require marking draygon as complete (to be consistent with other bosses).
+Space Jump can be checkable now if you can defeat draygon but can't get out
+Updated Plasma Beam to be blue (checkable) if you can get in but not out.
+Ether tablet fixed so no longer blue unless you can reach it.
+Changed early brinstar supers to sequence break without any bombs because you can technically get it with a quick drop.  They are still capturable/pinnable.
+Fixed some weird issues with sequence breaks showing up in hard logic when they shouldn't, mostly in Maridia
+Fixed energy reserve requirements for gauntlet in tournament logic
+
+1.3.2
+-----
+Fixed east norfair entry function
+
+1.3.1
+-----
+Typo fix causing script file not to work
+
+1.3.0
+-----
+Blind no longer in logic unless you have a weapon to defeat him
+Updated to base code v10.1 logic.
+
+1.2.0
+-----
+Major map overhaul, now has nested tabs and region maps for both Zelda and Metroid.
+Made the missiles above crocomire properly peek (blue), not sequence break (yellow).
+Reordered the bosses on the tracker to be more "normal" order.
+
+1.1.9
+-----
+In normal mode screw+space+morph can get you to gauntlet.
+Can now mark Ridley E-Tank as an out-of-logic mark if you don't have charge beam.
+
+1.1.8
+-----
+Can now peek at missile above Gold Torizo coming from Lower Norfair Portal
+Need to be able to open the door to peek at first green brinstar missile now
+Chest game now correctly shows one item
+
+1.1.7
+-----
+Wrecked Ship and Crateria both had "peek" locations that were incorrectly marked as sequence breaks without speed booster
+Super missile/power bomb in Pink Brinstar were mismarked
+
+1.1.6
+-----
+Fixed not needing moon pearl to show palace of darkness
+Added a peek to the after-gauntlet spots
+Fixed not being able to add a ether check
+Removed ability to add bombos check if you don't have south death world access
+Added cane/mushroom sequence break to magic bat
+
+1.1.5
+-----
+Updated game name to work with EmoTracker v2.0
+
+1.1.4
+-----
+Fixed bug where dark world portal wasn't working in hard mode
+
+1.1.3
+-----
+Fixed bug in getting to red brinstar power bomb spike room in normal logic
+
+1.1.2
+-----
+Fixed access rules for death mountain
+Fixed charge beam access rules (can use normal bombs and screw attack in addition to power bombs)
+Bomb required to be marked for desert cave
+Draygon required to be marked for Space Jump and Plasma Beam locations
+
+1.1.1
+-----
+Hotfix update to correct graveyard ledge bug
+
+1.1.0
+-----
+Added a couple peek locations
+In sync with current released version now (was not "really" v9.2 before)
+Changed "Casual" to "Normal" and "Tournament" to "Hard"
+
+1.0.6
+-----
+Bugfix with west death mountain
+Bugfix with catfish
+
+1.0.5
+-----
+Lower Norfair (east) access changes for upcoming v10
+Death Mountain portal fix
+Added 4th tab for combined Zelda map
+
+1.0.4
+-----
+Fixed death mountain logic
+Added sequence break to top crocomire missile
+
+1.0.3
+-----
+Made heart and heart pieces capturable
+Updated a couple logic updates from v10
+Fixed King Zora logic
+Kraid energy tank now requires Kraid to be defeated
+Thieves town now shows partial completion if hammer missing
+
+1.0.2
+-----
+Fixed gauntlet logic
+Made missle above crocomire a capturable item
+Added bombs requirement to all zelda areas that require bombs
+
+-----
+1.0.1
+Added readme.txt file with contact information
+Made several wrecked ship spots dependant on phantoon being marked
+Pinned items now wrap
+Fixed some bomb logic issues
+
+-----
+1.0.0 
+Initial Release
