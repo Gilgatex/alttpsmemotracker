@@ -163,11 +163,12 @@
 					"access_rules": [
 					  "[tournament]",
 					  
-					  "casual,[speed]",
-					  "casual,[grapple]",
-					  "casual,[space]",
-					  "casual,[$canSpringJump]",
-					  "casual,[$canAccessMaridiaPortal]"
+					  "casual,speed",
+					  "casual,grapple",
+					  "casual,space",
+					  "casual,gravity,$canFlySM",
+					  "casual,gravity,hijump",
+					  "casual,$canAccessMaridiaPortal"
 					],
 					"sections": [
 					  {
@@ -197,7 +198,8 @@
 					  "casual,phantoon,super,grapple",
 					  "casual,phantoon,super,$canFlySM",
 					  "casual,phantoon,super,space",
-					  "casual,phantoon,super,$canSpringJump,hijump",
+					  "casual,phantoon,super,gravity,$canFlySM,hijump",
+					  "casual,phantoon,super,gravity,hijump",
 					  "casual,phantoon,$canAccessMaridiaPortal,hijump",
 					  "casual,phantoon,$canAccessMaridiaPortal,$canFly",
 					  "casual,phantoon,$canAccessMaridiaPortal,speed"
@@ -229,7 +231,8 @@
 					  "casual,phantoon,super,speed",
 					  "casual,phantoon,super,grapple",
 					  "casual,phantoon,super,space",
-					  "casual,phantoon,super,$canSpringJump",
+					  "casual,phantoon,super,gravity,$canFlySM",
+					  "casual,phantoon,super,gravity,hijump",
 					  "casual,phantoon,super,$canAccessMaridiaPortal"
 					],
 					"sections": [
@@ -335,7 +338,8 @@
 					"access_rules": [
 					  "[tournament],$canEnterAndLeaveGauntletTournament,$canBombPassages",
 					  "casual,$canEnterAndLeaveGauntletCasual,$canBombPassages,[$hasEnergyReserves:3]",
-					  "{$canPowerBomb}"
+					  "{$canPowerBomb}",
+					  "{screw}"
 					],
 					"sections": [
 					  {
@@ -1454,7 +1458,7 @@
 					],
 					"sections": [
 					  {
-						"name": "Major Item",
+						"name": "Grapple Beam",
 						"item_count": 1
 					  }
 					],
@@ -1965,10 +1969,10 @@
 							"access_rules": [
 							  "[tournament],$canBombWalls,$heatProof,charge",
 							  "[tournament],$canBombWalls,$heatProof,super",
-							  "[casual],$canBombWalls,charge,$canAccessLowerNorfairPortal",
-							  "[casual],$canBombWalls,charge,space,$canPowerBomb",
-							  "[casual],$canBombWalls,super,$canAccessLowerNorfairPortal",
-							  "[casual],$canBombWalls,super,space,$canPowerBomb"
+							  "casual,$canBombWalls,charge,$canAccessLowerNorfairPortal",
+							  "casual,$canBombWalls,charge,space,$canPowerBomb",
+							  "casual,$canBombWalls,super,$canAccessLowerNorfairPortal",
+							  "casual,$canBombWalls,super,space,$canPowerBomb"
 							],							
 							"sections": [
 							  {
@@ -2008,7 +2012,8 @@
 			  "casual,super,$canPowerBomb,speed",
 			  "casual,super,$canPowerBomb,grapple",
 			  "casual,super,$canPowerBomb,space",
-			  "casual,super,$canPowerBomb,$canSpringJump",
+			  "casual,super,$canPowerBomb,gravity,$canFlySM",
+			  "casual,super,$canPowerBomb,gravity,hijump",
 			  "casual,super,$canAccessMaridiaPortal,gravity,$canBombPassages"
 			],
 			"children": [
@@ -2577,7 +2582,7 @@
 					],
 					"sections": [
 					  {
-						"name": "Major Item",
+						"name": "Spring Ball",
 						"item_count": 1
 					  }
 					],
@@ -3251,7 +3256,7 @@
 					"color": "#aa860d",
 					"access_rules": [ 
 						"$canFly,lift2,mirror", 
-						"$canAccessMiseryMirePortal,lift1,mirror"
+						"$canAccessMiseryMirePortal,mirror"
 					],
 					"sections": [
 					  //  Cave
